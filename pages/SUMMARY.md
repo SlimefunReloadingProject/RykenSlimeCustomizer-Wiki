@@ -2,6 +2,7 @@
 
 * [主页](README.md)
 * [使用前声明](declaration.md)
+* [下载与安装](download-and-install.md)
 
 ## 附属 <a href="#addon" id="addon"></a>
 
