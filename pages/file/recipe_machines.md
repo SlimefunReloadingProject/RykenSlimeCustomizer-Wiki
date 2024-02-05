@@ -64,7 +64,7 @@ EXAMPLE_RECIPE_MACHINE:
 
 合成所需秒数。
 
+### recipes
 
-
-
+设置机器的配方。
 

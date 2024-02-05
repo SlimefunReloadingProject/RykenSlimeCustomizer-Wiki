@@ -35,15 +35,15 @@ EXAMPLE_MULTIBLOCK_MACHINE:
 
 ### **work**
 
-设置按照机器配方里的哪个方块工作。
+设置右键后机器配方里的哪个方块让机器工作。
 
 ### sound
 
 右键工作方块后合成成功发出的声音，id列表请去 [跳转](https://slimefun.github.io/javadocs/Slimefun4/docs/io/github/thebusybiscuit/slimefun4/core/services/sounds/SoundEffect.html) 。
 
+### 注意事项
 
-
-
+必须要放一个发射器。设置后我们会自动搜索工作方块的上下左右找到发射器。
 
 
 

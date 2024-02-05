@@ -22,7 +22,7 @@ EXAMPLE_MATERIAL_GENERATOR:
 
 ### capacity
 
-生成一次所需电力。
+能源容量。
 
 ### tickRate
 
@@ -34,11 +34,11 @@ EXAMPLE_MATERIAL_GENERATOR:
 
 ### per
 
-每次生成物品个数。
+生成一次所耗能量。
 
+### outputItem
 
-
-
+生成的物品。写法请按照[**通用物品格式**](../format/universal-item-format.md)
 
 
 

@@ -4,6 +4,10 @@
 * [使用前声明](declaration.md)
 * [下载与安装](download-and-install.md)
 
+## 插件本体 <a href="#plugin" id="plugin"></a>
+
+* [指令与权限](plugin/zhi-ling-yu-quan-xian.md)
+
 ## 附属 <a href="#addon" id="addon"></a>
 
 * [附属结构](addon/structure.md)
