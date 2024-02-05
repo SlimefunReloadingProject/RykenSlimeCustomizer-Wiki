@@ -23,4 +23,4 @@
 * [机器](file/machine.md)
 * [机器菜单](file/menu.md)
 * [多方块机器](file/multi-block-machine.md)
-* [配方机器](file/formula-machine.md)
+* [配方机器](file/recipe\_machines.md)
