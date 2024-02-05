@@ -46,4 +46,4 @@ recipe:
 
 ## 例子
 
-详见 [**配置文件-物品**](file/Items.md) 。
+详见 [**配置文件-物品**](../file/items.md) 。
