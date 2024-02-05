@@ -8,4 +8,4 @@
 
 请在使用本附属前详细地阅读[《使用前声明》](Declaration.md)。  
 
-本教程由 [BoXueDuoCai](https://github.com/BoXueDuoCai) 与 [mmmjjkx](https://github.com/lijinhong11) 编写，该插件由 [mmmjjkx](https://github.com/lijinhong11) 编写，该Wiki由 [HiTech0926](https://github.com/HiTech0926) 使用 [docsify](https://github.com/HiTech0926)https://github.com/HiTech0926 在 [GitHub Pages](https://pages.github.com/)https://pages.github.com/ 上部署。(以首字母顺序排列)
+本教程由 [BoXueDuoCai](https://github.com/BoXueDuoCai) 与 [mmmjjkx](https://github.com/lijinhong11) 编写，该插件由 [mmmjjkx](https://github.com/lijinhong11) 编写，该Wiki由 [HiTech0926](https://github.com/HiTech0926) 使用 [docsify](https://docsify.js.org/#/) 在 [GitHub Pages](https://pages.github.com/) 上部署。(以首字母顺序排列)
