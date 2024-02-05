@@ -18,4 +18,6 @@
 
 若因您个人或团体的使用不当(如非官方途径下载、插件被他人篡改等原因)所造成的的一切后果**须由自己承担**，**严禁**以任何形式将责任推脱至上述插件及配置文件的相关维护者与创作者。  
 
+本附属插件版权归 [SliemfunReloadingProject](https://github.com/SlimefunReloadingProject)https://github.com/SlimefunReloadingProject 所有。
+
 本章声明至此结束。  
