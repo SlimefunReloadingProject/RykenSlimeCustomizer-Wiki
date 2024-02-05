@@ -62,7 +62,7 @@ EXAMPLE_RECIPE_MACHINE:
 
 ### seconds
 
-合成所需粘液刻。
+合成所需秒数。
 
 
 

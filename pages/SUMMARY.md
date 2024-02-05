@@ -24,3 +24,4 @@
 * [机器菜单](file/menu.md)
 * [多方块机器](file/multi-block-machine.md)
 * [配方机器](file/recipe\_machines.md)
+* [发电机](file/generators.md)
