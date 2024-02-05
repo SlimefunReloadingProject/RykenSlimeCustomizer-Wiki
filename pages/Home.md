@@ -8,4 +8,4 @@
 
 请在使用本附属前详细地阅读[《使用前声明》](Declaration.md)。  
 
-本教程由 BoXueDuoCai 与 mmmjjkx 编写，该插件由 mmmjjkx 编写。(以首字母顺序排列)
+本教程由 BoXueDuoCai 与 mmmjjkx 编写，该插件由 mmmjjkx 编写，该Wiki由HiTech0926使用docsify在GitHub Pages上部署。(以首字母顺序排列)
