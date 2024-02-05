@@ -48,7 +48,7 @@ EXAMPLE_RECIPE_MACHINE:
 
 设置机器能储存多少能量。
 
-### input/output
+### input/output (1次缩进)
 
 设置机器在机器菜单里的位置，详见[ 机器菜单 ](menu.md)。
 
