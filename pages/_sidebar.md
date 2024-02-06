@@ -1,21 +1,26 @@
-* [主页](Home.md)
+* [主页](home.md)
+* [使用前声明](declaration.md)
+* [下载与安装](download-and-install.md)
 
-* [使用前声明](Declaration.md)
+* 插件本体
+    * [指令与权限](plugin/command-and-permission.md)
 
-* [下载与安装](Download-and-install.md)
-
-* 附属结构
-    * [附属结构](addon/Structure.md)
-    * [附属文件](addon/File.md)
-    * [编写附属信息](addon/Plugin-information.md)
+* 附属
+    * [附属结构](addon/structure.md)
+    * [附属文件](addon/file.md)
+    * [编写附属信息](addon/plugin-information.md)
 
 * 物品格式
-    * [通用物品格式](format/Universal-item-format.md)
-    * [配方](format/Recipe.md)
+    * [通用物品格式](format/universal-item-format.md)
+    * [配方](format/recipe.md)
 
 * 配置文件
-    * [物品组（分类）](file/Groups.md)
-    * [物品](file/Items.md)
-    * [GEO资源](file/Geo.md)
-    * [机器](file/Machine.md)
-    * [机器菜单](file/Menu.md)
+    * [物品组（分类）](file/groups.md)
+    * [物品](file/items.md)
+    * [GEO资源](file/geo.md)
+    * [发电机](file/generators.md)
+    * [机器](file/machine.md)
+    * [机器菜单](file/menu.md)
+    * [多方块机器](file/multi-block-machine.md)
+    * [配方机器](file/recipe\_machines.md)
+    * [材料生成器](file/mat\_generators.md)
