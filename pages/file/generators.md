@@ -1,8 +1,6 @@
----
-description: 必不可少的能源来源。
----
-
 # 发电机
+
+> 必不可少的能源来源。
 
 ```yaml
 EXAMPLE_GENERATOR:
