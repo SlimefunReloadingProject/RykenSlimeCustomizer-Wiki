@@ -11,4 +11,4 @@
 - 如果你学过Java等这类语言，你就能很快上手写更高级的机器
 
 [GitHub](https://github.com/SlimefunReloadingProject/RykenSlimeCustomizer)
-[开始使用](Home)
+[开始使用](home)
