@@ -4,6 +4,8 @@ description: 有自定义输入输出的机器。
 
 # 配方机器
 
+<mark style="color:red;">**目前仍然不稳定，请不要尝试！**</mark>
+
 ```yaml
 EXAMPLE_RECIPE_MACHINE:
   item_group: example_normal_group

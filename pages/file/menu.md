@@ -88,6 +88,10 @@ EXAMPLE_RECIPE_MACHINE:
 
 **e.g.：**0-8意思是**从第1格到第9格**都是放这个物品。
 
+### progressbar
+
+设置这个物品为机器的进度条物品。
+
 ### 其他
 
 在machine.yml里的机器如果想写menu，请注意，两处的id必须一致！

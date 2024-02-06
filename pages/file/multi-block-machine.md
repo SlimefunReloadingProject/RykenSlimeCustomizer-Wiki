@@ -8,10 +8,10 @@ EXAMPLE_MULTIBLOCK_MACHINE:
     material: CRAFTING_TABLE
   recipe:
     #按照这个设置
-    #0 1 2
-    #3 4 5
-    #6 7 8
-    4:
+    #1 2 3
+    #4 5 6
+    #7 8 9
+    5:
       material: OAK_FENCE_GATE
     #不要漏发射器
     8:
@@ -26,10 +26,11 @@ EXAMPLE_MULTIBLOCK_MACHINE:
           material: EXAMPLE_ITEM
       output:
         material_type: full_slimefun
-        material: EXAMPLE_ITEM_2           
+        material: EXAMPLE_ITEM_2
+        
 ```
 
-### item\_group,item,recipe\_type,recipe,material\_type,material
+### item\_group,item,recipe\_type,recipe
 
 详见[**物品**](broken-reference)
 
@@ -40,6 +41,18 @@ EXAMPLE_MULTIBLOCK_MACHINE:
 ### sound
 
 右键工作方块后合成成功发出的声音，id列表请去 [跳转](https://slimefun.github.io/javadocs/Slimefun4/docs/io/github/thebusybiscuit/slimefun4/core/services/sounds/SoundEffect.html) 。
+
+### recipes
+
+设置机器配方
+
+#### input
+
+设置配方输入
+
+#### output
+
+设置配方输出
 
 ### 注意事项
 
