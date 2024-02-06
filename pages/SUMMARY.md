@@ -1,6 +1,6 @@
 # Table of contents
 
-* [主页 :id=home](README.md)
+* [主页](README.md)
 * [使用前声明](declaration.md)
 * [下载与安装](download-and-install.md)
 
