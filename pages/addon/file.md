@@ -35,3 +35,11 @@
 ### groups.yml <a href="#groups.yml" id="groups.yml"></a>
 
 存放附属的物品组（分类）。
+
+### mb\_machines.yml
+
+存放附属的多方块机器。
+
+### recipe\_machines.yml
+
+存放附属的配方机器。
