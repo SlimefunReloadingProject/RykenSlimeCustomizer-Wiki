@@ -2,7 +2,7 @@
 
 ![logo](https://cdn.jsdelivr.net/gh/SlimefunReloadingProject/RykenSlimeCustomizer-Wiki@master/images/logo.svg)
 
-# RykenSlimeCustomizer <small>1.0</small> :id=rsc
+# RykenSlimeCustomizer <small>1.0</small> :id=home
 
 > 更高级的自定义粘液附属
 
