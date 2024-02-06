@@ -6,7 +6,7 @@
 
 ## 插件本体 <a href="#plugin" id="plugin"></a>
 
-* [指令与权限](plugin/zhi-ling-yu-quan-xian.md)
+* [指令与权限](plugin/command-and-permission.md)
 
 ## 附属 <a href="#addon" id="addon"></a>
 
