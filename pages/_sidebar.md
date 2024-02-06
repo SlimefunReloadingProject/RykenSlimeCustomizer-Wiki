@@ -1,4 +1,4 @@
-* [主页](home.md)
+* [主页](README.md)
 * [使用前声明](declaration.md)
 * [下载与安装](download-and-install.md)
 
