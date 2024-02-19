@@ -2,7 +2,7 @@
 
 > 粘液附属必不可少的东西
 
-**注：**该类型没有自定义输入输出！（请到[ 配方机器 ](file/_recipe_machines.md)实现）
+**注：**该类型没有自定义输入输出！（请到[ 配方机器 ](file/recipe_machines.md)实现）
 
 **示例：**
 
@@ -79,4 +79,4 @@ EXAMPLE_MACHINE_ENERGY:
 
 ### 其他
 
-在machine.yml里的机器如果想写menu，详见 [机器菜单](file/_menu.md) 。
+在machine.yml里的机器如果想写menu，详见 [机器菜单](file/menu.md) 。
