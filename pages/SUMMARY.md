@@ -1,4 +1,4 @@
-# Table of contents
+# 目录
 
 * [主页](README.md)
 * [使用前声明](declaration.md)
@@ -21,6 +21,7 @@
 
 ## 配置文件 <a href="#file" id="file"></a>
 
+* 
 * [物品组（分类）](file/groups.md)
 * [物品](file/items.md)
 * [GEO资源](file/geo.md)

@@ -36,9 +36,9 @@ EXAMPLE_GENERATOR:
       seconds: 10
 ```
 
-### item\_group,item,recipe\_type,recipe,material\_type,material
+### item\_group, item, recipe\_type, recipe
 
-详见[**物品**](broken-reference)
+详见[**物品**](items.md)
 
 ### production
 
@@ -51,38 +51,3 @@ EXAMPLE_GENERATOR:
 #### seconds
 
 燃料可持续时间，单位：秒。
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

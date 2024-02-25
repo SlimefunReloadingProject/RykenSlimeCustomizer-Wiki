@@ -1,5 +1,7 @@
 # 编写附属信息
 
+<mark style="color:red;background:transparent">注意：带*均为必填</mark>
+
 **示例：**
 
 ```yaml
@@ -8,15 +10,16 @@ name: "示例附属"
 depends: []
 pluginDepends: []
 version: "1.0"
+authors: ["mmmjjkx"]
 ```
 
 ## 解析
 
-### id
+### id*
 
 设置附属的id，这是**必不可少**的。在保存物品、卸载某个附属、设置附属前置时需要。
 
-### name
+### name*
 
 设置附属名称，这是**必不可少**的。
 
@@ -27,3 +30,11 @@ version: "1.0"
 ### version
 
 设置附属版本。默认1.0(~~_偷懒写版本不是一个好习惯哦_~~)
+
+### description
+
+设置附属描述。默认为空。
+
+### authors*
+
+设置附属作者。
