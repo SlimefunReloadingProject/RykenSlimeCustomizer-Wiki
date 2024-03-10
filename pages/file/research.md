@@ -12,20 +12,18 @@ example_research:
   currencyCost: 10 #非必填  
 ```
 
-## levelCost
+| 内容 | 描述 |
+| -------- | -------- |
+| `example_research` | 研究的key，每个研究的key不能相同。<br>**仅支持小写字母、数字、下划线!** |
+| id | 研究的数字ID，最大为 2147483647。 |
+| name | 研究的名称。 |
+| levelCost | 解锁研究所需要的经验等级。 |
+| items | 研究所包含的物品列表。必须为粘液科技物品ID。 |
+| currencyCost | 解锁研究所需要的游戏币，详见注意事项。 |
 
-设置花费的经验等级。
 
-## items
+# 注意事项
 
-设置研究后解锁哪些物品。
-
-## currencyCost
-
-设置花费的金钱。
-
-# 注意
-
-levelCost和currencyCost仅能同时存在一个。如果两个同时存在，会忽略levelCost。
+levelCost和currencyCost仅能同时存在一个。如果两个同时存在，则会忽略levelCost。
 
 **使用currencyCost时请设置粘液本体配置里的`researches.use-money-unlock`为true**

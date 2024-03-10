@@ -4,6 +4,6 @@
 
 指令的权限是rsc.command.子指令名，默认都是op可执行。
 
-给予rsc.command权限可以执行所有这里的指令（<mark style="color:red;">**不建议给予玩家此权限！**</mark>）。
+给予rsc.command权限可以执行这里的所有指令（<mark style="color:red;">**不建议给予玩家此权限！**</mark>）。
 
 <mark style="color:red;">**不建议给予玩家除list以外的权限！**</mark>

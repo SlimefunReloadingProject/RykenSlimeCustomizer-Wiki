@@ -2,7 +2,7 @@
 
 ### info.yml <a href="#info.yml" id="info.yml"></a>
 
-这是一个至关重要的文件，它是用于存放附属的信息，RSC首先读取都需要它。没有它，RSC会直接跳过加载。（作用跟Bukkit类插件的plugin.yml, Bungeecord类插件的bungee.yml一样）
+这是一个至关重要的文件，它用于存放附属的信息，RSC首先读取都需要它。没有它，RSC会直接跳过加载。（作用跟Bukkit类插件的plugin.yml, Bungeecord类插件的bungee.yml一样）
 
 ### items.yml <a href="#items.yml" id="items.yml"></a>
 

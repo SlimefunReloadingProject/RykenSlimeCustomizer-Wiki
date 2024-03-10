@@ -10,9 +10,10 @@
 
 ## 感谢
 
-* Wiki编写：[BoXueDuoCai](https://github.com/BoXueDuoCai)  [mmmjjkx](https://github.com/lijinhong11)
+* Wiki编写：[BoXueDuoCai](https://github.com/BoXueDuoCai)  [haiman233](https://github.com/haiman233)  [mmmjjkx](https://github.com/lijinhong11)
 * 插件编写：[mmmjjkx](https://github.com/lijinhong11)
 * Wiki搭建：[HiTech0926](https://github.com/HiTech0926)
 * Wiki部署：[docsify](https://docsify.js.org/#/)  [GitHub Pages](https://pages.github.com/)
+* 模板提供：[hth0987654](https://github.com/hth0987654)
 
 以上人员或单位均以首字母排序

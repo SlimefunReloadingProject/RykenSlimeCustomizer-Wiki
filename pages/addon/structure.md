@@ -35,4 +35,4 @@ addons
 | addons     | 存放附属   |
 | example    | 存放附属内容 |
 | scripts    | 存放脚本文件 |
-| saveditems | 存放保存的物 |
+| saveditems | 存放保存物品 |

@@ -12,10 +12,16 @@ description: "RSC示例附属"
 authors: ["mmmjjkx"]
 repo: "SlimefunReloadingProject/rsc-example"
 ```
-
-## repo
-
-这是附属更新的必填项。
+| 内容 | 描述 |
+| --- | ----------- |
+| id | 附属的id。 |
+| name | 附属的名称。 |
+| depends | 依赖的其它用RykenSlimeCustomizer编辑的自定义附属id |
+| pluginDepends | 依赖的插件名称，即在plugin.yml中定义的名称。 |
+| version | 附属的版本。 |
+| description | 附属的描述。 |
+| authors | 附属的作者。 |
+| repo | 附属对应的github库，这是附属更新的必填项。 |
 
 ## 更新步骤
 
@@ -29,7 +35,7 @@ repo: "SlimefunReloadingProject/rsc-example"
 
 ## 注意事项
 
-发行版下载下来的版本一定要跟发行版名称相同！
+发行版下载下来的版本一定要与发行版的名称相同！
 
 否则会造成**死循环**。
 

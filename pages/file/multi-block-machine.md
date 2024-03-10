@@ -30,33 +30,21 @@ EXAMPLE_MULTIBLOCK_MACHINE:
         
 ```
 
-### item\_group,item,recipe\_type,recipe
+| 内容 | 描述 | 有效输入 |
+| --- | ----------- | ----------------- |
+| `EXAMPLE_ITEM` | 多方块机器的ID。<br>该ID不能与任何其他物品的ID相同! | **仅支持大写字母、数字、下划线!** |
+| item_group | 多方块机器所在[物品组（分类）](file/groups.md)的ID。 |
+| item.# | [通用物品格式](format/universal-item-format.md)| 可选择性添加modelId、lore、glow等。 |
+| recipe | 设置多方块机器的搭建方式。详见[**配方**](../format/recipe.md)，搭建一个多方块机器必须包含一个发射器。 |
+| recipe.#.input | 合成输出物品的配方。 |
+| recipe.#.output | 多方块机器输出的物品。 |
+| work| 设置工作方块，即多方块机器合成一个物品需要右键的方块，填相应方块在recipe中的数字。 |
+| sound | 右键工作方块并成功合成物品后发出的声音，详见 [声音](https://slimefun.github.io/javadocs/Slimefun4/docs/io/github/thebusybiscuit/slimefun4/core/services/sounds/SoundEffect.html) 。 |
 
-详见[**物品**](broken-reference)
 
-### **work**
+## 注意事项
 
-设置右键后机器配方里的哪个方块让机器工作。
-
-### sound
-
-右键工作方块后合成成功发出的声音，id列表请去 [跳转](https://slimefun.github.io/javadocs/Slimefun4/docs/io/github/thebusybiscuit/slimefun4/core/services/sounds/SoundEffect.html) 。
-
-### recipes
-
-设置机器配方
-
-#### input
-
-设置配方输入
-
-#### output
-
-设置配方输出
-
-### 注意事项
-
-必须要放一个发射器。设置后我们会自动搜索工作方块的上下左右找到发射器。
+多方块机器的recipe必须安排一个发射器。多方块机器搭建完成后会自动搜索工作方块的上下左右找到发射器。
 
 
 
