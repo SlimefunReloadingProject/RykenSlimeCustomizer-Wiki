@@ -5,6 +5,7 @@
 ```yaml
 EXAMPLE_ITEM:
   item_group: example_sub_group
+  placeable: false
   item:
     name: "&a示例物品"
     material: DIAMOND
@@ -16,6 +17,7 @@ EXAMPLE_ITEM:
       amount: 1
 EXAMPLE_ITEM_2:
   item_group: example_normal_group
+  placeable: false
   item:
     name: "&a示例物品2"
     material: NETHERITE_INGOT
@@ -28,34 +30,27 @@ EXAMPLE_ITEM_2:
       material: EXAMPLE_ITEM
       amount: 1
 ```
+| 内容 | 描述 | 有效输入 |
+| --- | ----------- | ----------------- |
+| `EXAMPLE_ITEM` | 物品的ID。<br>该ID不能与任何其他物品的ID相同! | **仅支持大写字母、数字、下划线!** |
+| item_group | 物品所在[物品组（分类）](file/groups.md)的ID。 |
+| item.# | [通用物品格式](format/universal-item-format.md)| 可选择性添加modelId、lore、glow等 |
+| placeable | 物品是否可放置。**不要让工具等本来就无法放置的物品可放置！** |
+| recipe_type | 见 SlimeCustomizer wiki[合成配方](https://slimefun-addons-wiki.guizhanss.cn/slime-customizer/Crafting-Recipe) ，可填自定义的recipe_type详见[配方类型](file/recipe_type.md)。 |
+| script | 物品引用的脚本，设置物品对应的脚本文件，双引号内填脚本对应的文件名称 |
+| recipe | 设置物品的配方。详见[**配方**](../format/recipe.md) |
 
-## 设置
+## 注意事项
 
-### ID\*
+关于item.#后的标签，本页仅以name、material、amount为示例，可以在amount后添加更多标签，详见[通用物品格式](format/universal-item-format.md)
 
-就跟上面的示例中`EXAMPLE_ITEM`, `EXAMPLE_ITEM_2`一样，这些代表了物品的id，/sf give时也会用到。
+注意name与material为必填，如果不填material_type，则默认检测material为原版物品
 
-### item\_group\*
+### 关于本页引用的示例脚本example_item_2
 
-这是设置物品所在的物品组。这是必填项，而且只能引用附属内的物品组，不能引用其他的附属的物品组。
+示例：
 
-### item
-
-设置粘液物品外表是什么样子，填写时**请使用通用物品格式编写物品。**
-
-### recipe\_type
-
-设置配方类型。
-
-### recipe
-
-设置物品配方。写法请参考[**配方**](../format/recipe.md)**。**
-
-### script
-
-编写脚本你需要一些编程基础。
-
-这个是设置物品对应的脚本文件。当物品右键时会执行脚本文件里的内容。
+物品右键时会执行脚本文件里的内容
 
 ```
 function onUse(e) {

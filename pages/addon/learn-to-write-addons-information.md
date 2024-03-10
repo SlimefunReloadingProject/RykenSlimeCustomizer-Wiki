@@ -13,28 +13,13 @@ version: "1.0"
 authors: ["mmmjjkx"]
 ```
 
-## 解析
+| 内容 | 描述 |
+| --- | ----------- |
+| id | 附属的id，在保存物品、卸载某个附属、设置附属前置时需要 |
+| name | 附属的名称。 |
+| depends | 依赖的其它用RykenSlimeCustomizer编辑的自定义附属id |
+| pluginDepends | 依赖的插件名称，即在plugin.yml中定义的名称。 |
+| version | 附属的版本，默认为1.0 |
+| description | 附属的描述。 |
+| authors | 附属的作者。 |
 
-### id*
-
-设置附属的id，这是**必不可少**的。在保存物品、卸载某个附属、设置附属前置时需要。
-
-### name*
-
-设置附属名称，这是**必不可少**的。
-
-### depends/pluginDepends
-
-设置附属前置。前置前者是rsc附属，后者是服务器插件。
-
-### version
-
-设置附属版本。默认1.0(~~_偷懒写版本不是一个好习惯哦_~~)
-
-### description
-
-设置附属描述。默认为空。
-
-### authors*
-
-设置附属作者。

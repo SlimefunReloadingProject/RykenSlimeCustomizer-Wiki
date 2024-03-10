@@ -21,30 +21,27 @@ EXAMPLE_GEO_RESOURCE:
     the_end: 2
 ```
 
-## 设置
+| 内容 | 描述 | 有效输入 |
+| --- | ----------- | ----------------- |
+| `EXAMPLE_GEO` | 自然资源的ID。<br>该ID不能与任何其他物品的ID相同! | **仅支持大写字母、数字、下划线!** |
+| item_group| 自然资源所在[物品组（分类）](file/groups.md)的ID。 |
+| item.# | [通用物品格式](format/universal-item-format.md)| 可选择性添加modelId、lore、glow等。 |
+| recipe_type | 见 SlimeCustomizer wiki[合成配方](https://slimefun-addons-wiki.guizhanss.cn/slime-customizer/Crafting-Recipe) ，可填自定义的recipe_type详见[配方类型](file/recipe_type.md) |
+| max-deviation | 每个区块自然资源数量的最大偏差。 | 正整数 |
+| obtain_from_geo_miner | 设置自然资源是否可以从GEO矿机中挖到。|
+| geo_name | 设置自然资源的名称。 |
+| supply | 设置自然资源在各个世界环境、生物群系的默认数量，详见注意事项。 |
 
-### item\_group,item,recipe\_type,recipe
+## 注意事项
 
-详见[**物品**](broken-reference)
+1、关于supply
 
-### max\_deviation
+world、nether、the\_end代表着主世界、下界、末地三个维度。
 
-设置每个区块自然资源数量的最大偏差。
+plains、ocean代表主世界的生物群系。
 
-### obtain\_from\_geo\_miner
+others代表在主世界的其它生物群系。
 
-设置自然资源是否可以从GEO矿机中挖到。
+下界与末地的生物群系同理
 
-### geo\_name
-
-设置自然资源名称
-
-### supply
-
-设置自然资源在各个世界环境、生物群系的默认数量。
-
-world、nether、the\_end代表了世界环境。
-
-plains、ocean代表了在主世界环境的生物群系。
-
-others代表在主世界其他存在的生物群系。
+2、有关geo的更多信息，详见[Slimecustomizer wiki](https://slimefun-addons-wiki.guizhanss.cn/slime-customizer/Geo-Resources)

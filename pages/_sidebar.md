@@ -7,6 +7,7 @@
 * 插件本体
   
   * [指令与权限](plugin/commands-and-permissions.md)
+  * [配置注册顺序](plugin/registration-order.md)
 
 * 附属
   
@@ -24,20 +25,21 @@
   * [内容加载/注册选项](file/context-options.md)
   * [物品组（分类）](file/groups.md)
   * [配方类型](file/recipe_type.md)
-  * [物品](file/items.md)
   * [GEO资源](file/geo.md)
-  * [生物掉落型物品](file/mob_drops.md)
+  * [生物掉落物](file/mob_drops.md)
+  * [物品](file/items.md)
   * [电容](file/capacitors.md)
   * [机器菜单](file/menu.md)
   * [机器](file/machine.md)
   * [发电机](file/generators.md)
-  * [太阳能发电机](solar_generators.md)
+  * [太阳能发电机](file/solar_generators.md)
   * [材料生成器](file/mat\_generators.md)
   * [配方机器](file/recipe_machines.md)
   * [简单机器](file/simple_machines.md)
   * [多方块机器](file/multi-block-machine.md)
   * [研究](file/research.md)
 - 脚本-基础
+  - [介绍](scripts-basic/introduction.md)
   
   - [基础](scripts-basic/basic.md)
   
@@ -46,8 +48,6 @@
   - [物品](scripts-basic/items.md)
   
   - [机器菜单](scripts-basic/machine_menus.md)
-  
-  - [配方机器](scripts-basic/recipe_machines.md)
 
 - 脚本-进阶
   
