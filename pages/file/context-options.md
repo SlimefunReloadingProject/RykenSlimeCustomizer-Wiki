@@ -10,7 +10,7 @@ EXAMPLE_FOR_REGISTER:
     conditions:
        - "hasplugin DyeBench"
        - "!hasplugin DynaTech"
-	unfinished: false
+    unfinished: false
 ```
 
 | 内容 | 描述 |
@@ -29,7 +29,8 @@ EXAMPLE_FOR_REGISTER:
 | 条件名        | 解释      | 示例                   |
 | ---------- | ------- | -------------------- |
 | hasplugin  | 需要某插件   | hasplugin DyeBench   |
-| !hasplugin | 不要某插件出现 | !hasplugin DynaBench |
+| !hasplugin | 要卸载某插件 | !hasplugin DynaBench |
+| version | 检查MC版本是否达到要求(使用>=,=,<=,>,<,!=这些符号来判断) | version >= 1.20.1 |
 
 
 
