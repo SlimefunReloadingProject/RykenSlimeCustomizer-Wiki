@@ -49,6 +49,7 @@ RykenSlimeCustomizer将配置与脚本结合（脚本是非必须选项），使
 ## 感谢
 
 Wiki贡献：
+
 ![Wiki贡献](https://contrib.rocks/image?repo=SlimefunReloadingProject/RykenSlimeCustomizer-Wiki)
 
 * 插件编写：[mmmjjkx](https://github.com/lijinhong11)
