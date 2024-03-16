@@ -29,6 +29,7 @@
   * [生物掉落物](file/mob_drops.md)
   * [物品](file/items.md)
   * [电容](file/capacitors.md)
+  * [食物](file/foods.md)
   * [机器菜单](file/menu.md)
   * [机器](file/machine.md)
   * [发电机](file/generators.md)
@@ -40,21 +41,14 @@
   * [研究](file/research.md)
 - 脚本-基础
   - [介绍](scripts-basic/introduction.md)
-  
   - [基础](scripts-basic/basic.md)
-  
   - [机器](scripts-basic/machines.md)
-  
   - [物品](scripts-basic/items.md)
-  
   - [机器菜单](scripts-basic/machine_menus.md)
+  - [食物](scripts-basic/foods.md)
 
 - 脚本-进阶
-  
   - [物品使用后消耗](scripts-advanced/item-consume.md)
-  
-  - 
 
 - 杂项
-  
   - [让你的附属可更新](other/updateable-addon.md)

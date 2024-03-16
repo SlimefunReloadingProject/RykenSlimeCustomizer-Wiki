@@ -17,6 +17,7 @@
   - [GEO资源](file/geo.md)
   - [物品](file/items.md)
   - [电容](file/capacitors.md)
+  - [食物](file/foods.md)
   - [机器菜单](file/menu.md)
   - [发电机](file/generators.md)
   - [太阳能发电机](file/solar_generators.md)
