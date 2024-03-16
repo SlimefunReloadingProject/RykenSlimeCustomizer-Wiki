@@ -37,6 +37,6 @@ repo: "SlimefunReloadingProject/rsc-example"
 
 在Github上设置的Releases版本一定要与上述的version相同！
 
-否则会造成**死循环**。
+否则会造成**重复下载**。
 
 

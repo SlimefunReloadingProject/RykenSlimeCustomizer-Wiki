@@ -87,7 +87,7 @@ EXAMPLE_RECIPE_MACHINE:
 
 ## 注意事项
 
-1、关于import
+1. 关于import
 
 ```yaml
 EXAMPLE_RECIPE_MACHINE:
@@ -97,4 +97,4 @@ EXAMPLE_RECIPE_MACHINE:
 
 如果你使用了import，则slots可忽略不写，但是自定义的机器相应的input和output依然需要填写对应槽的数字
 
-2/如果你想给一个机器添加自定义菜单时，请注意，machine与menu的id必须一致！
+2. 如果你想给一个机器添加自定义菜单时，请注意，machine与menu的id必须一致！

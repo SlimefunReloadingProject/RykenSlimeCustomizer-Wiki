@@ -1,7 +1,6 @@
 # 物品
 
 **示例：**
-
 ```yaml
 EXAMPLE_ITEM:
   item_group: example_sub_group
@@ -47,15 +46,4 @@ EXAMPLE_ITEM_2:
 注意name与material为必填，如果不填material_type，则默认检测material为原版物品
 
 ### 关于本页引用的示例脚本example_item_2
-
-示例：
-
-物品右键时会执行脚本文件里的内容
-
-```
-function onUse(e) {
-    
-}
-```
-
-其中 e 代表 [**PlayerRightClickEvent(玩家右键事件)**](https://slimefun.github.io/javadocs/Slimefun4/docs/io/github/thebusybiscuit/slimefun4/api/events/PlayerRightClickEvent.html) 。
+详见[脚本基础-物品](../scripts-basic/items.md)
