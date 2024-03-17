@@ -22,10 +22,13 @@ EXAMPLE_MULTIBLOCK_MACHINE:
     example:
       input:
         1:
-          material_type: full_slimefun
+          material_type: slimefun
           material: EXAMPLE_ITEM
+        2:
+          material_type: slimefun
+          material: EXAMPLE_MACHINE
       output:
-        material_type: full_slimefun
+        material_type: slimefun
         material: EXAMPLE_ITEM_2
         
 ```
@@ -46,5 +49,10 @@ EXAMPLE_MULTIBLOCK_MACHINE:
 
 多方块机器的recipe必须安排一个发射器。多方块机器搭建完成后会自动搜索工作方块的上下左右找到发射器。
 
+## 如何编写一个只能用多方块机器制作的材料
 
+首先，自定义一个[配方类型](file/recipe_type.md)，配方类型的名字为此台多方块机器的名字，可自行添加lore等内容
 
+然后在items.md中注册一个物品，recipe_type填写自定义的配方类型id，在recipe中编写相应的配方(注意：在items文件里编写的配方只是为了展示，并不代表多方块机器真正拥有这个配方)
+
+最后在multi-block-machine.md编写一个多方块机器，input对应物品的配方（照抄你在items文件里编写的配方），output填你在items.md文件里自定义的物品id
