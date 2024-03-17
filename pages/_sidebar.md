@@ -5,7 +5,7 @@
 * [下载与安装](download-and-install.md)
 
 * 插件本体
-  
+  * [对比与总览](plugin/comparison.md)
   * [指令与权限](plugin/commands-and-permissions.md)
   * [配置注册顺序](plugin/registration-order.md)
 
