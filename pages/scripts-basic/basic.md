@@ -1,8 +1,8 @@
 # 脚本基础
 这里列出所有脚本中可以方便使用的方法/字段
+
 ## [server](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Bukkit.html)
-类型：字段  
-获取服务器实例
+一个字段，用于获取服务器实例
 
 ## isPluginLoaded
 示例用法:
@@ -37,24 +37,24 @@ sendMessage(player, "<rainbow>A cool message</rainbow>");
 ```js
 let slimefunItem = getSfItemById("IRON_DUST");
 ```
-通过id获取粘液物品
-返回一个SlimefunItem
+通过id获取粘液物品，返回一个SlimefunItem
 
 ## getSfItemByItem
 示例用法:
 ```js
 let slimefunItem = getSfItemByItem(player.getInventory().getItemInMainHand());
 ```
-通过ItemStack获取粘液物品
-返回一个SlimefunItem
+通过ItemStack获取粘液物品，返回一个SlimefunItem
 
 ## isItemSimilar
 示例用法:
 ```js
 let isItemMatch = isItemSimilar(item, sfItem, checkLore);
 ```
+对比物品，相同返回true，不相同返回false  
 
 详细入参说明:
+
 |入参名称|类型|说明|
 |---|---|---|
 |item|ItemStack|要对比的物品1|
@@ -73,28 +73,31 @@ let radioactived = isRadioactiveItem(player.getInventory().getItemInMainHand());
 ```js
 let soulbound = isSoulbound(player.getInventory().getItemInMainHand());
 ```
-检测此物品是可以灵魂绑定
+检测此物品是否为灵魂绑定物品
 
 ## canPlayerUseItem
 示例用法:
 ```js
 let usable = canPlayerUseItem(player, item, sendMessage);
 ```
+检测玩家是否可以使用此物品  
 
 详细入参说明:
+
 |入参名称|类型|说明|
 |---|---|---|
 |player|Player|玩家|
 |item|ItemStack|目标物品|
 |sendMessage|boolean|如果玩家不能使用物品时向玩家发送消息|
-
 ## setData
 示例用法:
 ```js
 setData(blockLocation, key, value)
 ```
+往机器设置数据  
 
 详细入参说明:
+
 |入参名称|类型|说明|
 |---|---|---|
 |blockLocation|Location|方块位置|
@@ -106,8 +109,10 @@ setData(blockLocation, key, value)
 ```js
 let value = getData(blockLocation, key)
 ```
+从机器获取数据  
 
 详细入参说明:
+
 |入参名称|类型|说明|
 |---|---|---|
 |blockLocation|Location|方块位置|
