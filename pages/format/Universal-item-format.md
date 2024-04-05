@@ -109,23 +109,3 @@ lore:
 ```
 glow: (true或false)
 ```
-
-### 可充电物品
-
-```
-energy_capacity: <容量>
-```
-
-容量最大为 2147483647 。
-
-*提示：仅通过添加energy_capacity的可充电物品是没有任何功能的，如果想让可充电物品拥有其它功能，需要搭配脚本使用*
-
-### 辐射
-
-```
-radiation: <辐射等级>
-```
-
-辐射等级详见[辐射](https://slimefun.github.io/javadocs/Slimefun4/docs/io/github/thebusybiscuit/slimefun4/core/attributes/Radioactivity.html)
-
-*注意：辐射与可充电物品无法共存*
