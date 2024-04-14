@@ -72,9 +72,9 @@ material: bb0f722aec27490cf056f560afdd457a0a794e703556cc4c3b51a582f5c57aa4
 
 设置物品材料，填写内容由材料类型决定。
 
-例如slimefun类型，这里写粘液物品ID。
+如果是slimefun，此项填写粘液物品ID。
 
-头颅那些写url或base64。
+如果是头颅，此项填写链接、url或base64。
 
 ```
 material: <材料>
