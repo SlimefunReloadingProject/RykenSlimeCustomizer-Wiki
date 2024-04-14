@@ -2,7 +2,9 @@
 
 #### 下载 <a href="#xia-zai" id="xia-zai"></a>
 
-请前往Github下载官方正版！ [跳转](https://github.com/SlimefunReloadingProject/RykenSlimeCustomizer/)
+HiMCBBS [https://www.himcbbs.net/resources/10/](https://www.himcbbs.net/resources/10/)
+
+Github [https://github.com/SlimefunReloadingProject/RykenSlimeCustomizer/](https://github.com/SlimefunReloadingProject/RykenSlimeCustomizer/)
 
 #### 安装 <a href="#an-zhuang" id="an-zhuang"></a>
 
