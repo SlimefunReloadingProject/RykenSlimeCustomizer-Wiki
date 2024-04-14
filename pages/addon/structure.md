@@ -22,6 +22,8 @@ addons
         │  recipe_types.yml
         │  researches.yml
         │  solar_generators.yml
+	    │
+        ├─saveditems
         │
         └─scripts
                 example_item_2.js

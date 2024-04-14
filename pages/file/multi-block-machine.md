@@ -55,4 +55,4 @@ EXAMPLE_MULTIBLOCK_MACHINE:
 
 然后在items.yml中注册一个物品(详见[物品](items.md)，recipe_type填写自定义的配方类型id，在recipe中编写相应的配方(注意：在items文件里编写的配方只是为了展示，并不代表多方块机器真正拥有这个配方)
 
-最后在multi-block-machine.md编写一个多方块机器，input对应物品的配方（照抄你在items文件里编写的配方），output填你在items.yml文件里自定义的物品id
+最后在multi-block-machine.yml编写一个多方块机器，input对应物品的配方（照抄你在items文件里编写的配方），output填你在items.yml文件里自定义的物品id
