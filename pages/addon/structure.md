@@ -22,7 +22,7 @@ addons
         │  recipe_types.yml
         │  researches.yml
         │  solar_generators.yml
-	    │
+        │
         ├─saveditems
         │
         └─scripts
