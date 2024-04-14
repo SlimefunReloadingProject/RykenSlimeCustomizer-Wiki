@@ -28,6 +28,7 @@
   * [GEO资源](file/geo.md)
   * [生物掉落物](file/mob_drops.md)
   * [物品](file/items.md)
+  * [盔甲](file/armors.md)
   * [电容](file/capacitors.md)
   * [食物](file/foods.md)
   * [机器菜单](file/menu.md)
@@ -48,7 +49,7 @@
   - [食物](scripts-basic/foods.md)
 
 - 脚本-进阶
-  - [物品使用后消耗](scripts-advanced/item-consume.md)
+  - [道具](scripts-advanced/item-consume.md)
 
 - 杂项
   - [让你的附属可更新](other/updateable-addon.md)

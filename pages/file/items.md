@@ -14,6 +14,7 @@ EXAMPLE_ITEM:
     1:
       material: APPLE
       amount: 1
+  radiation: HIGH
 EXAMPLE_ITEM_2:
   item_group: example_normal_group
   placeable: false
@@ -28,6 +29,7 @@ EXAMPLE_ITEM_2:
       material_type: slimefun
       material: EXAMPLE_ITEM
       amount: 1
+  energy_capacity: 100
 ```
 | 内容 | 描述 | 有效输入 |
 | --- | ----------- | ----------------- |
@@ -38,6 +40,82 @@ EXAMPLE_ITEM_2:
 | recipe_type | 见 SlimeCustomizer wiki[合成配方](https://slimefun-addons-wiki.guizhanss.cn/slime-customizer/Crafting-Recipe) ，可填自定义的recipe_type详见[配方类型](recipe_type.md)。 |
 | script | 物品引用的脚本，设置物品对应的脚本文件，双引号内填脚本对应的文件名称 |
 | recipe | 设置物品的配方。详见[**配方**](../format/recipe.md) |
+| energy_capacity | 可充电物品的充电量，详见下文 |
+| radiation | 辐射等级，详见下文 |
+| rainbow | 彩虹方块，详见下文 |
+| rainbow_materials | 自定义彩虹方块，详见下文 |
+| anti_wither | 防凋灵，详见下文 |
+| soulbound | 灵魂绑定，详见下文 |
+| piglin_trade.piglin_chance | 猪灵交易物品，详见下文 |
+| vanilla | 人造类物品，详见下文 |
+
+### 可充电物品
+
+```
+energy_capacity: <容量>
+```
+
+容量最大为 2147483647 。
+
+*提示：仅通过添加energy_capacity的可充电物品是没有任何功能的，如果想让可充电物品拥有其它功能，需要搭配脚本使用*
+
+### 辐射
+
+```
+ radiation: <辐射等级>
+```
+
+辐射等级详见[辐射](https://slimefun.github.io/javadocs/Slimefun4/docs/io/github/thebusybiscuit/slimefun4/core/attributes/Radioactivity.html)
+
+### 彩虹方块与自定义彩虹方块
+
+```
+ rainbow: <类型>
+```
+
+彩虹方块类型包括：GLASS_PANE（玻璃板）、GLASS（玻璃）、STAINED_GLASS（彩色玻璃）、STAINED_GLASS_PANE（彩色玻璃板）、WOOL（羊毛）、 TERRACOTTA（陶瓦）、TERRACOTTA_ALL（所有陶瓦）、GLAZED_TERRACOTTA（带釉陶瓦）
+
+```
+ rainbow_materials:
+    - GRASS_BLOCK
+    - DIRT
+```
+
+自定义彩虹方块，按照上述格式添加方块ID
+
+### 防凋灵
+
+```
+ anti_wither: true/false
+```
+
+注意：只有方块可以设置这个选项
+当anti_wither为true时，该方块将无法被凋灵破坏
+
+### 灵魂绑定
+
+```
+ soulbound: true
+```
+
+当soulbound为true时，该物品将不会在玩家死亡后掉落
+
+### 猪灵交易物品
+
+```
+ piglin_trade:
+     piglin_trade_chance: <0-100>
+```
+
+设置此物品的获取方式为猪灵交易物品，记得改recipe_type
+
+### 人造类物品
+
+```
+ vanilla: true/false
+```
+
+类似于人造钻石，当vanilla为true时，此物品可以被当做原版物品作为原版工作台合成物品时的材料
 
 ## 注意事项
 

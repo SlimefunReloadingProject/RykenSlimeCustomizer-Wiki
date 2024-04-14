@@ -10,11 +10,11 @@ EXAMPLE_MATERIAL_GENERATOR:
   recipe_type: ENHANCED_CRAFTING_TABLE
   recipe:
     1:
-      material_type: full_slimefun
+      material_type: slimefun
       material: EXAMPLE_ITEM
   output: [12]
   outputItem:
-    material_type: full_slimefun
+    material_type: slimefun
     material: EXAMPLE_ITEM
   tickRate: 5
   status: 4

@@ -4,6 +4,10 @@
 ## [server](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Bukkit.html)
 一个字段，用于获取服务器实例
 
+## %player%
+
+获取玩家的名字，支持 PlaceholderAPI
+
 ## isPluginLoaded
 示例用法:
 ```js
@@ -117,3 +121,36 @@ let value = getData(blockLocation, key)
 |---|---|---|
 |blockLocation|Location|方块位置|
 |key|String|键|
+
+## randint
+
+# randintA
+示例用法：
+```javascript
+randintA(10);
+```
+返回 0~9 的随机数（0,1,2,3,4,5,6,7,8,9）
+
+# randintB
+示例用法：
+```javascript
+randintB(10, true);
+randintB(10, false);
+```
+如果第二个参数为 true，则返回 0~10 的随机数（0,1,2,3,4,5,6,7,8,9,10）
+如果第二个参数为 false，则返回 0~9 的随机数（0,1,2,3,4,5,6,7,8,9）
+
+# randintC
+示例用法：
+```javascript
+randintC(2, 10);
+```
+返回 2~9 的随机数（2,3,4,5,6,7,8,9）
+
+# randintD
+示例用法：
+```javascript
+randintD(2, 10, true);
+```
+如果第3个参数为 true, 则返回 2~10 的随机数（2,3,4,5,6,7,8,9,10）
+如果第3个参数为 false, 则返回 2~9 的随机数（2,3,4,5,6,7,8,9）
