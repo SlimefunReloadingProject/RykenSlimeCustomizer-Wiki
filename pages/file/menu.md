@@ -7,6 +7,7 @@
 ```yaml
 EXAMPLE_MACHINE:
   title: "&a示例菜单"
+  script: "example_menu"
   slots:
     0-8:
      name: "&a"
@@ -48,11 +49,11 @@ EXAMPLE_MATERIAL_GENERATOR:
     0-3:
       name: "&a"
       material: BLACK_STAINED_GLASS_PANE
-    #注意，不推荐在第4格放置物品，因为这已经设置成了用来展示信息的位置
-    5-11:
+    # 注意，不推荐在第4格放置物品，因为这已经设置成了用来展示信息的位置，你可以在材料生成器的配置中修改 `status` 参数
+    5-12:
       name: "&a"
       material: BLACK_STAINED_GLASS_PANE
-    13-17:
+    14-17:
       name: "&a"
       material: BLACK_STAINED_GLASS_PANE
 EXAMPLE_RECIPE_MACHINE:
@@ -63,8 +64,8 @@ EXAMPLE_RECIPE_MACHINE:
       material: BLACK_STAINED_GLASS_PANE
     4:
       name: "&a信息"
-      progressbar: true
       material: GREEN_STAINED_GLASS_PANE
+      progressbar: true
     5-9:
       name: "&a"
       material: BLACK_STAINED_GLASS_PANE
@@ -74,6 +75,7 @@ EXAMPLE_RECIPE_MACHINE:
     17-26:
       name: "&a"
       material: BLACK_STAINED_GLASS_PANE
+
 ```
 
 | 内容 | 描述 | 有效输入 |

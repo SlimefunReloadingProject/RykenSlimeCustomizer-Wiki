@@ -7,11 +7,12 @@
 ```
 recipe:
   1: 
-    ...
+    material: cobblestone
   2:
-    ...
+    material_type: none
   3:
-    ...
+    material_type: slimefun
+    material: REINFORCED_ALLOY_INGOT
   4:
     ...
   5:

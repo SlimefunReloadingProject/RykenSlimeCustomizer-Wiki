@@ -4,32 +4,84 @@
 ```yaml
 EXAMPLE_ITEM:
   item_group: example_sub_group
-  placeable: false
   item:
     name: "&a示例物品"
     material: DIAMOND
-    amount: 1
   recipe_type: ENHANCED_CRAFTING_TABLE  
   recipe:
     1:
       material: APPLE
       amount: 1
-  radiation: HIGH
 EXAMPLE_ITEM_2:
   item_group: example_normal_group
-  placeable: false
   item:
     name: "&a示例物品2"
     material: NETHERITE_INGOT
-    amount: 1
   recipe_type: ENHANCED_CRAFTING_TABLE  
   script: "example_item_2"
   recipe:
     1:
       material_type: slimefun
       material: EXAMPLE_ITEM
-      amount: 1
-  energy_capacity: 100
+EXAMPLE_ITEM_3:
+  item_group: example_normal_group
+  item:
+    name: "&a示例物品3"
+    material: GOLD_INGOT
+  recipe_type: ENHANCED_CRAFTING_TABLE
+  energy_capacity: 1000
+  script: "example_item_3"
+  recipe:
+    1:
+      material_type: slimefun
+      material: EXAMPLE_ITEM2
+SYNTHETIC_STONE:
+  item_group: example_sub_group
+  placeable: false
+  item:
+    name: "&7人造石头"
+    material: STONE
+  recipe_type: ENHANCED_CRAFTING_TABLE
+  recipe:
+    1:
+      material: COBBLESTONE
+    2:
+      material: COBBLESTONE
+    4:
+      material_type: slimefun
+      material: STONE_CHUNK
+    5:    
+      material_type: slimefun
+      material: STONE_CHUNK
+  vanilla: true
+WITHER_PROOF_STONE:
+  item_group: example_sub_group
+  item:
+    name: "&7&l防凋零石头"
+    material: STONE
+  anti_wither: true  
+  recipe_type: ENHANCED_CRAFTING_TABLE
+  recipe:
+    1:
+      material: COBBLESTONE
+    2:
+      material: COBBLESTONE
+    3:
+      material_type: slimefun
+      material: MOD_PLATE_DUMMY # 来自匠魂，未安装此附属会自动转为石头
+CHANGEABLE_DIRT:
+  item_group: example_normal_group
+  item:
+    name: "&6&l可变泥土"
+    material: DIRT
+  piglin_trade:
+    piglin_trade_chance: 10
+  rainbow: CUSTOM
+  rainbow_materials:
+    - DIRT      
+    - GRASS_BLOCK
+    - PODZOL  
+
 ```
 | 内容 | 描述 | 有效输入 |
 | --- | ----------- | ----------------- |
@@ -46,7 +98,7 @@ EXAMPLE_ITEM_2:
 | rainbow_materials | 自定义彩虹方块，详见下文 |
 | anti_wither | 防凋灵，详见下文 |
 | soulbound | 灵魂绑定，详见下文 |
-| piglin_trade.piglin_chance | 猪灵交易物品，详见下文 |
+| piglin_trade.piglin_trade_chance | 猪灵交易物品，详见下文 |
 | vanilla | 人造类物品，详见下文 |
 
 ### 可充电物品

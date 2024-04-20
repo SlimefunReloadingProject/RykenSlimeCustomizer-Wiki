@@ -30,14 +30,45 @@ EXAMPLE_MULTIBLOCK_MACHINE:
       output:
         material_type: slimefun
         material: EXAMPLE_ITEM_2
-        
+    helmet:
+      input:
+        3:
+          material_type: slimefun
+          material: EXAMPLE_ITEM_2
+      output:
+        material_type: slimefun
+        material: EXAMPLE_HELMET
+    chestplate:
+      input:
+        4:
+          material_type: slimefun
+          material: EXAMPLE_ITEM_2
+      output:
+        material_type: slimefun
+        material: EXAMPLE_CHESTPLATE
+    leggings:
+      input:
+        5:
+          material_type: slimefun
+          material: EXAMPLE_ITEM_2
+      output:
+        material_type: slimefun
+        material: EXAMPLE_LEGGINGS
+    boots:
+      input:
+        6:
+          material_type: slimefun
+          material: EXAMPLE_ITEM_2
+      output:
+        material_type: slimefun
+        material: EXAMPLE_BOOTS
 ```
 
 | 内容 | 描述 | 有效输入 |
 | --- | ----------- | ----------------- |
 | `EXAMPLE_ITEM` | 多方块机器的ID。<br>该ID不能与任何其他物品的ID相同! | **仅支持大写字母、数字、下划线!** |
-| item_group | 多方块机器所在[物品组（分类）](file/groups.md)的ID。 |
-| item.# | [通用物品格式](format/universal-item-format.md)| 可选择性添加modelId、lore、glow等。 |
+| item_group | 多方块机器所在[物品组（分类）](groups.md)的ID。 |
+| item.# | [通用物品格式](../format/universal-item-format.md)| 可选择性添加modelId、lore、glow等。 |
 | recipe | 设置多方块机器的搭建方式。详见[**配方**](../format/recipe.md)，搭建一个多方块机器必须包含一个发射器。 |
 | recipe.#.input | 合成输出物品的配方。 |
 | recipe.#.output | 多方块机器输出的物品。 |
