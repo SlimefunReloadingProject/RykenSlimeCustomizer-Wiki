@@ -71,13 +71,13 @@ rsc同样也利好于材质制作者，可以为自定义物品套上特殊的�
 | 自定义能源类型 | × | √ |
 | 机器脚本 | × | √ |
 
-sc中关于机器的配置仅包含machine.yml，且机器菜单单一，输入输出数量单一，功能单一，但是编写较为简单
+sc中关于机器的配置仅包含`machine.yml`，且机器菜单单一，输入输出数量单一，功能单一，但是编写较为简单
 
-rsc中关于机器的配置包含machine.yml（无输入输出机器，需脚本套模）、recipe_machines.yml（配方机器）、simple_machines（简单机器），可自定义机器菜单，功能多样
+rsc中关于机器的配置包含`machine.yml`（无输入输出机器，需脚本套模）、`recipe_machines.yml`（配方机器）、`simple_machines.yml`（简单机器），可自定义机器菜单，功能多样
 
-rsc可在machine.yml中通过编辑能源类型（energy.type），自定义能源节点等能源类型
+rsc可在`machine.yml`中通过编辑能源类型（`energy.type`），自定义能源节点等能源类型
 
-rsc中的simple_machines.yml为编写者提供简易的粘液原版机器进阶版的编写，而在sc中添加同类机器则格外繁琐，需一个个填写输入与输出物品
+rsc中的`simple_machines.yml`为编写者提供简易的粘液原版机器进阶版的编写，而在sc中添加同类机器则格外繁琐，需一个个填写输入与输出物品
 
 ## 多方块机器类
 

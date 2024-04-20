@@ -97,6 +97,6 @@ EXAMPLE_RECIPE_MACHINE:
   import: 机器id
 ```
 
-如果你使用了import，则slots可忽略不写，但是自定义的机器相应的input和output依然需要填写对应槽的数字
+如果你使用了`import`，则`slots`可忽略不写，但是自定义的机器相应的`input`和`output`依然需要填写对应槽的数字
 
-2. 如果你想给一个机器添加自定义菜单时，请注意，machine与menu的id必须一致！
+2. 如果你想给一个机器添加自定义菜单时，请注意， machine 与 menu 的`id`必须一致！

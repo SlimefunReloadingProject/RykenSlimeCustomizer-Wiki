@@ -47,4 +47,4 @@ recipe:
 
 ## 应用
 
-详见 [**配置文件-物品**](../file/items.md) 。
+详见 [**配置文件-物品**](file/items.md) 。

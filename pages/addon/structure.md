@@ -37,6 +37,6 @@ addons
 | 文件夹名称      | 作用     |
 | ---------- | ------ |
 | addons     | 存放附属   |
-| example    | 存放附属内容 |
+| example    | 存放附属内容（可改为其他名字，如sf Expansion） |
 | scripts    | 存放脚本文件 |
 | saveditems | 存放保存物品 |

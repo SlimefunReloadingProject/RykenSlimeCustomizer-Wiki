@@ -39,7 +39,7 @@ function onUse(event) {
 }
 ```
 
-这里执行的是/give creeper_spawn_egg{EntityTag:{id:"minecraft:iron_golem"}指令，
+这里执行的是`/give creeper_spawn_egg{EntityTag:{id:"minecraft:iron_golem"}`指令，
 
 runOpCommand对应的是以op身份运行此段指令，括号内为指令内容。
 

@@ -67,9 +67,9 @@ EXAMPLE_MULTIBLOCK_MACHINE:
 | 内容 | 描述 | 有效输入 |
 | --- | ----------- | ----------------- |
 | `EXAMPLE_ITEM` | 多方块机器的ID。<br>该ID不能与任何其他物品的ID相同! | **仅支持大写字母、数字、下划线!** |
-| item_group | 多方块机器所在[物品组（分类）](groups.md)的ID。 |
-| item.# | [通用物品格式](../format/universal-item-format.md)| 可选择性添加modelId、lore、glow等。 |
-| recipe | 设置多方块机器的搭建方式。详见[**配方**](../format/recipe.md)，搭建一个多方块机器必须包含一个发射器。 |
+| item_group | 多方块机器所在[物品组（分类）](file/groups.md)的ID。 |
+| item.# | [通用物品格式](format/universal-item-format.md)| 可选择性添加`modelId`、`lore`、`glow`等。 |
+| recipe | 设置多方块机器的搭建方式。详见[**配方**](format/recipe.md)，搭建一个多方块机器必须包含一个发射器。 |
 | recipe.#.input | 合成输出物品的配方。 |
 | recipe.#.output | 多方块机器输出的物品。 |
 | work| 设置工作方块，即多方块机器合成一个物品需要右键的方块，填相应方块在recipe中的数字。 |
@@ -84,6 +84,6 @@ EXAMPLE_MULTIBLOCK_MACHINE:
 
 首先，自定义一个[配方类型](file/recipe_type.md)，配方类型的名字为此台多方块机器的名字，可自行添加lore等内容
 
-然后在items.yml中注册一个物品(详见[物品](items.md)，recipe_type填写自定义的配方类型id，在recipe中编写相应的配方(注意：在items文件里编写的配方只是为了展示，并不代表多方块机器真正拥有这个配方)
+然后在items.yml中注册一个物品(详见[物品](file/items.md)，recipe_type填写自定义的配方类型id，在recipe中编写相应的配方(注意：在items文件里编写的配方只是为了展示，并不代表多方块机器真正拥有这个配方)
 
 最后在multi-block-machine.yml编写一个多方块机器，input对应物品的配方（照抄你在items文件里编写的配方），output填你在items.yml文件里自定义的物品id
