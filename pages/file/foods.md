@@ -4,4 +4,4 @@
 
 关于食物的特性通过在items.yml中引用脚本实现，详见[脚本-食物](scripts-basic/foods.md)
 
-格式见[物品](items.md)
+格式见[物品](file/items.md)

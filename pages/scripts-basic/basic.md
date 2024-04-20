@@ -6,7 +6,7 @@
 
 ## %player%
 
-获取玩家的名字，支持 PlaceholderAPI
+获取玩家的名字，也支持 PlaceholderAPI 的变量
 
 ## isPluginLoaded
 示例用法:
@@ -32,7 +32,7 @@ runConsoleCommand("say 我自由了");
 ## sendMessage
 示例用法:
 ```js
-sendMessage(player, "<rainbow>A cool message</rainbow>");
+sendMessage(player, "&rainbow&A cool message&r");
 ```
 向玩家发送消息(支持MineDown格式)
 
@@ -53,7 +53,7 @@ let slimefunItem = getSfItemByItem(player.getInventory().getItemInMainHand());
 ## isItemSimilar
 示例用法:
 ```js
-let isItemMatch = isItemSimilar(item, sfItem, checkLore);
+let isItemMatch = isItemSimilar(itemStack, sfItem, checkLore);
 ```
 对比物品，相同返回true，不相同返回false  
 
@@ -61,7 +61,7 @@ let isItemMatch = isItemSimilar(item, sfItem, checkLore);
 
 |入参名称|类型|说明|
 |---|---|---|
-|item|ItemStack|要对比的物品1|
+|itemStack|ItemStack|要对比的物品|
 |sfItem|ItemStack|对比样本，通常为粘液物品|
 |checkLore|boolean|是否检查物品lore|
 
@@ -91,7 +91,7 @@ let usable = canPlayerUseItem(player, item, sendMessage);
 |入参名称|类型|说明|
 |---|---|---|
 |player|Player|玩家|
-|item|ItemStack|目标物品|
+|itemStack|ItemStack|目标物品|
 |sendMessage|boolean|如果玩家不能使用物品时向玩家发送消息|
 ## setData
 示例用法:
@@ -127,30 +127,61 @@ let value = getData(blockLocation, key)
 # randintA
 示例用法：
 ```javascript
+randintA(number);
 randintA(10);
 ```
+详细入参说明:
+
+|入参名称|类型|说明|
+|---|---|---|
+|number|int|整数|
+
 返回 0~9 的随机数（0,1,2,3,4,5,6,7,8,9）
 
 # randintB
 示例用法：
 ```javascript
+randintB(number, self);
 randintB(10, true);
-randintB(10, false);
 ```
-如果第二个参数为 true，则返回 0~10 的随机数（0,1,2,3,4,5,6,7,8,9,10）
-如果第二个参数为 false，则返回 0~9 的随机数（0,1,2,3,4,5,6,7,8,9）
+详细入参说明:
+
+|入参名称|类型|说明|
+|---|---|---|
+|number|int|整数|
+|self|boolean|布尔值|
+
+如果第2个参数为 true，则返回 0~10 的随机数（0,1,2,3,4,5,6,7,8,9,10）
+如果第3个参数为 false，则返回 0~9 的随机数（0,1,2,3,4,5,6,7,8,9）
 
 # randintC
 示例用法：
 ```javascript
+randintC(start, stop);
 randintC(2, 10);
 ```
+详细入参说明:
+
+|入参名称|类型|说明|
+|---|---|---|
+|start|int|整数|
+|stop|int|整数|
+
 返回 2~9 的随机数（2,3,4,5,6,7,8,9）
 
 # randintD
 示例用法：
 ```javascript
+randintD(start, stop, self);
 randintD(2, 10, true);
 ```
+详细入参说明:
+
+|入参名称|类型|说明|
+|---|---|---|
+|start|int|整数|
+|stop|int|整数|
+|self|boolean|布尔值|
+
 如果第3个参数为 true, 则返回 2~10 的随机数（2,3,4,5,6,7,8,9,10）
 如果第3个参数为 false, 则返回 2~9 的随机数（2,3,4,5,6,7,8,9）

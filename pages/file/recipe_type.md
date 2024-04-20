@@ -19,7 +19,7 @@ EXAMPLE_MULTIBLOCK_MACHINE_RECIPE_TYPE:
 | material | 原版物品 |
 | name | 配方类型的名称| |
 
-在此基础上，你可以自行添加lore、glow等标签，详见[通用物品格式](../format/universal-item-format.md)。
+在此基础上，你可以自行添加`modelId`、`lore`、`glow`等标签，详见[通用物品格式](format/universal-item-format.md)。
 
 此处的配方类型ID可直接用于recipe_type的引用。
 

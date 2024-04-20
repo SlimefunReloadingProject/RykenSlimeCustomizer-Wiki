@@ -45,7 +45,7 @@ example_locked_group:
 | -------- | -------- |
 | `example_normal_group` | 分类的ID，每个分类的ID不能相同。<br>**仅支持字母、数字、下划线!**<br>新分类系统不再强制使用小写字母，但从物品引用分类时，请注意分类ID的大小写。 |
 | type | (**必填**) 分类的类型。可用类型详见下方注意事项。 |
-| item.# | [通用物品格式](../format/universal-item-format.md)| 可选择性添加modelId、lore、glow等。 |
+| item.# | [通用物品格式](format/universal-item-format.md)| 可选择性添加`modelId`、`lore`、`glow`等。 |
 | tier | (*可选*) 分类的优先级，默认为3。<br>分类的优先级是一个整数，低优先级的分类将优先显示。 |
 | parent | (分类类型为子分类`sub`时**必填**) 父分类的ID。<br>只能是自定义附属中定义的父分类ID。 |
 | month | (分类类型为季节性分类`seasonal`时**必填**) 季节性分类的显示月份，范围为1-12。 |
