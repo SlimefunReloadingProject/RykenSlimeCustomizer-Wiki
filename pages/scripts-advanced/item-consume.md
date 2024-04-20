@@ -24,7 +24,7 @@ function onUse(event) {
 
     // 判断玩家主手中是否有物品，且该物品的数量大于0  
     if (itemInMainHand != null && itemInMainHand.getAmount() > 0) {
-        // // 将转换数量设为玩家主手中物品的数量  
+        // 将转换数量设为玩家主手中物品的数量  
         // var amount = itemInMainHand.getAmount();  
 
         // 将转换数量设为一个

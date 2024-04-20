@@ -3,28 +3,28 @@
 当方块被放置时触发
 ### 方法体
 ```js
-function onPlace(e) {
+function onPlace(event) {
 
 }
 ```
 ### 入参
 |字段|类型|描述|
 |--|---|--|
-|e|[BlockPlaceEvent](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/block/BlockPlaceEvent.html)|方块被放置事件|
+|event|[BlockPlaceEvent](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/block/BlockPlaceEvent.html)|方块被放置事件|
 
 ## onBreak
 当方块被破坏时触发
 ### 方法体
 ```js
-function onBreak(e, is, drops) {
+function onBreak(event, itemStack, drops) {
 
 }
 ```
 ### 入参
 |字段|类型|描述|
 |--|---|--|
-|e|[BlockPlaceEvent](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/block/BlockBreakEvent.html)|方块被破坏事件|
-|is|[ItemStack](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemStack.html)|貌似是方块的物品形式或者是拿来破坏方块的物品|
+|event|[BlockPlaceEvent](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/block/BlockBreakEvent.html)|方块被破坏事件|
+|itemStack|[ItemStack](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemStack.html)|貌似是方块的物品形式或者是拿来破坏方块的物品|
 |drops|[List](https://doc.qzxdp.cn/jdk/17/zh/api/java.base/java/util/List.html)<ItemStack\>|掉落物|
 
 ## tick

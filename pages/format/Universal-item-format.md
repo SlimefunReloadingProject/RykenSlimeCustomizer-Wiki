@@ -68,17 +68,13 @@ material: bb0f722aec27490cf056f560afdd457a0a794e703556cc4c3b51a582f5c57aa4
 
 如果material_type填的是slimefun，你可以在同级的情况下添加glow，修改name和lore，可用于在不改变物品材质的情况下，编辑一个粘液物品，可用于机器的输出项。
 
-5、saveditem
-
-如果material_type填的是saveditem，需要在material一栏填写保存物品对应的文件名
-
 ### 材料\*
 
 设置物品材料，填写内容由材料类型决定。
 
-如果是slimefun，此项填写粘液物品ID。
+例如slimefun类型，这里写粘液物品ID。
 
-如果是头颅，此项填写链接、url或base64。
+头颅那些写url或base64。
 
 ```
 material: <材料>

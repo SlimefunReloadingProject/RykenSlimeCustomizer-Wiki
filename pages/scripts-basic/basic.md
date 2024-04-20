@@ -34,7 +34,7 @@ runConsoleCommand("say 我自由了");
 ```js
 sendMessage(player, "<rainbow>A cool message</rainbow>");
 ```
-向玩家发送消息(支持MiniMessage格式)
+向玩家发送消息(支持MineDown格式)
 
 ## getSfItemById
 示例用法:
@@ -122,7 +122,7 @@ let value = getData(blockLocation, key)
 |blockLocation|Location|方块位置|
 |key|String|键|
 
-## randint
+## randint（随机数）
 
 # randintA
 示例用法：

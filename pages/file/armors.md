@@ -12,18 +12,38 @@ example_armor:
     id: EXAMPLE_HELMET
     material: LEATHER_HELMET
     name: "&d示例头盔"
+    recipe_type: EXAMPLE_MULTIBLOCK_MACHINE_RECIPE_TYPE
+    recipe:
+      3:
+        material_type: slimefun
+        material: EXAMPLE_ITEM_2
   chestplate:
     id: EXAMPLE_CHESTPLATE
     material: LEATHER_CHESTPLATE
     name: "&d示例胸甲"
+    recipe_type: EXAMPLE_MULTIBLOCK_MACHINE_RECIPE_TYPE
+    recipe:
+      4:
+        material_type: slimefun
+        material: EXAMPLE_ITEM_2
   leggings:
     id: EXAMPLE_LEGGINGS
     material: LEATHER_LEGGINGS
     name: "&d示例护腿"
+    recipe_type: EXAMPLE_MULTIBLOCK_MACHINE_RECIPE_TYPE
+    recipe:
+      5:
+        material_type: slimefun
+        material: EXAMPLE_ITEM_2
   boots:
     id: EXAMPLE_BOOTS
     material: LEATHER_BOOTS
     name: "&d示例靴子"
+    recipe_type: EXAMPLE_MULTIBLOCK_MACHINE_RECIPE_TYPE
+    recipe:
+      6:
+        material_type: slimefun
+        material: EXAMPLE_ITEM_2
     potion_effects:
       - "SPEED 5"
 ```
