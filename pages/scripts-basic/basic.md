@@ -126,7 +126,7 @@ let value = getData(blockLocation, key)
 
 # randintA
 示例用法：
-```javascript
+```js
 randintA(number);
 randintA(10);
 ```
@@ -140,7 +140,7 @@ randintA(10);
 
 # randintB
 示例用法：
-```javascript
+```js
 randintB(number, self);
 randintB(10, true);
 ```
@@ -156,7 +156,7 @@ randintB(10, true);
 
 # randintC
 示例用法：
-```javascript
+```js
 randintC(start, stop);
 randintC(2, 10);
 ```
@@ -171,7 +171,7 @@ randintC(2, 10);
 
 # randintD
 示例用法：
-```javascript
+```js
 randintD(start, stop, self);
 randintD(2, 10, true);
 ```
@@ -185,3 +185,24 @@ randintD(2, 10, true);
 
 如果第3个参数为 true, 则返回 2~10 的随机数（2,3,4,5,6,7,8,9,10）
 如果第3个参数为 false, 则返回 2~9 的随机数（2,3,4,5,6,7,8,9）
+
+# NBTAPI
+
+## ! 需安装 NBTAPI 插件 !
+
+示例用法：
+```js
+NBTAPI.readItem(item)
+NBTAPI.getOrCreateCompound(parent, name)
+NBTAPI.readBlock(block)
+NBTAPI.readEntity(entity)
+```
+详细入参说明:
+
+|入参名称|类型|说明|
+|---|---|---|
+|itemStack|ItemStack|物品|
+|parent|NBTCompound|NBT复合|
+|name|String|字符串|
+|block|Block|方块|
+|entity|Entity|实体|

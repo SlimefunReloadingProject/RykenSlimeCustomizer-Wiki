@@ -56,16 +56,57 @@ EX_ADVANCED_GOLD_PAN:
 ## 注意事项
 1、关于简单机器类型(type)
 
-简单机器类型仅包含以下几种：
+简单机器类型包含以下几种：
 
-    ELECTRIC_SMELTERY 电动冶炼炉  
-    ELECTRIC_FURNACE 电炉  
-    ELECTRIC_GOLD_PAN 电动淘金机 
-    ELECTRIC_DUST_WASHER 电动洗矿机  
-    ELECTRIC_ORE_GRINDER 电动碎矿机  
-    ELECTRIC_INGOT_FACTORY 电动铸锭机  
-    ELECTRIC_INGOT_PULVERIZER 电动打粉机  
-    CHARGING_BENCH 充电台 
-    TREE_GROWTH_ACCELERATOR 树木生长加速器
-	ANIMAL_GROWTH_ACCELERATOR 动物生长加速器
-	CROP_GROWTH_ACCELERATOR 作物生长加速器
+```yaml
+ELECTRIC_SMELTERY         # 电动冶炼炉  
+ELECTRIC_FURNACE          # 电炉  
+ELECTRIC_GOLD_PAN         # 电动淘金机 
+ELECTRIC_DUST_WASHER      # 电动洗矿机  
+ELECTRIC_ORE_GRINDER      # 电动碎矿机  
+ELECTRIC_INGOT_FACTORY    # 电动铸锭机  
+ELECTRIC_INGOT_PULVERIZER # 电动打粉机  
+CHARGING_BENCH            # 充电台 
+TREE_GROWTH_ACCELERATOR   # 树木生长加速器
+ANIMAL_GROWTH_ACCELERATOR # 动物生长加速器
+CROP_GROWTH_ACCELERATOR   # 作物生长加速器
+FREEZER                   # 冰箱
+CARBON_PRESS              # 碳压机
+ELECTRIC_PRESS            # 压缩机
+ELECTRIC_CRUCIBLE         # 电动坩埚
+FOOD_FABRICATOR           # 食品加工机
+HEATED_PRESSURE_CHAMBER   # 加热压力舱
+AUTO_ENCHANTER            # 自动附魔机
+AUTO_DISENCHANTER         # 自动祛魔机
+BOOK_BINDER               # 附魔书整合机
+AUTO_ANVIL                # 自动铁砧
+AUTO_DRIER                # 自动烘干机
+AUTO_BREWER               # 自动酿造机
+REFINERY                  # 炼油机
+PRODUCE_COLLECTOR         # 全自动收集机
+ENTITY_ASSEMBLER          # 实体装配机（示例：铁傀儡装配机）
+```
+
+2、个别机器类型需包含的参数
+
+```yaml
+# 格式
+settings:
+  radius: 10 # 范围。选填，默认为 1
+  repair_factor: 10 # 修理因子。选填，默认为 10
+  entity_type: BEE # 实体类型。必填
+  head: # 铁傀儡装配机中的南瓜头。必填
+    material: IRON_BLOCK
+  body: # 铁块装配机中的铁块。必填
+    material: GRASS_BLOCK
+```
+
+| 机器类型 | 参数 | 参数类型 | 是否选填 | 默认值 | 补充说明 |
+| - | - | - | - | - | - |
+| 自动铁砧 | repair_factor | int | 选填 | 10 | 单次修复的值
+| 树木生长加速器 | radius | int | 选填 | 1 | 机器工作生效范围
+| 动物生长加速器 | radius | int | 选填 | 1 | 机器工作生效范围
+| 作物生长加速器 | radius | int | 选填 | 1 | 机器工作生效范围
+| 实体装配机 | entity_type | string | **必填** | '' | 机器生成的实体
+| 实体装配机 | head | [通用物品格式](format/universal-item-format.md) | **必填** | 无 | 即铁傀儡装配机中的南瓜头
+| 实体装配机 | body | [通用物品格式](format/universal-item-format.md) | **必填** | 无 | 即铁傀儡装配机中的铁块
