@@ -1,4 +1,4 @@
-# 太阳能发电机
+# 太阳能发电机(solar_generators.yml)
 
 ```yaml
 EXAMPLE_SOLAR_GENERATOR:

@@ -7,11 +7,11 @@
 
 上述功能可以通过脚本实现，下文给出示例
 
-```yaml
+```js
 // 当物品被右键时
 function onUse(event) {
-    // 定义一个字符串变量sf，其值为一个特定的物品生成指令，此示例代码是用于给予一个生成铁傀儡的苦力怕刷怪蛋  
-    var sf = "creeper_spawn_egg{EntityTag:{id:\"minecraft:iron_golem\"}}"; // 材质(此为苦力怕刷怪蛋)+生成蛋(此为生成铁傀儡)
+    // 定义一个字符串变量item，其值为一个特定的物品生成指令，此示例代码是用于给予一个生成铁傀儡的苦力怕刷怪蛋  
+    var item = "creeper_spawn_egg{EntityTag:{id:\"minecraft:iron_golem\"}}"; // 材质(此为苦力怕刷怪蛋)+生成蛋(此为生成铁傀儡)
 
     // 获取触发事件的玩家对象  
     var player = event.getPlayer();
@@ -34,7 +34,7 @@ function onUse(event) {
         itemInMainHand.setAmount(itemInMainHand.getAmount() - 1);
 
         // 运行op指令
-        runOpCommand(player, "give " + player.getName() + " " + sf + " " + amount);
+        runOpCommand(player, "give " + player.getName() + " " + item + " " + amount);
     }
 }
 ```
@@ -43,4 +43,4 @@ function onUse(event) {
 
 runOpCommand对应的是以op身份运行此段指令，括号内为指令内容。
 
-请注意，如果指令中包含双引号，请将双引号替换成 **\"**
+请注意，如果指令中包含双引号，请将双引号替换成 **\\\"**

@@ -1,4 +1,4 @@
-# 简单机器
+# 简单机器(simple_machines.yml)
 
 ```yaml
 EX_ADVANCED_GOLD_PAN:
@@ -84,7 +84,6 @@ AUTO_DRIER                # 自动烘干机
 AUTO_BREWER               # 自动酿造机
 REFINERY                  # 炼油机
 PRODUCE_COLLECTOR         # 全自动收集机
-ENTITY_ASSEMBLER          # 实体装配机（示例：铁傀儡装配机）
 ```
 
 2、个别机器类型需包含的参数
@@ -94,11 +93,6 @@ ENTITY_ASSEMBLER          # 实体装配机（示例：铁傀儡装配机）
 settings:
   radius: 10 # 范围。选填，默认为 1
   repair_factor: 10 # 修理因子。选填，默认为 10
-  entity_type: BEE # 实体类型。必填
-  head: # 铁傀儡装配机中的南瓜头。必填
-    material: IRON_BLOCK
-  body: # 铁块装配机中的铁块。必填
-    material: GRASS_BLOCK
 ```
 
 | 机器类型 | 参数 | 参数类型 | 是否选填 | 默认值 | 补充说明 |
@@ -107,6 +101,3 @@ settings:
 | 树木生长加速器 | radius | int | 选填 | 1 | 机器工作生效范围
 | 动物生长加速器 | radius | int | 选填 | 1 | 机器工作生效范围
 | 作物生长加速器 | radius | int | 选填 | 1 | 机器工作生效范围
-| 实体装配机 | entity_type | string | **必填** | '' | 机器生成的实体
-| 实体装配机 | head | [通用物品格式](format/universal-item-format.md) | **必填** | 无 | 即铁傀儡装配机中的南瓜头
-| 实体装配机 | body | [通用物品格式](format/universal-item-format.md) | **必填** | 无 | 即铁傀儡装配机中的铁块

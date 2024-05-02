@@ -1,4 +1,4 @@
-# 电容
+# 电容(capacitors.yml)
 
 ```yaml
 EXAMPLE_CAPACITOR:

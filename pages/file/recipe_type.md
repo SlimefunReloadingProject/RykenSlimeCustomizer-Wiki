@@ -1,4 +1,4 @@
-# 配方类型
+# 配方类型(recipe_types.yml)
 
 > 这是仅作显示的配方类型。
 
@@ -39,7 +39,7 @@ recipe_type: NULL
 
 [参考代码](https://github.com/StarWishsama/Slimefun4/blob/master/src/main/java/io/github/thebusybiscuit/slimefun4/api/recipes/RecipeType.java)
 ```yaml
-MULTIBLOCK # 多方块结构
+# 自动设置配方的类型
 ARMOR_FORGE # 盔甲锻造台
 GRIND_STONE # 磨石
 SMELTERY # 冶炼炉
@@ -50,8 +50,11 @@ PRESSURE_CHAMBER # 压力机
 MAGIC_WORKBENCH # 魔法工作台
 ORE_WASHER # 洗矿机
 ENHANCED_CRAFTING_TABLE # 增强型工作台
-JUICER # 榨汁机
 ANCIENT_ALTAR # 远古祭坛
+
+# 仅展示的类型
+MULTIBLOCK # 多方块结构
+JUICER # 榨汁机
 MOB_DROP # 生物掉落
 BARTER_DROP # 猪灵交易
 INTERACT # 交互

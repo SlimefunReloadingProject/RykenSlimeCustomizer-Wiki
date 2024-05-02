@@ -1,4 +1,4 @@
-# 生物掉落物
+# 生物掉落物(mob_drops.yml)
 
 ```yaml
 EXAMPLE_MOB_DROP:

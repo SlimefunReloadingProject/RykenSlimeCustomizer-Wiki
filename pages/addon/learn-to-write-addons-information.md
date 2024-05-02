@@ -1,4 +1,4 @@
-# 编写附属信息
+# 编写附属信息(info.yml)
 
 <mark style="color:red;background:transparent">注意：带*均为必填</mark>
 

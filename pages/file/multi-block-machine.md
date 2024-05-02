@@ -1,4 +1,4 @@
-# 多方块机器
+# 多方块机器(mb_machines.yml)
 
 ```yaml
 EXAMPLE_MULTIBLOCK_MACHINE:

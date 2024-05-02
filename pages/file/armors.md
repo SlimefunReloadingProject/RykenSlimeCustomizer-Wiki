@@ -1,4 +1,4 @@
-# 盔甲
+# 盔甲(armors.yml)
 
 ```yaml
 example_armor:

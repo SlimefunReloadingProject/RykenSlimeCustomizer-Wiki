@@ -1,4 +1,4 @@
-# 研究
+# 研究(researches.yml)
 
 示例：
 
