@@ -13,8 +13,8 @@ EXAMPLE_MACHINE:
   recipe_type: ENHANCED_CRAFTING_TABLE
   recipe:
     1:
-     material_type: slimefun
-     material: EXAMPLE_ITEM
+      material_type: slimefun
+      material: EXAMPLE_ITEM
   input: [9, 10, 11, 12, 13, 14, 15, 16, 17]
   output: [31]
   script: "example_machine"
@@ -31,8 +31,8 @@ EXAMPLE_MACHINE_ENERGY:
     type: NONE
   recipe:
     1:
-     material_type: slimefun
-     material: EXAMPLE_ITEM
+      material_type: slimefun
+      material: EXAMPLE_ITEM
   input: []
   output: []
   script: "example_machine_energy"

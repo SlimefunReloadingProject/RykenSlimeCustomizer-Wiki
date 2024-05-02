@@ -11,6 +11,7 @@ depends: []
 pluginDepends: []
 version: "1.0"
 authors: ["mmmjjkx"]
+repo: ""
 ```
 
 | 内容 | 描述 |
@@ -22,3 +23,4 @@ authors: ["mmmjjkx"]
 | version | 附属的版本，默认为1.0 |
 | description | 附属的描述。 |
 | authors* | 附属的作者。 |
+| repo | 附属的github仓库。 |
