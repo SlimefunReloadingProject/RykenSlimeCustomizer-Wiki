@@ -32,6 +32,10 @@
 
 存放附属的电容。
 
+### foods.yml <a href="#foods.yml" id="foods.yml"></a>
+
+存放附属食物。
+
 ### menus.yml <a href="#menus.yml" id="menus.yml"></a>
 
 存放附属机器的菜单。
@@ -67,3 +71,7 @@
 ### researches.yml <a href="#researches.yml" id="researches.yml"></a>
 
 存放附属的研究。
+
+### supers.yml <a href="#supers.yml" id="supers.yml"></a>
+
+存放附属的继承物品。

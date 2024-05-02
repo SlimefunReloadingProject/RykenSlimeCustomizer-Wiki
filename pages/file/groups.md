@@ -31,9 +31,6 @@ example_seasonal_group:
     name: "&b示例季节性物品组"
     material: OAK_LEAVES
     amount: 1
-  actions:
-  - "link https://rsc.himcs.top/#/README"
-  - "console say 我自由了！"
 example_locked_group:
   type: "locked"
   parents:
@@ -41,7 +38,17 @@ example_locked_group:
   item:
     name: "&l示例锁定物品组"
     material: REPEATER
-    amount: 1       
+    amount: 1
+example_action_group:
+  type: "button"
+  parent: "example_parent_group"
+  item:
+    name: "&e示例链接组"
+    material: COMMAND_BLOCK
+    amount: 1
+  actions:
+  - "link https://rsc.himcs.top/#/README"
+  - "console say 我自由了！"
 ```
 
 | 内容 | 描述 |
