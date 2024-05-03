@@ -1,4 +1,4 @@
-# 物品组（分类）
+# 物品组（groups.yml）
 
 **示例：**
 
@@ -38,7 +38,17 @@ example_locked_group:
   item:
     name: "&l示例锁定物品组"
     material: REPEATER
-    amount: 1       
+    amount: 1
+example_action_group:
+  type: "button"
+  parent: "example_parent_group"
+  item:
+    name: "&e示例链接组"
+    material: COMMAND_BLOCK
+    amount: 1
+  actions:
+  - "link https://rsc.himcs.top/#/README"
+  - "console say 我自由了！"
 ```
 
 | 内容 | 描述 |
@@ -50,7 +60,12 @@ example_locked_group:
 | parent | (分类类型为子分类`sub`时**必填**) 父分类的ID。<br>只能是自定义附属中定义的父分类ID。 |
 | month | (分类类型为季节性分类`seasonal`时**必填**) 季节性分类的显示月份，范围为1-12。 |
 | parents | (分类类型为锁定分类`locked`时**必填**) 锁定分类所需的其他分类的`NamespacedKey`列表。<br>详见[Slimecustomizer wiki](https://slimefun-addons-wiki.guizhanss.cn/slime-customizer/Categories) 。 |
-
+| actions | 格式见下 |
+```yaml
+actions:
+- "link 链接" # 被玩家点击此分类后在聊天栏弹出可点击链接
+- "console 指令" # 被玩家点击此分类后在控制台执行命令
+```
 ## 注意事项
 
 1、分类的默认类型为normal

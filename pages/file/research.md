@@ -1,10 +1,10 @@
-# 研究
+# 研究(researches.yml)
 
 示例：
 
 ```yaml
 example_research:
-  id: 1
+  id: 367450001
   name: "&a示例研究"
   levelCost: 10
   items:

@@ -1,4 +1,4 @@
-# 无输入输出机器
+# 无输入输出机器(machines.yml)
 
 **注：**该配置自定义的机器无法自定义输入与输出的物品！（若要自定义含自定义输入和输出物品的机器，详见[ 配方机器 ](file/recipe_machines.md)）
 
@@ -13,8 +13,8 @@ EXAMPLE_MACHINE:
   recipe_type: ENHANCED_CRAFTING_TABLE
   recipe:
     1:
-     material_type: slimefun
-     material: EXAMPLE_ITEM
+      material_type: slimefun
+      material: EXAMPLE_ITEM
   input: [9, 10, 11, 12, 13, 14, 15, 16, 17]
   output: [31]
   script: "example_machine"
@@ -31,8 +31,8 @@ EXAMPLE_MACHINE_ENERGY:
     type: NONE
   recipe:
     1:
-     material_type: slimefun
-     material: EXAMPLE_ITEM
+      material_type: slimefun
+      material: EXAMPLE_ITEM
   input: []
   output: []
   script: "example_machine_energy"

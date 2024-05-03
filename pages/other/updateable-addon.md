@@ -1,6 +1,6 @@
-# 让你的附属可更新
+# 让你的附属自动更新
 
-示例附属信息文件:
+示例附属信息文件(info.yml):
 
 ```yaml
 id: example
@@ -38,5 +38,3 @@ repo: "SlimefunReloadingProject/rsc-example"
 在Github上设置的Releases版本一定要与上述的version相同！
 
 否则会造成**重复下载**。
-
-

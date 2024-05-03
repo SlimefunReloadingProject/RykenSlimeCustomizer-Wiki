@@ -1,4 +1,4 @@
-# GEO资源
+# GEO资源(geo_resources.yml)
 
 **示例：**
 

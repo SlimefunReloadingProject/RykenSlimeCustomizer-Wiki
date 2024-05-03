@@ -1,4 +1,4 @@
-# 材料生成器
+# 材料生成器(mat_generators.yml)
 
 ```yaml
 EXAMPLE_MATERIAL_GENERATOR:

@@ -1,4 +1,4 @@
-# 物品
+# 物品(items.yml)
 
 **示例：**
 ```yaml
@@ -103,7 +103,7 @@ CHANGEABLE_DIRT:
 
 ### 可充电物品
 
-```
+```yaml
 energy_capacity: <容量>
 ```
 
@@ -113,7 +113,7 @@ energy_capacity: <容量>
 
 ### 辐射
 
-```
+```yaml
  radiation: <辐射等级>
 ```
 
@@ -121,13 +121,23 @@ energy_capacity: <容量>
 
 ### 彩虹方块与自定义彩虹方块
 
-```
+```yaml
  rainbow: <类型>
 ```
 
-彩虹方块类型包括：GLASS_PANE（玻璃板）、GLASS（玻璃）、STAINED_GLASS（彩色玻璃）、STAINED_GLASS_PANE（彩色玻璃板）、WOOL（羊毛）、 TERRACOTTA（陶瓦）、TERRACOTTA_ALL（所有陶瓦）、GLAZED_TERRACOTTA（带釉陶瓦）
-
+彩虹方块类型包括：
+```yaml
+GLASS_PANE（玻璃板）
+GLASS（玻璃）
+STAINED_GLASS（彩色玻璃）
+STAINED_GLASS_PANE（彩色玻璃板）
+WOOL（羊毛） 
+TERRACOTTA（陶瓦）
+TERRACOTTA_ALL（所有陶瓦）
+GLAZED_TERRACOTTA（带釉陶瓦）
 ```
+
+```yaml
  rainbow_materials:
     - GRASS_BLOCK
     - DIRT
@@ -137,24 +147,24 @@ energy_capacity: <容量>
 
 ### 防凋灵
 
-```
+```yaml
  anti_wither: true/false
 ```
 
 注意：只有方块可以设置这个选项
-当anti_wither为true时，该方块将无法被凋灵破坏
+当`anti_wither: true`时，该方块将无法被凋灵破坏
 
 ### 灵魂绑定
 
-```
- soulbound: true
+```yaml
+ soulbound: true/false
 ```
 
-当soulbound为true时，该物品将不会在玩家死亡后掉落
+当`soulbound: true`时，该物品将不会在玩家死亡后掉落
 
 ### 猪灵交易物品
 
-```
+```yaml
  piglin_trade:
      piglin_trade_chance: <0-100>
 ```
@@ -163,11 +173,11 @@ energy_capacity: <容量>
 
 ### 人造类物品
 
-```
+```yaml
  vanilla: true/false
 ```
 
-类似于人造钻石，当vanilla为true时，此物品可以被当做原版物品作为原版工作台合成物品时的材料
+类似于人造钻石，当`vanilla: true`时，此物品可以被当做原版物品作为原版工作台合成物品时的材料
 
 ## 注意事项
 

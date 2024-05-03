@@ -1,4 +1,4 @@
-# 电容
+# 电容(capacitors.yml)
 
 ```yaml
 EXAMPLE_CAPACITOR:
@@ -13,7 +13,7 @@ EXAMPLE_CAPACITOR:
       material: APPLE
       amount: 1
     2:
-      material_type: full_slimefun
+      material_type: slimefun
       material: EXAMPLE_ITEM
 ```
 
