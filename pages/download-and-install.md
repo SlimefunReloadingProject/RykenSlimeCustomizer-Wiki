@@ -2,7 +2,7 @@
 
 #### 下载 <a href="#xia-zai" id="xia-zai"></a>
 
-HiMCBBS [https://www.himcbbs.net/resources/10/](https://www.himcbbs.net/resources/10/)
+HiMCBBS [https://www.himcbbs.cn/resources/10/](https://www.himcbbs.cn/resources/10/)
 
 Github [https://github.com/SlimefunReloadingProject/RykenSlimeCustomizer/](https://github.com/SlimefunReloadingProject/RykenSlimeCustomizer/)
 
