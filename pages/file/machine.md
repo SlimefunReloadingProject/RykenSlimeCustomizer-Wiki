@@ -36,7 +36,6 @@ EXAMPLE_MACHINE_ENERGY:
   input: []
   output: []
   script: "example_machine_energy"
-  work: 0
 ```
 
 | 内容 | 描述 | 有效输入 |
