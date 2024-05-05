@@ -37,13 +37,14 @@ function onClick(player, slot, slotItem, clickAction){
 |字段|类型|描述|
 |--|---|--|
 |player|[Player](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/entity/Player.html)|点击此菜单的玩家|
-|slot|int|点击的槽位|
-|slotItem|ItemStack|被点击的物品|
-|clickAction|[ClickAction](https://slimefun.github.io/javadocs/Slimefun4/docs/me/mrCookieSlime/CSCoreLibPlugin/general/Inventory/ClickAction.html)|点击动作|
+|slot|int|被点击的槽位|
+|slotItem|[ItemStack](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemStack.html)|被点击的物品|
+|clickAction|[ClickAction](https://slimefun.github.io/javadocs/Slimefun4/docs/me/mrCookieSlime/CSCoreLibPlugin/general/Inventory/ClickAction.html)|点击操作|
 
 ### 关于clickAction
 判断按键组合:  
 *以下使用ca代表clickAction*
+
 ```js
 //shift + 左键
 let shiftWithLeft = !ca.isRightClicked() && ca.isShiftClicked();

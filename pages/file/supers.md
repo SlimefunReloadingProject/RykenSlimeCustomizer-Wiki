@@ -3,8 +3,8 @@
 示例：
 
 ```yaml
-EXAMPLE_SUPER_ITEM:
-  item_group: example_sub_group
+RSC_EXAMPLE_SUPER_ITEM:
+  item_group: rsc_example_sub_group
   item:
     material: MUSIC_DISC_PIGSTEP
     name: "&b&l超级&7存储元件"
@@ -12,6 +12,8 @@ EXAMPLE_SUPER_ITEM:
       - "&e继承测试"
   class: "me.ddggdd135.slimeae.core.slimefun.MEItemStorageCell" # 来自 SlimeAE
   args: [50000]
+  #field:
+  #  value1: 1
   register:
     conditions:
        - "hasplugin SlimeAE"
@@ -19,9 +21,9 @@ EXAMPLE_SUPER_ITEM:
 
 | 内容 | 描述 | 有效输入 |
 | --- | ----------- | ----------------- |
-| `EXAMPLE_SUPER_ITEM` | 继承物品的ID。<br>该ID不能与任何其他物品的ID相同! | **仅支持大写字母、数字、下划线!** |
+| `RSC_EXAMPLE_SUPER_ITEM` | 继承物品的ID。<br>该ID不能与任何其他物品的ID相同! | **仅支持大写字母、数字、下划线!** |
 | item_group | 物品所在[物品组（分类）](file/groups.md)的ID。 |
-| item.# | [通用物品格式](format/universal-item-format.md)| 可选择性添加modelId、lore、glow等。 |
+| item.# | [通用物品格式](format/universal-item-format.md)| 可选择性添加`modelId`、`lore`、`glow`等。 |
 | recipe_type | 见 SlimeCustomizer wiki[合成配方](https://slimefun-addons-wiki.guizhanss.cn/slime-customizer/Crafting-Recipe) ，可填自定义的recipe_type详见[配方类型](file/recipe_type.md)。 |
 | recipe | 设置继承物品的配方。详见[**配方**](format/recipe.md) |
 | class | 设置继承什么物品，这里需要填写要继承的物品的完整类名 | org.example.project.ExampleClass |
@@ -35,8 +37,8 @@ EXAMPLE_SUPER_ITEM:
 假设我们继承了一个粘液原版机器，这里用[CarbonPress(碳压机)](https://slimefun.github.io/javadocs/Slimefun4/docs/io/github/thebusybiscuit/slimefun4/implementation/items/electric/machines/CarbonPress.html)作为例子
 
 现在的配置是这样的:
-```yml
-EXAMPLE_SUPER_ITEM:
+```yaml
+RSC_EXAMPLE_SUPER_CARBON_PRESS:
   item_group: example_sub_group
   item:
     material: FURNACE
@@ -44,8 +46,8 @@ EXAMPLE_SUPER_ITEM:
   class: "io.github.thebusybiscuit.slimefun4.implementation.items.electric.machines.CarbonPress"
 ```
 此时如果你需要设置他的效率、能源容量等等，你可以这样:
-```yml
-EXAMPLE_SUPER_ITEM:
+```yaml
+RSC_EXAMPLE_SUPER_CARBON_PRESS:
   item_group: example_sub_group
   item:
     material: FURNACE
@@ -59,12 +61,12 @@ EXAMPLE_SUPER_ITEM:
 那么你就获得了一个能源容量为50000、效率20x的超级碳压机
 
 ## 使用field修改部分字段的值
-这里用无尽的GEO矿机做例子  
-源代码：<https://github.com/Mooy1/InfinityExpansion/blob/master/src/main/java/io/github/mooy1/infinityexpansion/items/machines/GeoQuarry.java>
+这里用无尽的GEO矿机做例子. [源代码参考](https://github.com/Mooy1/InfinityExpansion/blob/master/src/main/java/io/github/mooy1/infinityexpansion/items/machines/GeoQuarry.java)
 
 现在的配置是这样的：
-```yml
-EXAMPLE_SUPER_ITEM:
+
+```yaml
+RSC_SUPER_GEO_QUARRY:
   item_group: example_sub_group
   item:
     material: FURNACE
@@ -72,9 +74,10 @@ EXAMPLE_SUPER_ITEM:
   class: "io.github.mooy1.infinityexpansion.items.machines.GeoQuarry"
 ```
 
-那我们修改ticksPerOutput来增加geo矿机的输出时间:
-```yml
-EXAMPLE_SUPER_ITEM:
+然后我们修改ticksPerOutput来增加GEO矿机的输出时间:
+
+```yaml
+RSC_SUPER_GEO_QUARRY:
   item_group: example_sub_group
   item:
     material: FURNACE
@@ -84,6 +87,7 @@ EXAMPLE_SUPER_ITEM:
   field:
     ticksPerOutput: 2
 ```
+
 此时你就获得了一个一秒输出一个的超级GEO矿机  
 
-**注意: 你不能修改常量(被final修饰的变量)**
+**注意: 你不能修改常量(在class中被final修饰的变量)**

@@ -46,4 +46,4 @@ function tick(info) {
 
 ### setWorking(b)
 设置机器是否正在工作  
-入参`b`代表布尔值
+入参`b`代表布尔值(true/false)

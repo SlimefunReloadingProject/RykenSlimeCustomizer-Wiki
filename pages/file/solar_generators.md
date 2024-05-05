@@ -1,8 +1,8 @@
 # 太阳能发电机(solar_generators.yml)
 
 ```yaml
-EXAMPLE_SOLAR_GENERATOR:
-  item_group: example_normal_group
+RSC_EXAMPLE_SOLAR_GENERATOR:
+  item_group: rsc_example_normal_group
   item:
     name: "&c示例太阳能发电机"
     material: GOLD_BLOCK
@@ -17,23 +17,23 @@ EXAMPLE_SOLAR_GENERATOR:
   recipe:
     1:
       material_type: slimefun
-      material: EXAMPLE_ITEM
+      material: RSC_EXAMPLE_ITEM
     3:
       material_type: slimefun
-      material: EXAMPLE_ITEM_2
+      material: RSC_EXAMPLE_ITEM_2
     5:
       material_type: slimefun
-      material: EXAMPLE_MACHINE
+      material: RSC_EXAMPLE_MACHINE
     7:
       material_type: slimefun
-      material: EXAMPLE_ITEM_2
+      material: RSC_EXAMPLE_ITEM_2
     9:
       material_type: slimefun
-      material: EXAMPLE_ITEM
+      material: RSC_EXAMPLE_ITEM
 ```
 | 内容 | 描述 | 有效输入 |
 | --- | ----------- | ----------------- |
-| `EXAMPLE_SOLAR_GENERATOR` | 太阳能发电机的ID。<br>该ID不能与任何其他物品的ID相同! | **仅支持大写字母、数字、下划线!** |
+| `RSC_EXAMPLE_SOLAR_GENERATOR` | 太阳能发电机的ID。<br>该ID不能与任何其他物品的ID相同! | **仅支持大写字母、数字、下划线!** |
 | item_group | 物品所在[物品组（分类）](file/groups.md)的ID。 |
 | item.# | [通用物品格式](format/universal-item-format.md)| 可选择性添加modelId、lore、glow等。 |
 | capacity | 太阳能发电机可储存的能量，最大为 2147483647，设置为0则是不可充电的机器 |

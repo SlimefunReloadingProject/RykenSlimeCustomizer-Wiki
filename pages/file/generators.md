@@ -3,7 +3,7 @@
 > 必不可少的发电装置。
 
 ```yaml
-EXAMPLE_GENERATOR:
+RSC_EXAMPLE_GENERATOR:
   item_group: example_normal_group
   item:
     name: "&c示例发电机"
@@ -16,19 +16,19 @@ EXAMPLE_GENERATOR:
   recipe:
     1:
       material_type: slimefun
-      material: EXAMPLE_ITEM
+      material: RSC_EXAMPLE_ITEM
     3:
       material_type: slimefun
-      material: EXAMPLE_ITEM
+      material: RSC_EXAMPLE_ITEM
     5:
       material_type: slimefun
-      material: EXAMPLE_MACHINE
+      material: RSC_EXAMPLE_MACHINE
     7:
       material_type: slimefun
-      material: EXAMPLE_ITEM
+      material: RSC_EXAMPLE_ITEM
     9:
       material_type: slimefun
-      material: EXAMPLE_ITEM
+      material: RSC_EXAMPLE_ITEM
   fuels:
     example_fuel:
       item:

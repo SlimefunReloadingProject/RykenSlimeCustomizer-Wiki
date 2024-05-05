@@ -2,8 +2,8 @@
 
 **示例：**
 ```yaml
-EXAMPLE_ITEM:
-  item_group: example_sub_group
+RSC_EXAMPLE_ITEM:
+  item_group: rsc_example_sub_group
   item:
     name: "&a示例物品"
     material: DIAMOND
@@ -12,8 +12,8 @@ EXAMPLE_ITEM:
     1:
       material: APPLE
       amount: 1
-EXAMPLE_ITEM_2:
-  item_group: example_normal_group
+RSC_EXAMPLE_ITEM_2:
+  item_group: rsc_example_normal_group
   item:
     name: "&a示例物品2"
     material: NETHERITE_INGOT
@@ -22,9 +22,9 @@ EXAMPLE_ITEM_2:
   recipe:
     1:
       material_type: slimefun
-      material: EXAMPLE_ITEM
-EXAMPLE_ITEM_3:
-  item_group: example_normal_group
+      material: RSC_EXAMPLE_ITEM
+RSC_EXAMPLE_ITEM_3:
+  item_group: rsc_example_normal_group
   item:
     name: "&a示例物品3"
     material: GOLD_INGOT
@@ -34,9 +34,9 @@ EXAMPLE_ITEM_3:
   recipe:
     1:
       material_type: slimefun
-      material: EXAMPLE_ITEM2
-SYNTHETIC_STONE:
-  item_group: example_sub_group
+      material: RSC_EXAMPLE_ITEM2
+RSC_SYNTHETIC_STONE:
+  item_group: rsc_example_sub_group
   placeable: false
   item:
     name: "&7人造石头"
@@ -54,7 +54,7 @@ SYNTHETIC_STONE:
       material_type: slimefun
       material: STONE_CHUNK
   vanilla: true
-WITHER_PROOF_STONE:
+RSC_WITHER_PROOF_STONE:
   item_group: example_sub_group
   item:
     name: "&7&l防凋零石头"
@@ -69,25 +69,34 @@ WITHER_PROOF_STONE:
     3:
       material_type: slimefun
       material: MOD_PLATE_DUMMY # 来自匠魂，未安装此附属会自动转为石头
-CHANGEABLE_DIRT:
-  item_group: example_normal_group
+RSC_CHANGEABLE_DIRT:
+  item_group: rsc_example_normal_group
   item:
     name: "&6&l可变泥土"
     material: DIRT
-  piglin_trade:
-    piglin_trade_chance: 10
+  piglin_trade_chance: 10
+  drop_from: PODZOL
+  drop_chance: 10
+  drop_amount: 1
   rainbow: CUSTOM
   rainbow_materials:
     - DIRT      
     - GRASS_BLOCK
     - PODZOL  
-
+RSC_HIDDEN_ITEM:
+  item_group: rsc_example_normal_group
+  item:
+    name: "&6&l隐藏物品"
+    material: BARRIER
+  piglin_trade_chance: 10
+  hidden: true
+  radiation: VERY_DEADLY
 ```
 | 内容 | 描述 | 有效输入 |
 | --- | ----------- | ----------------- |
-| `EXAMPLE_ITEM` | 物品的ID。<br>该ID不能与任何其他物品的ID相同! | **仅支持大写字母、数字、下划线!** |
+| `RSC_EXAMPLE_ITEM` | 物品的ID。<br>该ID不能与任何其他物品的ID相同! | **仅支持大写字母、数字、下划线!** |
 | item_group | 物品所在[物品组（分类）](file/groups.md)的ID。 |
-| item.# | [通用物品格式](format/universal-item-format.md)| 可选择性添加modelId、lore、glow等 |
+| item.# | [通用物品格式](format/universal-item-format.md)| 可选择性添加`modelId`、`lore`、`glow`等 |
 | placeable | 物品是否可放置。**不要让工具等本来就无法放置的物品可放置！** |
 | recipe_type | 见 SlimeCustomizer wiki[合成配方](https://slimefun-addons-wiki.guizhanss.cn/slime-customizer/Crafting-Recipe) ，可填自定义的recipe_type详见[配方类型](file/recipe_type.md)。 |
 | script | 物品引用的脚本，设置物品对应的脚本文件，双引号内填脚本对应的文件名称 |
@@ -98,8 +107,10 @@ CHANGEABLE_DIRT:
 | rainbow_materials | 自定义彩虹方块，详见下文 |
 | anti_wither | 防凋灵，详见下文 |
 | soulbound | 灵魂绑定，详见下文 |
-| piglin_trade.piglin_trade_chance | 猪灵交易物品，详见下文 |
+| piglin_trade | 猪灵交易物品，详见下文 |
 | vanilla | 人造类物品，详见下文 |
+| hidden | 隐藏物品，详见下文 |
+| drop_from | 挖掘方块掉落，详见下文 |
 
 ### 可充电物品
 
@@ -165,12 +176,14 @@ GLAZED_TERRACOTTA（带釉陶瓦）
 ### 猪灵交易物品
 
 ```yaml
- piglin_trade:
-     piglin_trade_chance: <0-100>
+  piglin_trade_chance: <1-100>
 ```
 
-设置此物品的获取方式为猪灵交易物品，记得改recipe_type
-
+设置此物品的获取方式为猪灵交易物品。
+<br>粘液提供了一个配方，用于设置`recipe_Type`
+```yaml
+recipe_type: BARTER_DROP # 猪灵交易
+```
 ### 人造类物品
 
 ```yaml
@@ -178,6 +191,29 @@ GLAZED_TERRACOTTA（带釉陶瓦）
 ```
 
 类似于人造钻石，当`vanilla: true`时，此物品可以被当做原版物品作为原版工作台合成物品时的材料
+
+### 隐藏物品
+
+```yaml
+ hidden: true/false
+```
+
+当`hidden: true`时，此物品不会在粘液书中显示
+
+### 方块掉落物品
+
+```yaml
+  drop_from: PODZOL
+```
+
+类似于硼砂，在这里是挖掘灰化土掉落这个粘液物品（参考上面 可变泥土 ）
+
+```yaml
+  drop_chance: <1-100> # 可选，默认100
+  drop_amount: 1 # 可选，默认1
+```
+
+你可以设置掉落的几率以及数量
 
 ## 注意事项
 

@@ -30,7 +30,7 @@ function onUse(event) {
         // 将转换数量设为一个
         var amount = 1;
 
-        // 将玩家主手中的物品数量设置为已有物品数量-1个，即消耗了一个物品 
+        // 将玩家主手中的物品数量设置为已有物品数量 - 1，即消耗了一个物品 
         itemInMainHand.setAmount(itemInMainHand.getAmount() - 1);
 
         // 运行op指令

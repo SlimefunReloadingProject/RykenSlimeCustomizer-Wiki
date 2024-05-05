@@ -1,56 +1,56 @@
 # 盔甲(armors.yml)
 
 ```yaml
-example_armor:
+rsc_example_armor:
   protection_types:
     - BEES
     - RADIATION
     - FLYING_INTO_WALL
   fullSet: true
-  item_group: example_normal_group
+  item_group: rsc_example_normal_group
   helmet:
-    id: EXAMPLE_HELMET
+    id: RSC_EXAMPLE_HELMET
     material: LEATHER_HELMET
     name: "&d示例头盔"
-    recipe_type: EXAMPLE_MULTIBLOCK_MACHINE_RECIPE_TYPE
+    recipe_type: RSC_EXAMPLE_MULTIBLOCK_MACHINE_RECIPE_TYPE
     recipe:
       3:
         material_type: slimefun
-        material: EXAMPLE_ITEM_2
+        material: RSC_EXAMPLE_ITEM_2
   chestplate:
-    id: EXAMPLE_CHESTPLATE
+    id: RSC_EXAMPLE_CHESTPLATE
     material: LEATHER_CHESTPLATE
     name: "&d示例胸甲"
-    recipe_type: EXAMPLE_MULTIBLOCK_MACHINE_RECIPE_TYPE
+    recipe_type: RSC_EXAMPLE_MULTIBLOCK_MACHINE_RECIPE_TYPE
     recipe:
       4:
         material_type: slimefun
-        material: EXAMPLE_ITEM_2
+        material: RSC_EXAMPLE_ITEM_2
   leggings:
-    id: EXAMPLE_LEGGINGS
+    id: RSC_EXAMPLE_LEGGINGS
     material: LEATHER_LEGGINGS
     name: "&d示例护腿"
-    recipe_type: EXAMPLE_MULTIBLOCK_MACHINE_RECIPE_TYPE
+    recipe_type: RSC_EXAMPLE_MULTIBLOCK_MACHINE_RECIPE_TYPE
     recipe:
       5:
         material_type: slimefun
-        material: EXAMPLE_ITEM_2
+        material: RSC_EXAMPLE_ITEM_2
   boots:
-    id: EXAMPLE_BOOTS
+    id: RSC_EXAMPLE_BOOTS
     material: LEATHER_BOOTS
     name: "&d示例靴子"
-    recipe_type: EXAMPLE_MULTIBLOCK_MACHINE_RECIPE_TYPE
+    recipe_type: RSC_EXAMPLE_MULTIBLOCK_MACHINE_RECIPE_TYPE
     recipe:
       6:
         material_type: slimefun
-        material: EXAMPLE_ITEM_2
+        material: RSC_EXAMPLE_ITEM_2
     potion_effects:
       - "SPEED 5"
 ```
 
 | 内容 | 描述 | 有效输入 |
 | --- | ----------- | ----------------- |
-| `example_armor_piece` | 套装的NamespacedKey。 |  |
+| `rsc_example_armor` | 套装的NamespacedKey。 |  |
 | item_group | 盔甲所在[物品组（分类）](file/groups.md)的ID。 |
 | fullSet | 是否需要盔甲组成套装才能使保护类型与药水效果生效 |
 | protection_types | 保护类型，详见下文 |

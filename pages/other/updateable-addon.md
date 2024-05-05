@@ -1,6 +1,4 @@
-# 让你的附属自动更新
-
-示例附属信息文件(info.yml):
+# 让你的附属自动更新(info.yml)
 
 ```yaml
 id: example
@@ -25,7 +23,7 @@ repo: "SlimefunReloadingProject/rsc-example"
 
 ## 更新步骤
 
-1.从**GitHub**获取存储库
+1.从**GitHub**获取存储库，地址为上述的`repo`
 
 2.寻找最新发行版并比对
 

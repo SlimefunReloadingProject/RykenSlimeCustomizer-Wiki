@@ -12,7 +12,7 @@
 
 ## 简介
 
-首先，你一定非常好奇什么是Ryken自定义粘液附属，他和自定义附属（SlimeCustomizer）又有什么不同？
+首先，你一定非常好奇什么是Ryken自定义粘液附属（RykenSlimeCustomizer），他和自定义附属（SlimeCustomizer）又有什么不同？
 
 本页将说明RykenSlimeCustomizer与SlimeCustomizer的优缺点，并解决一部分对于此插件最基础的疑惑
 

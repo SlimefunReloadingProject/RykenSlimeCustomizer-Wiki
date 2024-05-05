@@ -3,12 +3,12 @@
 示例：
 
 ```yaml
-example_research:
+rsc_example_research:
   id: 367450001
   name: "&a示例研究"
   levelCost: 10
   items:
-    - EXAMPLE_ITEM
+    - RSC_EXAMPLE_ITEM
   currencyCost: 10 #非必填  
 ```
 

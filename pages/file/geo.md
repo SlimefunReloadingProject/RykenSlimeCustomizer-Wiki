@@ -3,8 +3,8 @@
 **示例：**
 
 ```yaml
-EXAMPLE_GEO_RESOURCE:
-  item_group: example_normal_group
+RSC_EXAMPLE_GEO_RESOURCE:
+  item_group: rsc_example_normal_group
   item:
     name: "&a示例GEO资源"
     material: DIAMOND
