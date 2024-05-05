@@ -16,7 +16,7 @@
 
 ## 物品格式 <a href="#format" id="format"></a>
 
-* [通用配置格式](format/universal-item-format.md)
+* [通用物品格式](format/universal-item-format.md)
 * [配方](format/recipe.md)
 
 ## 配置文件 <a href="#file" id="file"></a>
