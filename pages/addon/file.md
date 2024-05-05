@@ -68,10 +68,10 @@
 
 存放附属的多方块机器。
 
-### researches.yml <a href="#researches.yml" id="researches.yml"></a>
-
-存放附属的研究。
-
 ### supers.yml <a href="#supers.yml" id="supers.yml"></a>
 
 存放附属的继承物品。
+
+### researches.yml <a href="#researches.yml" id="researches.yml"></a>
+
+存放附属的研究。

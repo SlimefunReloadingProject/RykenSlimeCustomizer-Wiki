@@ -1,8 +1,8 @@
 # 材料生成器(mat_generators.yml)
 
 ```yaml
-EXAMPLE_MATERIAL_GENERATOR:
-  item_group: example_sub_group
+RSC_EXAMPLE_MATERIAL_GENERATOR:
+  item_group: rsc_example_sub_group
   item:
     name: "&c示例材料生成器"
     material: IRON_BLOCK
@@ -11,11 +11,11 @@ EXAMPLE_MATERIAL_GENERATOR:
   recipe:
     1:
       material_type: slimefun
-      material: EXAMPLE_ITEM3
+      material: RSC_WITHER_PROOF_STONE
   output: [13]
   outputItem:
     material_type: slimefun
-    material: EXAMPLE_ITEM
+    material: RSC_EXAMPLE_ITEM
   tickRate: 5
   status: 4
   per: 10
@@ -23,7 +23,7 @@ EXAMPLE_MATERIAL_GENERATOR:
 
 | 内容 | 描述 | 有效输入 |
 | --- | ----------- | ----------------- |
-| `EXAMPLE_MATERIAL_GENERATOR` | 材料生成器的ID。<br>该ID不能与任何其他物品的ID相同! | **仅支持大写字母、数字、下划线!** |
+| `RSC_EXAMPLE_MATERIAL_GENERATOR` | 材料生成器的ID。<br>该ID不能与任何其他物品的ID相同! | **仅支持大写字母、数字、下划线!** |
 | item_group | 物品所在[物品组（分类）](file/groups.md)的ID。 |
 | item.# | [通用物品格式](format/universal-item-format.md)| 可选择性添加modelId、lore、glow等。 |
 | capacity | 机器可储存的能量，最大为 2147483647，设置为0则是不可充电的机器。 |

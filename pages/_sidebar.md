@@ -35,10 +35,11 @@
   * [机器](file/machine.md)
   * [发电机](file/generators.md)
   * [太阳能发电机](file/solar_generators.md)
-  * [材料生成器](file/mat\_generators.md)
+  * [材料生成器](file/mat_generators.md)
   * [配方机器](file/recipe_machines.md)
   * [简单机器](file/simple_machines.md)
   * [多方块机器](file/multi-block-machine.md)
+  * [继承物品](file/supers.md)
   * [研究](file/research.md)
 - 脚本-基础
   - [介绍](scripts-basic/introduction.md)

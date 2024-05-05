@@ -10,7 +10,7 @@ addons
     └─example
         |  armors.yml
         │  capacitors.yml
-        |  foods.yml
+        │  foods.yml
         │  generators.yml
         │  geo_resources.yml
         │  groups.yml
@@ -25,15 +25,15 @@ addons
         │  recipe_types.yml
         │  researches.yml
         │  solar_generators.yml
-        |  supers.yml
+        │  supers.yml
         │
         ├─saveditems
         │
         └─scripts
-            | example_item_2.js
-            | example_item_3.js
-            | example_machine.js
-            | example_machine_energy.js
+            │ example_item_2.js
+            │ example_item_3.js
+            │ example_machine.js
+            │ example_machine_energy.js
             └─example_menu.js
 ```
 

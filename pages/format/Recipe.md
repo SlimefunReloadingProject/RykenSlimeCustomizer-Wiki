@@ -4,7 +4,7 @@
 
 格式：
 
-```
+```yaml
 recipe:
   1: 
     material: cobblestone
@@ -29,7 +29,7 @@ recipe:
 
 如果有些格子不需要放入物品，这样写会更加快捷，如下述示例：
 
-```
+```yaml
 recipe:
   1:
     ...

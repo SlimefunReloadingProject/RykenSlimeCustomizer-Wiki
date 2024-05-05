@@ -6,7 +6,7 @@
 
 ## %player%
 
-获取玩家的名字，也支持 PlaceholderAPI 的变量
+用于获取玩家的名字，此外RSC还支持 [PlaceholderAPI](https://github.com/PlaceholderAPI/PlaceholderAPI) 的变量
 
 ## isPluginLoaded
 示例用法:
@@ -61,8 +61,8 @@ let isItemMatch = isItemSimilar(itemStack, sfItem, checkLore);
 
 |入参名称|类型|说明|
 |---|---|---|
-|itemStack|ItemStack|要对比的物品|
-|sfItem|ItemStack|对比样本，通常为粘液物品|
+|itemStack|[ItemStack](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemStack.html)|要对比的物品|
+|sfItem|[ItemStack](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemStack.html)|对比样本，通常为粘液物品|
 |checkLore|boolean|是否检查物品lore|
 
 ## isRadioactiveItem
@@ -90,8 +90,8 @@ let usable = canPlayerUseItem(player, item, sendMessage);
 
 |入参名称|类型|说明|
 |---|---|---|
-|player|Player|玩家|
-|itemStack|ItemStack|目标物品|
+|player|[Player](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/entity/Player.html)|玩家|
+|itemStack|[ItemStack](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemStack.html)|目标物品|
 |sendMessage|boolean|如果玩家不能使用物品时向玩家发送消息|
 ## setData
 示例用法:
@@ -104,7 +104,7 @@ setData(blockLocation, key, value)
 
 |入参名称|类型|说明|
 |---|---|---|
-|blockLocation|Location|方块位置|
+|blockLocation|[Location](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Location.html)|方块位置|
 |key|String|键|
 |value|String|值|
 
@@ -119,7 +119,7 @@ let value = getData(blockLocation, key)
 
 |入参名称|类型|说明|
 |---|---|---|
-|blockLocation|Location|方块位置|
+|blockLocation|[Location](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Location.html)|方块位置|
 |key|String|键|
 
 ## randint（随机数）
@@ -201,8 +201,8 @@ NBTAPI.readEntity(entity)
 
 |入参名称|类型|说明|
 |---|---|---|
-|itemStack|ItemStack|物品|
+|itemStack|[ItemStack](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemStack.html)|物品|
 |parent|NBTCompound|NBT复合|
 |name|String|字符串|
-|block|Block|方块|
-|entity|Entity|实体|
+|block|[Block](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/block/Block.html)|方块|
+|entity|[Entity](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/entity/Entity.html)|实体|

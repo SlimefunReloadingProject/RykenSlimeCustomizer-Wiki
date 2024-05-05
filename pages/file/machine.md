@@ -5,8 +5,8 @@
 **示例：**
 
 ```yaml
-EXAMPLE_MACHINE:
-  item_group: example_sub_group
+RSC_EXAMPLE_MACHINE:
+  item_group: rsc_example_sub_group
   item:
     name: "&b示例机器"
     material: DIAMOND_BLOCK
@@ -14,13 +14,13 @@ EXAMPLE_MACHINE:
   recipe:
     1:
       material_type: slimefun
-      material: EXAMPLE_ITEM
+      material: RSC_EXAMPLE_ITEM3
   input: [9, 10, 11, 12, 13, 14, 15, 16, 17]
   output: [31]
   script: "example_machine"
   work: 0
-EXAMPLE_MACHINE_ENERGY:
-  item_group: example_sub_group
+RSC_EXAMPLE_MACHINE_ENERGY:
+  item_group: rsc_example_sub_group
   item:
     name: "&b示例能源机器"
     material: DIAMOND_BLOCK
@@ -32,7 +32,7 @@ EXAMPLE_MACHINE_ENERGY:
   recipe:
     1:
       material_type: slimefun
-      material: EXAMPLE_ITEM
+      material: RSC_EXAMPLE_MACHINE
   input: []
   output: []
   script: "example_machine_energy"
@@ -40,7 +40,7 @@ EXAMPLE_MACHINE_ENERGY:
 
 | 内容 | 描述 | 有效输入 |
 | --- | ----------- | ----------------- |
-| `EXAMPLE_ITEM` | 机器的ID。<br>该ID不能与任何其他物品的ID相同! | **仅支持大写字母、数字、下划线!** |
+| `RSC_EXAMPLE_MACHINE` | 机器的ID。<br>该ID不能与任何其他物品的ID相同! | **仅支持大写字母、数字、下划线!** |
 | item_group | 物品所在[物品组（分类）](file/groups.md)的ID。 |
 | item.# | [通用物品格式](format/universal-item-format.md)| 可选择性添加modelId、lore、glow等。 |
 | recipe_type | 见 SlimeCustomizer wiki[合成配方](https://slimefun-addons-wiki.guizhanss.cn/slime-customizer/Crafting-Recipe) ，可填自定义的recipe_type详见[配方类型](file/recipe_type.md) |

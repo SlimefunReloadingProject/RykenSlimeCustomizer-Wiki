@@ -3,35 +3,35 @@
 **示例：**
 
 ```yaml
-example_normal_group:
+rsc_example_normal_group:
   item:
     name: "&a示例普通物品组"
     material: GRASS_BLOCK
     amount: 1
-example_parent_group:
+rsc_example_parent_group:
   type: "nested"
   tier: 2
   item:
     name: "&a示例父物品组"
     material: OAK_PLANKS
     amount: 1
-example_sub_group:
+rsc_example_sub_group:
   type: "sub"
-  parent: "example_parent_group"
+  parent: "rsc_example_parent_group"
   item:
     name: "&e示例子物品组"
     material: REDSTONE
     amount: 1
     lore: 
       - "&aHello?"
-example_seasonal_group:
+rsc_example_seasonal_group:
   type: "seasonal"
   month: 1
   item:
     name: "&b示例季节性物品组"
     material: OAK_LEAVES
     amount: 1
-example_locked_group:
+rsc_example_locked_group:
   type: "locked"
   parents:
     - slimefun:basic_machines
@@ -39,9 +39,9 @@ example_locked_group:
     name: "&l示例锁定物品组"
     material: REPEATER
     amount: 1
-example_action_group:
+rsc_example_action_group:
   type: "button"
-  parent: "example_parent_group"
+  parent: "rsc_example_parent_group"
   item:
     name: "&e示例链接组"
     material: COMMAND_BLOCK
@@ -77,6 +77,7 @@ actions:
 | seasonal       | 季节性物品组                 |
 | nested, parent | 嵌套物品组(父物品组)            |
 | sub            | 子物品组（必须在parent栏写父物品组名） |
+| button         | 链接组（需填写actions，其余同子物品组）
 
 2、**当物品组类型为锁定物品组时，需要填入父分类的**`NamespacedKey`**，而不是直接引用附属内的物品组。**
 

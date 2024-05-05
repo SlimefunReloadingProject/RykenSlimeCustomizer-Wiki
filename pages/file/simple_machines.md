@@ -1,8 +1,8 @@
 # 简单机器(simple_machines.yml)
 
 ```yaml
-EX_ADVANCED_GOLD_PAN:
-  item_group: example_sub_group
+RSC_EX_ADVANCED_GOLD_PAN:
+  item_group: rsc_example_sub_group
   item:
     material: FURNACE
     name: "&b&l超级&7淘金机"
@@ -43,7 +43,7 @@ EX_ADVANCED_GOLD_PAN:
 
 | 内容 | 描述 | 有效输入 |
 | --- | ----------- | ----------------- |
-| `EX_ADVANCED_GOLD_PAN` | 机器的ID。<br>该ID不能与任何其他物品的ID相同! | **仅支持大写字母、数字、下划线!** |
+| `RSC_EX_ADVANCED_GOLD_PAN` | 机器的ID。<br>该ID不能与任何其他物品的ID相同! | **仅支持大写字母、数字、下划线!** |
 | item_group | 物品所在[物品组（分类）](file/groups.md)的ID。 |
 | item.# | [通用物品格式](format/universal-item-format.md)| 可选择性添加modelId、lore、glow等。 |
 | type | 简单机器类型，详见注意事项。 |
