@@ -6,7 +6,7 @@
 
 ```yaml
 RSC_EXAMPLE_RECIPE_MACHINE:
-  item_group: rsc+example_normal_group
+  item_group: rsc_example_normal_group
   item:
     name: "&e示例配方机器"
     material: GREEN_STAINED_GLASS
