@@ -55,7 +55,7 @@ RSC_SYNTHETIC_STONE:
       material: STONE_CHUNK
   vanilla: true
 RSC_WITHER_PROOF_STONE:
-  item_group: example_sub_group
+  item_group: rsc_example_sub_group
   item:
     name: "&7&l防凋零石头"
     material: STONE
