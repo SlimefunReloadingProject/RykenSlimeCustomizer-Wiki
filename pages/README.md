@@ -51,10 +51,8 @@ RykenSlimeCustomizer将配置与脚本结合（脚本是非必须选项），使
 Wiki贡献：
 
 ![Wiki贡献](https://contrib.rocks/image?repo=SlimefunReloadingProject/RykenSlimeCustomizer-Wiki)
+以上人员按Wiki贡献大小排序排列
 
-* 插件编写：[mmmjjkx](https://github.com/lijinhong11)
+* 插件编写：[lijinhong11](https://github.com/lijinhong11)
 * Wiki搭建：[HiTech0926](https://github.com/HiTech0926)
-* Wiki部署：[docsify](https://docsify.js.org/#/)  [GitHub Pages](https://pages.github.com/)
 * 模板提供：[hth0987654](https://github.com/hth0987654)
-
-以上人员或单位均以首字母排序
