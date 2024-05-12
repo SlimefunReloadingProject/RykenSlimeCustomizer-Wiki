@@ -86,8 +86,12 @@ RSC_SUPER_GEO_QUARRY:
   #新增部分
   field:
     ticksPerOutput: 2
+  #无尽要求  
+  method:
+    energyPerTick: 2000
+    energyCapacity: 200
 ```
 
 此时你就获得了一个一秒输出一个的超级GEO矿机  
 
-**注意: 你不能修改常量(在class中被final修饰的变量)**
+**注意: 你不能修改常量(在class中被final修饰的变量)以及静态变量(被static修饰的变量)**
