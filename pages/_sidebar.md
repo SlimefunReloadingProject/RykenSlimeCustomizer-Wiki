@@ -14,6 +14,7 @@
   * [附属结构](addon/structure.md)
   * [附属文件](addon/file.md)
   * [编写附属信息](addon/learn-to-write-addons-information.md)
+  * [转换SC配置至RSC配置](addon/sc-to-rsc.md)
 
 * 物品格式
   

@@ -61,37 +61,7 @@ RSC_EXAMPLE_SUPER_CARBON_PRESS:
 那么你就获得了一个能源容量为50000、效率20x的超级碳压机
 
 ## 使用field修改部分字段的值
-这里用无尽的GEO矿机做例子. [源代码参考](https://github.com/Mooy1/InfinityExpansion/blob/master/src/main/java/io/github/mooy1/infinityexpansion/items/machines/GeoQuarry.java)
-
-现在的配置是这样的：
-
-```yaml
-RSC_SUPER_GEO_QUARRY:
-  item_group: example_sub_group
-  item:
-    material: FURNACE
-    name: "&b&l超级&7GEO矿机"
-  class: "io.github.mooy1.infinityexpansion.items.machines.GeoQuarry"
-```
-
-然后我们修改ticksPerOutput来增加GEO矿机的输出时间:
-
-```yaml
-RSC_SUPER_GEO_QUARRY:
-  item_group: example_sub_group
-  item:
-    material: FURNACE
-    name: "&b&l超级&7GEO矿机"
-  class: "io.github.mooy1.infinityexpansion.items.machines.GeoQuarry"
-  #新增部分
-  field:
-    ticksPerOutput: 2
-  #无尽要求  
-  method:
-    energyPerTick: 2000
-    energyCapacity: 200
-```
-
-此时你就获得了一个一秒输出一个的超级GEO矿机  
+目前没有一个很好的类做示例...
+等待补充...
 
 **注意: 你不能修改常量(在class中被final修饰的变量)以及静态变量(被static修饰的变量)**
