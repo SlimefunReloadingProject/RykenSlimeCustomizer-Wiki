@@ -1,4 +1,5 @@
 # 内容加载/注册选项(任意.yml)
+
 你可以为给附属添加的物品、机器等添加这些选项
 
 示例(不要照抄):
@@ -11,6 +12,7 @@ OBJECT_FOR_REGISTER:
     conditions:
        - "hasplugin DyeBench"
        - "!hasplugin DynaTech"
+       - "version >= 1.18.1"
     unfinished: false
 ```
 

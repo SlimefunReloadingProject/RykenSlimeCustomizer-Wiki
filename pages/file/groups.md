@@ -3,52 +3,66 @@
 **示例：**
 
 ```yaml
+# RykenSlimeCustomizer Wiki: https://rsc.himcs.top/#/file/groups
 rsc_example_normal_group:
   item:
     name: "&a示例普通物品组"
     material: GRASS_BLOCK
-    amount: 1
+
 rsc_example_parent_group:
-  type: "nested"
-  tier: 2
+  type: nested
   item:
     name: "&a示例父物品组"
     material: OAK_PLANKS
-    amount: 1
+
 rsc_example_sub_group:
-  type: "sub"
+  type: sub
   parent: "rsc_example_parent_group"
   item:
     name: "&e示例子物品组"
     material: REDSTONE
-    amount: 1
-    lore: 
-      - "&aHello?"
+
 rsc_example_seasonal_group:
-  type: "seasonal"
-  month: 1
+  type: seasonal
+  month: 5
   item:
     name: "&b示例季节性物品组"
     material: OAK_LEAVES
-    amount: 1
+
 rsc_example_locked_group:
-  type: "locked"
+  type: locked
   parents:
     - slimefun:basic_machines
   item:
     name: "&l示例锁定物品组"
     material: REPEATER
-    amount: 1
-rsc_example_action_group:
-  type: "button"
-  parent: "rsc_example_parent_group"
+
+rsc_example_tier_10086_group:
+  type: sub
+  parent: rsc_example_parent_group
+  tier: 10086
+  item:
+    name: "&e示例优先级10086组"
+    material: IRON_ORE
+
+rsc_example_link_group:
+  type: button
+  parent: rsc_example_parent_group
   item:
     name: "&e示例链接组"
     material: COMMAND_BLOCK
-    amount: 1
   actions:
   - "link https://rsc.himcs.top/#/README"
-  - "console say 我自由了！"
+
+rsc_example_console_group:
+  type: button
+  parent: rsc_example_parent_group
+  item:
+    name: "&e示例控制台指令组"
+    material: BEDROCK
+  actions:
+  - "console say 示例控制台指令组"
+
 ```
 
 | 内容 | 描述 |

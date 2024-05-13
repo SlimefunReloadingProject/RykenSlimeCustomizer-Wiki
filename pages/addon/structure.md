@@ -5,7 +5,7 @@
 RSC使用模块化的结构，不用让你在SC里烦躁的合并机器。  
 结构树：
 
-```
+```tree
 addons
     └─example
         |  armors.yml
@@ -24,17 +24,20 @@ addons
         │  recipe_machines.yml
         │  recipe_types.yml
         │  researches.yml
+        │  simple_machines.yml
         │  solar_generators.yml
         │  supers.yml
         │
         ├─saveditems
+        │   └─ example_saveditem.yml
         │
         └─scripts
-            │ example_item_2.js
-            │ example_item_3.js
+            │ example_chargeable_item.js
+            │ example_food.js
             │ example_machine.js
             │ example_machine_energy.js
-            └─example_menu.js
+            │ example_menu.js
+            └─example_script_item.js
 ```
 
 | 文件夹名称      | 作用     |

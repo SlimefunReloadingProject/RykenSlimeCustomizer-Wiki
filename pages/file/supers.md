@@ -12,8 +12,6 @@ RSC_EXAMPLE_SUPER_ITEM:
       - "&e继承测试"
   class: "me.ddggdd135.slimeae.core.slimefun.MEItemStorageCell" # 来自 SlimeAE
   args: [50000]
-  #field:
-  #  value1: 1
   register:
     conditions:
        - "hasplugin SlimeAE"

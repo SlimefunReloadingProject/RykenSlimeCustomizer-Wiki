@@ -1,7 +1,8 @@
 # 食物(foods.yml)
 
 示例:
-```yml
+
+```yaml
 RSC_EXAMPLE_FOOD:
   item_group: rsc_example_sub_group
   item:

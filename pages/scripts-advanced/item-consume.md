@@ -11,7 +11,8 @@
 // 当物品被右键时
 function onUse(event) {
     // 定义一个字符串变量item，其值为一个特定的物品生成指令，此示例代码是用于给予一个生成铁傀儡的苦力怕刷怪蛋  
-    var item = "creeper_spawn_egg{EntityTag:{id:\"minecraft:iron_golem\"}}"; // 材质(此为苦力怕刷怪蛋)+生成蛋(此为生成铁傀儡)
+    var item = "creeper_spawn_egg{EntityTag:{id:\"minecraft:iron_golem\"}}"; 
+    //         材质(此为苦力怕刷怪蛋)            生成的实体(此为生成铁傀儡)
 
     // 获取触发事件的玩家对象  
     var player = event.getPlayer();
@@ -21,6 +22,9 @@ function onUse(event) {
 
     // 获取玩家主手中的物品  
     var itemInMainHand = inv.getItemInMainHand();
+
+    // 你也可以这样写
+    // var itemInMainHand = player.getInventory().getItemInMainHand();
 
     // 判断玩家主手中是否有物品，且该物品的数量大于0  
     if (itemInMainHand != null && itemInMainHand.getAmount() > 0) {

@@ -1,6 +1,7 @@
 # 物品(items.yml)
 
 **示例：**
+
 ```yaml
 RSC_EXAMPLE_ITEM:
   item_group: rsc_example_sub_group
@@ -18,7 +19,7 @@ RSC_EXAMPLE_ITEM_2:
     name: "&a示例物品2"
     material: NETHERITE_INGOT
   recipe_type: ENHANCED_CRAFTING_TABLE  
-  script: "example_item_2"
+  script: example_script_item
   recipe:
     1:
       material_type: slimefun
@@ -30,7 +31,7 @@ RSC_EXAMPLE_ITEM_3:
     material: GOLD_INGOT
   recipe_type: ENHANCED_CRAFTING_TABLE
   energy_capacity: 1000
-  script: "example_item_3"
+  script: example_chargeable_item
   recipe:
     1:
       material_type: slimefun
@@ -92,6 +93,7 @@ RSC_HIDDEN_ITEM:
   hidden: true
   radiation: VERY_DEADLY
 ```
+
 | 内容 | 描述 | 有效输入 |
 | --- | ----------- | ----------------- |
 | `RSC_EXAMPLE_ITEM` | 物品的ID。<br>该ID不能与任何其他物品的ID相同! | **仅支持大写字母、数字、下划线!** |
@@ -137,6 +139,7 @@ energy_capacity: <容量>
 ```
 
 彩虹方块类型包括：
+
 ```yaml
 GLASS_PANE（玻璃板）
 GLASS（玻璃）
@@ -180,10 +183,12 @@ GLAZED_TERRACOTTA（带釉陶瓦）
 ```
 
 设置此物品的获取方式为猪灵交易物品。
-<br>粘液提供了一个配方，用于设置`recipe_Type`
+<br>当你设置了这个选项，RSC会自动帮你补充 recipe_type:
+
 ```yaml
 recipe_type: BARTER_DROP # 猪灵交易
 ```
+
 ### 人造类物品
 
 ```yaml
@@ -207,13 +212,12 @@ recipe_type: BARTER_DROP # 猪灵交易
 ```
 
 类似于硼砂，在这里是挖掘灰化土掉落这个粘液物品（参考上面 可变泥土 ）
+你还可以设置掉落的几率以及数量（与drop_from同级）：
 
 ```yaml
   drop_chance: <1-100> # 可选，默认100
   drop_amount: 1 # 可选，默认1
 ```
-
-你可以设置掉落的几率以及数量
 
 ## 注意事项
 
@@ -222,4 +226,5 @@ recipe_type: BARTER_DROP # 猪灵交易
 注意name与material为必填，如果不填material_type，则默认检测material为原版物品
 
 ### 关于本页引用的示例脚本example_item_2
+
 详见[脚本基础-物品](scripts-basic/items.md)

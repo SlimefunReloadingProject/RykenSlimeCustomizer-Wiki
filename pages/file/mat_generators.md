@@ -34,11 +34,3 @@ RSC_EXAMPLE_MATERIAL_GENERATOR:
 | tickRate | 每生成一次物品所需时间，最大为 2147483647。 |
 | status | 设置显示信息的槽位。 |
 | per | 每生成一次物品所耗的能量。 |
-
-
-
-
-
-
-
-

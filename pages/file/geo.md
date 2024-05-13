@@ -23,7 +23,7 @@ RSC_EXAMPLE_GEO_RESOURCE:
 
 | 内容 | 描述 | 有效输入 |
 | --- | ----------- | ----------------- |
-| `EXAMPLE_GEO` | 自然资源的ID。<br>该ID不能与任何其他物品的ID相同! | **仅支持大写字母、数字、下划线!** |
+| `RSC_EXAMPLE_GEO_RESOURCE` | 自然资源的ID。<br>该ID不能与任何其他物品的ID相同! | **仅支持大写字母、数字、下划线!** |
 | item_group| 自然资源所在[物品组（分类）](file/groups.md)的ID。 |
 | item.# | [通用物品格式](format/universal-item-format.md)| 可选择性添加modelId、lore、glow等。 |
 | recipe_type | 见 SlimeCustomizer wiki[合成配方](https://slimefun-addons-wiki.guizhanss.cn/slime-customizer/Crafting-Recipe) ，可填自定义的recipe_type详见[配方类型](format/universal-item-format.md) |
