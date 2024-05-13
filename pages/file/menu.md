@@ -86,6 +86,7 @@ RSC_EXAMPLE_RECIPE_MACHINE:
 | slots.(number) | 槽对应的数字。 |
 | progressbar | 设置该物品为机器的进度条物品。|
 | import | 从ID对应的机器中获取菜单并导入至此机器，详见注意事项。|
+| script | 菜单引用的脚本，设置菜单对应的脚本文件，双引号内填脚本对应的文件名称 |
 
 ## 注意事项
 
@@ -99,4 +100,7 @@ RSC_EXAMPLE_RECIPE_MACHINE:
 
 如果你使用了`import`，则`slots`可忽略不写，但是自定义的机器相应的`input`和`output`依然需要填写对应槽的数字
 
-2. 如果你想给一个机器添加自定义菜单时，请注意， machine 与 menu 的`id`必须一致！
+2. 如果你想给一个机器添加自定义菜单时，**机器的`id`** 与 **菜单的`id`**必须一致！
+
+### 关于本页引用的示例脚本example_menu
+详见[脚本基础-机器菜单](scripts-basic/machine_menus.md)

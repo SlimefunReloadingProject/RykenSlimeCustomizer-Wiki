@@ -10,6 +10,7 @@ description: "RSC示例附属"
 authors: ["mmmjjkx"]
 repo: "SlimefunReloadingProject/rsc-example"
 ```
+
 | 内容 | 描述 |
 | --- | ----------- |
 | id | 附属的id。 |

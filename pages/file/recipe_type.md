@@ -35,7 +35,7 @@ recipe_type: NONE
 recipe_type: NULL
 ```
 ## 更多配方类型
-你可以设置配方类型为这些，但并不代表此配方一定存在，不过你仍然可以设置recipe来解释说明
+你可以设置配方类型为这些（粘液自带），但并不代表此配方一定存在，不过你仍然可以设置recipe来解释说明
 
 [参考代码](https://github.com/StarWishsama/Slimefun4/blob/master/src/main/java/io/github/thebusybiscuit/slimefun4/api/recipes/RecipeType.java)
 ```yaml
@@ -44,21 +44,21 @@ ARMOR_FORGE # 盔甲锻造台
 GRIND_STONE # 磨石
 SMELTERY # 冶炼炉
 ORE_CRUSHER # 碎矿机
-GOLD_PAN # 淘金
 COMPRESSOR # 压缩机
 PRESSURE_CHAMBER # 压力机
 MAGIC_WORKBENCH # 魔法工作台
 ORE_WASHER # 洗矿机
 ENHANCED_CRAFTING_TABLE # 增强型工作台
 ANCIENT_ALTAR # 远古祭坛
+JUICER # 榨汁机
+HEATED_PRESSURE_CHAMBER # 加热压力舱
 
 # 仅展示的类型
 MULTIBLOCK # 多方块结构
-JUICER # 榨汁机
+GOLD_PAN # 淘金
 MOB_DROP # 生物掉落
 BARTER_DROP # 猪灵交易
 INTERACT # 交互
-HEATED_PRESSURE_CHAMBER # 加热压力舱
 FOOD_FABRICATOR # 食品加工机
 FOOD_COMPOSTER # 食品堆肥机
 FREEZER # 冰箱
