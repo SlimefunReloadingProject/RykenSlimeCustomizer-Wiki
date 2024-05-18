@@ -20,7 +20,7 @@
 
 [SlimeCustomizer](https://github.com/SlimefunGuguProject/SlimeCustomizer) 适合新手入门使用，无需学Java等语言，仅通过最基础的配置修改，就能做出基础的附属
 
-SlimeCustomizer通俗易懂，更加简单明了，但是局限性较大，你只能在一个固定的框架中自定义
+SlimeCustomizer通俗易懂，更加简单明了，但是局限性较大，你只能在一个**固定的框架**中自定义
 
 比如：对于机器，你只能安排两个输入和两个输出，所有的机器都是一个统一的格式与菜单
 

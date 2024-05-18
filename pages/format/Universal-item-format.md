@@ -2,7 +2,7 @@
 
 <mark style="color:red;">**注意：**</mark>带\*为必填
 
-### 名称\*
+### \*名称
 
 设置物品名称。
 
@@ -38,7 +38,7 @@ amount: (数字)
 material_type: (材料类型)
 ```
 
-#### 详解：
+#### 详解
 
 1、skull\_base64 需要在material一栏填写头颅的Value
 
@@ -68,7 +68,7 @@ material: bb0f722aec27490cf056f560afdd457a0a794e703556cc4c3b51a582f5c57aa4
 
 当`material_type: slimefun`时，你可以在同级的情况下添加`glow`，修改`name`和`lore`，可用于在不改变物品材质的情况下，编辑一个粘液物品，可用于机器的输出项。
 
-### 材料\*
+### \*材料
 
 设置物品材料，填写内容由材料类型决定。
 
@@ -105,4 +105,3 @@ lore:
 ```yaml
 glow: true/false
 ```
-

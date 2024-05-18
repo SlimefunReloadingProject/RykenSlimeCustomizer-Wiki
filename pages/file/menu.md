@@ -1,5 +1,7 @@
 # 机器菜单(menus.yml)
 
+<mark style="color:red;">**注意：**</mark>带\*为必填
+
 > 一般机器必不可少的东西
 
 **示例：**
@@ -80,8 +82,8 @@ RSC_EXAMPLE_RECIPE_MACHINE:
 
 | 内容 | 描述 | 有效输入 |
 | --- | ----------- | ----------------- |
-| `RSC_EXAMPLE_MACHINE` | 菜单的ID，必须与对应的机器ID相同。 | **仅支持大写字母、数字、下划线!** |
-| title | 菜单的名称，通常会显示在箱子页面的左上角。 |
+| \*`RSC_EXAMPLE_MACHINE` | 菜单的ID，必须与对应的机器ID相同。 | **仅支持大写字母、数字、下划线!** |
+| \*title | 菜单的名称，通常会显示在箱子页面的左上角。 |
 | slots | 箱子页面的槽，可以将一个物品安排在一个或多个槽内。 |
 | slots.(number) | 槽对应的数字。 |
 | progressbar | 设置该物品为机器的进度条物品。|
@@ -90,7 +92,7 @@ RSC_EXAMPLE_RECIPE_MACHINE:
 
 ## 注意事项
 
-1. 关于import
+1. 关于`import`
 
 ```yaml
 RSC_EXAMPLE_RECIPE_MACHINE:

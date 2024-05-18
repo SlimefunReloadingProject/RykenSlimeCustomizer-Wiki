@@ -1,5 +1,9 @@
 # 盔甲(armors.yml)
 
+<mark style="color:red;">**注意：**</mark>带\*为必填
+
+**示例：**
+
 ```yaml
 rsc_example_armor:
   protection_types:
@@ -50,11 +54,11 @@ rsc_example_armor:
 
 | 内容 | 描述 | 有效输入 |
 | --- | ----------- | ----------------- |
-| `rsc_example_armor` | 套装的NamespacedKey。 |  |
-| item_group | 盔甲所在[物品组（分类）](file/groups.md)的ID。 |
+| \*`rsc_example_armor` | 套装的NamespacedKey。 |  |
+| \*item_group | 盔甲所在[物品组（分类）](file/groups.md)的ID。 |
 | fullSet | 是否需要盔甲组成套装才能使保护类型与药水效果生效 |
 | protection_types | 保护类型，详见下文 |
-| helmet/chestplate/leggings/boots | 头盔/胸甲/护腿/靴子，遵循[通用物品格式](format/universal-item-format.md) |
+| \*helmet/chestplate/leggings/boots | 头盔/胸甲/护腿/靴子，遵循[通用物品格式](format/universal-item-format.md) |
 | potion_effects | 穿上盔甲时给予的药水效果格式为 药水效果ID + 药水等级 **(数字+1)级** |
 | recipe等 | 遵循[通用物品格式](format/universal-item-format.md) |
 

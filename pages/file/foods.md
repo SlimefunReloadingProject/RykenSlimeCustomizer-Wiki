@@ -1,6 +1,6 @@
 # 食物(foods.yml)
 
-示例:
+**示例：**
 
 ```yaml
 RSC_EXAMPLE_FOOD:

@@ -1,5 +1,9 @@
 # 简单机器(simple_machines.yml)
 
+<mark style="color:red;">**注意：**</mark>带\*为必填
+
+**示例：**
+
 ```yaml
 RSC_EX_ADVANCED_GOLD_PAN:
   item_group: rsc_example_sub_group
@@ -43,13 +47,13 @@ RSC_EX_ADVANCED_GOLD_PAN:
 
 | 内容 | 描述 | 有效输入 |
 | --- | ----------- | ----------------- |
-| `RSC_EX_ADVANCED_GOLD_PAN` | 机器的ID。<br>该ID不能与任何其他物品的ID相同! | **仅支持大写字母、数字、下划线!** |
-| item_group | 物品所在[物品组（分类）](file/groups.md)的ID。 |
-| item.# | [通用物品格式](format/universal-item-format.md)| 可选择性添加modelId、lore、glow等。 |
-| type | 简单机器类型，详见注意事项。 |
-| settings.capacity | 设置机器可储存的能量，最大为 2147483647。 |
-| settings.consumption | 机器运行消耗的能量，最大为 2147483647。 |
-| settings.speed | 机器运行速度，最大为 2147483647，数值越大，机器运行的越快。 |
+| \*`RSC_EX_ADVANCED_GOLD_PAN` | 机器的ID。<br>该ID不能与任何其他物品的ID相同! | **仅支持大写字母、数字、下划线!** |
+| \*item_group | 物品所在[物品组（分类）](file/groups.md)的ID。 |
+| \*item.# | [通用物品格式](format/universal-item-format.md)| 可选择性添加modelId、lore、glow等。 |
+| \*type | 简单机器类型，详见注意事项。 |
+| \*settings.capacity | 设置机器可储存的能量，最大为 2147483647。 |
+| \*settings.consumption | 机器运行消耗的能量，最大为 2147483647。 |
+| \*settings.speed | 机器运行速度，最大为 2147483647，数值越大，机器运行的越快。 |
 | recipe_type | 见 SlimeCustomizer wiki[合成配方](https://slimefun-addons-wiki.guizhanss.cn/slime-customizer/Crafting-Recipe) ，可填自定义的recipe_type详见[配方类型](file/recipe_type.md)。 |
 | recipe | 设置机器的配方。详见[**配方**](format/recipe.md) |
 

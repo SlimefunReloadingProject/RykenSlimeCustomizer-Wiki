@@ -1,5 +1,7 @@
 # GEO资源(geo_resources.yml)
 
+<mark style="color:red;">**注意：**</mark>带\*为必填
+
 **示例：**
 
 ```yaml
@@ -23,14 +25,14 @@ RSC_EXAMPLE_GEO_RESOURCE:
 
 | 内容 | 描述 | 有效输入 |
 | --- | ----------- | ----------------- |
-| `RSC_EXAMPLE_GEO_RESOURCE` | 自然资源的ID。<br>该ID不能与任何其他物品的ID相同! | **仅支持大写字母、数字、下划线!** |
-| item_group| 自然资源所在[物品组（分类）](file/groups.md)的ID。 |
-| item.# | [通用物品格式](format/universal-item-format.md)| 可选择性添加modelId、lore、glow等。 |
+| \*`RSC_EXAMPLE_GEO_RESOURCE` | 自然资源的ID。<br>该ID不能与任何其他物品的ID相同! | **仅支持大写字母、数字、下划线!** |
+| \*item_group| 自然资源所在[物品组（分类）](file/groups.md)的ID。 |
+| \*item.# | [通用物品格式](format/universal-item-format.md)| 可选择性添加modelId、lore、glow等。 |
 | recipe_type | 见 SlimeCustomizer wiki[合成配方](https://slimefun-addons-wiki.guizhanss.cn/slime-customizer/Crafting-Recipe) ，可填自定义的recipe_type详见[配方类型](format/universal-item-format.md) |
-| max-deviation | 每个区块自然资源数量的最大偏差。 | 正整数 |
+| \*max-deviation | 每个区块自然资源数量的最大偏差。 | 正整数 |
 | obtain_from_geo_miner | 设置自然资源是否可以从GEO矿机中挖到。|
-| geo_name | 设置自然资源的名称。 |
-| supply | 设置自然资源在各个世界环境、生物群系的默认数量，详见注意事项。 |
+| \*geo_name | 设置自然资源的名称。 |
+| \*supply | 设置自然资源在各个世界环境、生物群系的默认数量，详见注意事项。 |
 
 ## 注意事项
 
