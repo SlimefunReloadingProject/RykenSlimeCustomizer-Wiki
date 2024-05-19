@@ -44,6 +44,6 @@ RSC_EXAMPLE_FOOD:
 | nutrition | 设置物品的饥饿值 | 1 ~ 2147483647 |
 | saturation | 设置物品的饱和度 | 0.0 ~ 2147483647.0 |
 | eatseconds | 设置物品的食用时间 | 0.0 ~ 2147483647.0 <br> 默认 1.6 |
-| always_eatable | 设置物品是否总是可以食用 | true/false，默认false，true 可使原本不可食用的物品变得可食用 |
+| always_eatable | 设置物品是否总是可以食用 | true/false，默认false，true 可使在你饱食度满后仍然可以继续食用 |
 
 关于食物的特性通过在foods.yml中引用脚本实现，详见[脚本-食物](scripts-basic/foods.md)
