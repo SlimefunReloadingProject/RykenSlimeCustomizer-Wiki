@@ -44,5 +44,5 @@ RSC_EXAMPLE_SOLAR_GENERATOR:
 | \*dayEnergy | 太阳能发电机白天的发电量，单位为粘液刻，最大为 2147483647 |
 | \*nightEnergy | 太阳能发电机夜晚的发电量，单位为粘液刻，最大为 2147483647 |
 | \*lightLevel | 光照等级，机器所处的位置在未达到相应的光照等级时不会工作，最大为15 |
-| recipe_type | 见 SlimeCustomizer wiki[合成配方](https://slimefun-addons-wiki.guizhanss.cn/slime-customizer/Crafting-Recipe) ，可填自定义的recipe_type详见[配方类型](file/recipe_type.md)。 |
+| recipe_type | 见[配方类型](file/recipe_type.md)。 |
 | recipe | 设置太阳能发电机的配方。详见[**配方**](format/recipe.md) |

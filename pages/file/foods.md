@@ -8,7 +8,11 @@ RSC_EXAMPLE_FOOD:
   item:
     name: "食物 1"
     material: rotten_flesh
-  script: example_food
+  script: "example_food"
+  nutrition: 1
+  saturation: 0
+  eatseconds: 1.6
+  always_eatable: false
   recipe_type: MAGIC_WORKBENCH
   recipe:
     1:
@@ -22,9 +26,24 @@ RSC_EXAMPLE_FOOD:
       amount: 1
 ```
 
-自定义食物的实质就是自定义物品，所以自定义食物跟自定义物品的格式一样，需要在foods.yml中完成,
-**前提是物品材料类型必须是可食用的，不然不能触发脚本，也不能吃**
+| 内容 | 描述 | 有效输入 |
+| --- | ----------- | ----------------- |
+| \*`RSC_EXAMPLE_ITEM` | 物品的ID。<br>该ID不能与任何其他物品的ID相同! | **仅支持大写字母、数字、下划线!** |
+| \*item_group | 物品所在[物品组（分类）](file/groups.md)的ID。 |
+| \*item.# | [通用物品格式](format/universal-item-format.md)| 可选择性添加`modelId`、`lore`、`glow`等 |
+| recipe_type | 见[配方类型](file/recipe_type.md)。 |
+| \*script | 物品引用的脚本，设置物品对应的脚本文件，双引号内填脚本对应的文件名称 |
+| recipe | 设置物品的配方。详见[**配方**](format/recipe.md) |
+
+## 高级自定义食物
+
+> 以下参数版本需求 1.20.5+， 前置插件 NBTAPI
+
+| 内容 | 描述 | 有效输入 |
+| --- | ----------- | ----------------- |
+| nutrition | 设置物品的饥饿值 | 1 ~ 2147483647 |
+| saturation | 设置物品的饱和度 | 0.0 ~ 2147483647.0 |
+| eatseconds | 设置物品的食用时间 | 0.0 ~ 2147483647.0 <br> 默认 1.6 |
+| always_eatable | 设置物品是否总是可以食用 | true/false，默认false，true 可使原本不可食用的物品变得可食用 |
 
 关于食物的特性通过在foods.yml中引用脚本实现，详见[脚本-食物](scripts-basic/foods.md)
-
-格式见[物品](file/items.md)

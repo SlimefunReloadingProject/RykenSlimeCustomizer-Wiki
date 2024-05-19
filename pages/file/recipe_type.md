@@ -85,7 +85,7 @@ NULL # 无配方
 - PRESSURE_CHAMBER <u>压力机</u>
 - ANCIENT_ALTAR <u>古代祭坛</u>
 
-## 以下配方类型的合成配方仅第1格物品有效
+### 以下配方类型的合成配方仅第1格物品有效
 
 - COMPRESSOR <u>压缩机</u>
 - PRESSURE_CHAMBER <u>压力机</u>
@@ -95,10 +95,10 @@ NULL # 无配方
 - HEATED_PRESSURE_CHAMBER <u>加热压力舱</u>
 - JUICER <u>榨汁机</u>
 
-## 以下配方类型的合成配方必须所有9格都有物品
+### 以下配方类型的合成配方必须所有9格都有物品
 
 - ANCIENT_ALTAR <u>古代祭坛</u>
 
-## 以下配方类型的合成配方的第5格必须是生物蛋或空
+### 以下配方类型的合成配方的第5格必须是生物蛋或空
 
 - MOB_DROP <u>生物掉落</u>
