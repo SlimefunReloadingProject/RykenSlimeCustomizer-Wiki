@@ -48,7 +48,7 @@ RSC_EXAMPLE_GENERATOR:
 | \*item.# | [通用物品格式](format/universal-item-format.md)| 可选择性添加modelId、lore、glow等。 |
 | \*capacity | 发电机可储存的能量，最大为 2147483647，设置为0则是不可充电的机器 |
 | \*production | 发电机的发电量，单位为粘液刻，最大为 2147483647 |
-| recipe_type | 见 SlimeCustomizer wiki[合成配方](https://slimefun-addons-wiki.guizhanss.cn/slime-customizer/Crafting-Recipe) ，可填自定义的recipe_type详见[配方类型](file/recipe_type.md) |
+| recipe_type | 见[配方类型](file/recipe_type.md)。 |
 | recipe | 设置发电机的配方。详见[**配方**](format/recipe.md) |
 | \*input | 物品输入的对应槽位。（请不要在菜单中为这些槽位设置物品！） |
 | \*output | 物品输出的对应槽位。（请不要在菜单中为这些槽位设置物品！） |

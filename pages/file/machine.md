@@ -45,7 +45,7 @@ RSC_EXAMPLE_MACHINE_ENERGY:
 | \*`RSC_EXAMPLE_MACHINE` | 机器的ID。<br>该ID不能与任何其他物品的ID相同! | **仅支持大写字母、数字、下划线!** |
 | \*item_group | 物品所在[物品组（分类）](file/groups.md)的ID。 |
 | \*item.# | [通用物品格式](format/universal-item-format.md)| 可选择性添加modelId、lore、glow等。 |
-| recipe_type | 见 SlimeCustomizer wiki[合成配方](https://slimefun-addons-wiki.guizhanss.cn/slime-customizer/Crafting-Recipe) ，可填自定义的recipe_type详见[配方类型](file/recipe_type.md) |
+| recipe_type | 见[配方类型](file/recipe_type.md)。 |
 | script | 物品引用的脚本，设置物品对应的脚本文件，双引号内填脚本对应的文件名称。 |
 | recipe | 设置机器的配方。详见[**配方**](format/recipe.md) |
 | \*input | 物品输入的对应槽位。（请不要在菜单中为这些槽位设置物品！） |
