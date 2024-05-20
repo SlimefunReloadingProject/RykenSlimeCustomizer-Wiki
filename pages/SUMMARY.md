@@ -6,13 +6,16 @@
 
 ## 插件本体 <a href="#plugin" id="plugin"></a>
 
+* [对比与总览](plugin/comparison.md)
 * [指令与权限](plugin/commands-and-permissions.md)
+* [配置注册顺序](plugin/registration-order.md)
 
 ## 附属 <a href="#addon" id="addon"></a>
 
 * [附属结构](addon/structure.md)
 * [附属文件](addon/file.md)
 * [编写附属信息](addon/learn-to-write-addons-information.md)
+* [转换SC配置至RSC配置](addon/sc-to-rsc.md)
 
 ## 物品格式 <a href="#format" id="format"></a>
 

@@ -1,5 +1,9 @@
 # 让你的附属自动更新(info.yml)
 
+<mark style="color:red;">**注意：**</mark>带\*为必填
+
+**示例：**
+
 ```yaml
 id: example
 name: "示例附属"
@@ -13,14 +17,14 @@ repo: "SlimefunReloadingProject/rsc-example"
 
 | 内容 | 描述 |
 | --- | ----------- |
-| id | 附属的id。 |
-| name | 附属的名称。 |
+| \*id | 附属的id。 |
+| \*name | 附属的名称。 |
 | depends | 依赖的其它用RykenSlimeCustomizer编辑的自定义附属id |
 | pluginDepends | 依赖的插件名称，即在plugin.yml中定义的名称。 |
-| version | 附属的版本。 |
+| \*version | 附属的版本。 |
 | description | 附属的描述。 |
-| authors | 附属的作者。 |
-| repo | 附属对应的github库，这是附属更新的必填项。 |
+| \*authors | 附属的作者。 |
+| \*repo | 附属对应的github库，这是附属更新的必填项。 |
 
 ## 更新步骤
 
