@@ -29,7 +29,6 @@ RSC_EXAMPLE_MACHINE_ENERGY:
   recipe_type: ENHANCED_CRAFTING_TABLE
   energy:
     capacity: 100000
-    totalTicks: 10
     type: NONE
   recipe:
     1:
@@ -52,7 +51,6 @@ RSC_EXAMPLE_MACHINE_ENERGY:
 | \*output | 物品输出的对应槽位。（请不要在菜单中为这些槽位设置物品！） |
 | energy | 设置机器的能源，如果没有设置这个或者加载/读取失败则自动设置为无电机器 |
 | energy.capacity | 设置机器可储存的能量，最大为 2147483647。 |
-| energy.totalTicks | 设置每次输出物品的间隔时间，单位为粘液刻，最大为 2147483647。 |
 | energy.type | 机器作为能源组件的类型，具体内容详见注意事项 |
 | work | 设置无电机器的工作按钮槽位，如果没有此标签，则默认为-1（不设置）。 |
 
