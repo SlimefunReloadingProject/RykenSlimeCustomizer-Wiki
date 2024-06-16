@@ -219,7 +219,7 @@ recipe_type: BARTER_DROP # 猪灵交易
 
 ```yaml
   drop_chance: <1-100> # 可选，默认100
-  drop_amount: 1 # 可选，默认1
+  drop_amount: 1 # 可选，默认1，支持 drop_amount: 3-5 这种范围形式
 ```
 
 ## 注意事项

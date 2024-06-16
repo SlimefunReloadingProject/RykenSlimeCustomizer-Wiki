@@ -21,6 +21,9 @@ RSC_EXAMPLE_GEO_RESOURCE:
       others: 4
     nether: 1
     the_end: 2
+  drop_from: PODZOL
+  drop_chance: 10
+  drop_amount: 3-5
 ```
 
 | 内容 | 描述 | 有效输入 |
@@ -33,6 +36,21 @@ RSC_EXAMPLE_GEO_RESOURCE:
 | obtain_from_geo_miner | 设置自然资源是否可以从GEO矿机中挖到。|
 | \*geo_name | 设置自然资源的名称。 |
 | \*supply | 设置自然资源在各个世界环境、生物群系的默认数量，详见注意事项。 |
+| drop_from | 挖掘方块掉落，详见下文 |
+
+### 方块掉落物品
+
+```yaml
+  drop_from: PODZOL
+```
+
+类似于硼砂，在这里是挖掘灰化土掉落这个粘液物品（参考上面 可变泥土 ）
+你还可以设置掉落的几率以及数量（与drop_from同级）：
+
+```yaml
+  drop_chance: <1-100> # 可选，默认100
+  drop_amount: 1 # 可选，默认1，支持 drop_amount: 3-5 这种范围形式
+```
 
 ## 注意事项
 
