@@ -1,6 +1,6 @@
 # 对比与总览
 
-本页将对RykenSlimeCustomizer（后文简称rsc）与SlimeCustomizer（后文简称sc）的功能进行一个系统性的梳理，简单明了的列出rsc的优势，你也可以在此页找到你想要的功能
+本页将对RykenSlimeCustomizer（后文简称 **rsc**）与SlimeCustomizer（后文简称 **sc**）的功能进行一个系统性的梳理，简单明了的列出 rsc 的优势，你也可以在此页找到你想要的功能
 
 ## 加载差异
 
@@ -10,11 +10,12 @@
 | 自动更新附属 | ✕ | ✓ |
 | 多配置共存 | ✕ | ✓ |
 | 跳过错误配置 | ✕ | ✓ |
+| 预加载附属所有物品 | ✕ | ✓ |
 | 引用 sc 物品 | - | ✓ |
 
 自定义加载选项：详见[内容加载/注册选项](file/context-options.md)
 <br>自动更新附属：详见[让你的附属可更新](other/updateable-addon.md)
-
+<br>预加载附属所有物品：在同一个附属中，你可以在 `items.yml` 内引用后面 `machines.yml` 的内容，而无需再为此大费周章使用 `saveditem`
 ## 配方编写类
 
 关于配方的编写，rsc可以**省略不写**无物品的配方格，而sc必须按部就班的按统一格式编写
