@@ -28,6 +28,7 @@ addons
         │  simple_machines.yml
         │  solar_generators.yml
         │  supers.yml
+        │  template_machines.yml
         │
         ├─saveditems
         │   │  example_saveditem1.yml
