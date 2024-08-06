@@ -41,6 +41,7 @@
   * [简单机器](file/simple_machines.md)
   * [多方块机器](file/multi-block-machine.md)
   * [继承物品](file/supers.md)
+  * [模板机器](file/template_machines.md)
   * [研究](file/research.md)
 - 脚本-基础
   - [介绍](scripts-basic/introduction.md)

@@ -2,8 +2,8 @@
 
 ## 前言
 
-相信你或多或少的听说了一个自定义粘液附属SlimeCustomizer。但是它的局限性比较大。\
-当然，这个插件(RykenSlimeCustomizer)也是一个自定义粘液附属，且比SlimeCustomizer有更多自定义性。
+相信你或多或少的听说了一个自定义粘液附属SlimeCustomizer。但是它的局限性太大了。\
+为此，我们开发了一个自定义粘液附属插件(RykenSlimeCustomizer)，且比SlimeCustomizer有更多自定义性。
 如果你学过Java、JavaScript等这类语言，你就能很快上手写更高级的机器。
 
 欢迎加入QQ群交流：[811756705 (Slimefun Reloading... Project)](https://qm.qq.com/cgi-bin/qm/qr?k=idCPgpiN5wGQwc5fcO4PPLW4UkjAmsKP)
@@ -15,6 +15,12 @@
 首先，你一定非常好奇什么是Ryken自定义粘液附属（RykenSlimeCustomizer），他和自定义附属（SlimeCustomizer）又有什么不同？
 
 本页将说明RykenSlimeCustomizer与SlimeCustomizer的优缺点，并解决一部分对于此插件最基础的疑惑
+
+## SlimeCustomizer与RykenSlimeCustomizer
+
+为了更好地展示 SlimeCustomizer 与 RykenSlimeCustomizer 的区别，我们特别写了另外一篇文章，因为 RykenSlimeCustomizer 的优点实在太多了！
+
+[SlimeCustomizer与RykenSlimeCustomizer的区别](plugin/comparison.md)
 
 ### SlimeCustomizer 自定义粘液附属
 

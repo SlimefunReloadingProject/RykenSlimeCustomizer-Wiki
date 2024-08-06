@@ -72,6 +72,10 @@
 
 存放附属的继承物品。
 
+### template_machines.yml <a href="#template_machines.yml" id="template_machines.yml"></a>
+
+存放附属的模板机器。
+
 ### researches.yml <a href="#researches.yml" id="researches.yml"></a>
 
 存放附属的研究。
