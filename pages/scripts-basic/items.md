@@ -54,7 +54,7 @@ function onToolUse(event, item, fortune, drops) {
 
 |字段|类型|描述|
 |--|---|--|
-|event|[EntityDamageByEntityEvent](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/entity/EntityDamageByEntityEvent.html)|实体伤害另一实体事件|
+|event|[BlockBreakEvent](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/block/BlockBreakEvent.html)|方块被破坏事件|
 |item|[ItemStack](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemStack.html)|用来攻击的物品|
 |fortune|int|物品的时运附魔等级|
 |drops|List\<ItemStack\>|方块掉落物|
