@@ -20,6 +20,10 @@ RSC_EXAMPLE_MATERIAL_GENERATOR:
   outputItem:
     material_type: slimefun
     material: RSC_EXAMPLE_ITEM
+  outputs:
+    1:
+      material_type: slimefun
+      material: RSC_EXAMPLE_ITEM_2
   tickRate: 5
   status: 4
   per: 10
@@ -34,7 +38,8 @@ RSC_EXAMPLE_MATERIAL_GENERATOR:
 | recipe_type | 见[配方类型](file/recipe_type.md)。 |
 | recipe | 设置材料发生器的配方。详见[**配方**](format/recipe.md) |
 | \*output | 物品输出的对应槽位。（请不要在菜单中为这些槽位设置物品！） |
-| \*outputItem | 详见[通用物品格式](format/universal-item-format.md) |
+| outputItem | 详见[通用物品格式](format/universal-item-format.md), 不能和`outputs`共存 |
+| outputs.# | 详见[通用物品格式](format/universal-item-format.md), 不能和`outputItem`共存 |
 | \*tickRate | 每生成一次物品所需时间，最大为 2147483647。 |
 | \*status | 设置显示信息的槽位。 |
 | \*per | 每生成一次物品所耗的能量。 |

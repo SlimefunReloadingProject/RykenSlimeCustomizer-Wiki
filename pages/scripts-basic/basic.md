@@ -1,4 +1,5 @@
 # 脚本基础
+
 这里列出所有脚本中可以方便使用的方法/字段
 
 ## [server](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Bukkit.html)
@@ -50,6 +51,82 @@ sendMessage(player, "{#114514>}A cool message{#191981<}");
 ```
 
 向玩家发送消息(支持CMI格式)
+
+## runLater
+
+示例用法:
+
+```js
+runLater(runnable, delay);
+
+runLater(() => expression, 20);
+runLater(() => {
+    // statements
+}, 20);
+```
+
+在 delay 游戏刻后执行 runnable 代码块
+
+## runRepeating
+
+示例用法:
+
+```js
+runRepeating(runnable, delay, period);
+
+runRepeating(() => expression, 20, 10);
+runRepeating(() => {
+    // statements
+}, 20, 10);
+```
+
+在 delay 游戏刻后每隔 period 游戏刻执行 runnable 代码块
+
+## runAsync
+
+示例用法:
+
+```js
+
+runAsync(runnable);
+
+runAsync(() => expression);
+runAsync(() => {
+    // statements
+});
+```
+
+异步执行 runnable 代码块
+
+## runLaterAsync
+
+示例用法:
+
+```js
+runLaterAsync(runnable, delay);
+
+runLaterAsync(() => expression, 20);
+runLaterAsync(() => {
+    // statements
+}, 20);
+```
+
+在 delay 游戏刻后异步执行 runnable 代码块
+
+## runRepeatingAsync
+
+示例用法:
+
+```js
+runRepeatingAsync(runnable, delay, period);
+
+runRepeatingAsync(() => expression, 20, 10);
+runRepeatingAsync(() => {
+    // statements
+}, 20, 10);
+```
+
+在 delay 游戏刻后每隔 period 游戏刻异步执行 runnable 代码块
 
 ## getSfItemById
 
@@ -164,7 +241,7 @@ let value = getData(blockLocation, key)
 
 ## randint（随机数）
 
-# randintA
+## randintA
 
 示例用法：
 
@@ -181,7 +258,7 @@ randintA(10);
 
 返回 0~9 的随机数（0,1,2,3,4,5,6,7,8,9）
 
-# randintB
+## randintB
 
 示例用法：
 
@@ -200,7 +277,7 @@ randintB(10, true);
 如果`includeSelf: true`，则返回 0~10 的随机数（0,1,2,3,4,5,6,7,8,9,10）
 如果`includeSelf: false`，则返回 0~9 的随机数（0,1,2,3,4,5,6,7,8,9）
 
-# randintC
+## randintC
 
 示例用法：
 
@@ -218,7 +295,7 @@ randintC(2, 10);
 
 返回 2~9 的随机数（2,3,4,5,6,7,8,9）
 
-# randintD
+## randintD
 
 示例用法：
 
@@ -238,6 +315,19 @@ randintD(2, 10, true);
 如果`includeSelf: true`, 则返回 2~10 的随机数（2,3,4,5,6,7,8,9,10）
 如果`includeSelf: false`, 则返回 2~9 的随机数（2,3,4,5,6,7,8,9）
 
+# PDC 操作
+
+RSC 还提供了 [PDC 方法](https://github.com/Slimefun/dough/blob/main/dough-data/src/main/java/io/github/bakedlibs/dough/data/persistent/PersistentDataAPI.java)，用于操作物品的 PDC
+
+```js
+let itemMeta = itemStack.getItemMeta();
+let namespacedKey = new NamespacedKey("your_instance", "your_key");
+PersistentDataAPI.setString(itemMeta, namespacedKey, "your_value");
+PersistentDataAPI.getString(itemMeta, namespacedKey);
+itemStack.setItemMeta(itemMeta);
+
+```
+
 # 汉化版 Slimefun 方法
 
 RSC 在脚本中自动引入了来自**汉化版Slimefun**中的几个类
@@ -250,7 +340,7 @@ RSC 在脚本中自动引入了来自**汉化版Slimefun**中的几个类
 
 ```js
 SlimefunItems.ADVANCED_CIRCUIT_BOARD;
-SlimefunItem(itemGroup, item, recipeType, recipe);
+new SlimefunItem(itemGroup, slimefunItemStack, recipeType, recipe);
 StorageCacheUtils.hasBlock(location);
 SlimefunUtils.canPlayerUseItem(player, itemStack, isSendMessage);
 ```

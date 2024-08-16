@@ -43,6 +43,7 @@
   * [继承物品](file/supers.md)
   * [模板机器](file/template_machines.md)
   * [研究](file/research.md)
+
 - 脚本-基础
   - [介绍](scripts-basic/introduction.md)
   - [基础](scripts-basic/basic.md)
@@ -53,6 +54,4 @@
 
 - 脚本-进阶
   - [道具](scripts-advanced/item-consume.md)
-
-- 杂项
-  - [让你的附属可更新](other/updateable-addon.md)
+  - [监听](scripts-advanced/listener.md)
