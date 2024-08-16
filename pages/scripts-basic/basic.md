@@ -315,6 +315,19 @@ randintD(2, 10, true);
 如果`includeSelf: true`, 则返回 2~10 的随机数（2,3,4,5,6,7,8,9,10）
 如果`includeSelf: false`, 则返回 2~9 的随机数（2,3,4,5,6,7,8,9）
 
+# PDC 操作
+
+RSC 还提供了 [PDC 方法](https://github.com/Slimefun/dough/blob/main/dough-data/src/main/java/io/github/bakedlibs/dough/data/persistent/PersistentDataAPI.java)，用于操作物品的 PDC
+
+```js
+let itemMeta = itemStack.getItemMeta();
+let namespacedKey = new NamespacedKey("your_instance", "your_key");
+PersistentDataAPI.setString(itemMeta, namespacedKey, "your_value");
+PersistentDataAPI.getString(itemMeta, namespacedKey);
+itemStack.setItemMeta(itemMeta);
+
+```
+
 # 汉化版 Slimefun 方法
 
 RSC 在脚本中自动引入了来自**汉化版Slimefun**中的几个类
