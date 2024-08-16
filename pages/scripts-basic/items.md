@@ -20,7 +20,8 @@ function onUse(event) {
 
 ## onWeaponHit
 
-当玩家拿物品打怪时触发
+当玩家拿物品打怪时触发  
+<mark>需要物品里的placeable为false</mark>
 
 ### 方法体
 
@@ -41,6 +42,7 @@ function onWeaponHit(event, player, item) {
 ## onToolUse
 
 当玩家用物品挖方块时触发
+<mark>需要物品里的placeable为false</mark>
 
 ### 方法体
 
