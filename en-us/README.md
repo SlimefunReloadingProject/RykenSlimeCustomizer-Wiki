@@ -21,11 +21,11 @@ This page will explain the pros and cons of RykenSlimeCustomizer and SlimeCustom
 
 To better show the difference between SlimeCustomizer and RykenSlimeCustomizer, we wrote another article, because RykenSlimeCustomizer has too many advantages!
 
-[Differences between SlimeCustomizer and RykenSlimeCustomizer](plugin/comparison.md)
+[Differences between SlimeCustomizer and RykenSlimeCustomizer](/en-us/plugin/comparison.md)
 
 ### SlimeCustomizer
 
-[SlimeCustomizer](https://github.com/SlimefunGuguProject/SlimeCustomizer) is suitable for beginners. You don’t need to learn Java and other languages. You can make basic accessories by modifying the most basic configuration.
+[SlimeCustomizer](https://github.com/NCBPFluffyBear/SlimeCustomizer) is suitable for beginners. You don’t need to learn Java and other languages. You can make basic accessories by modifying the most basic configuration.
 
 SlimeCustomizer is easy to understand and simpler, but it has great limitations.
 You can only customize in a **fixed framework**

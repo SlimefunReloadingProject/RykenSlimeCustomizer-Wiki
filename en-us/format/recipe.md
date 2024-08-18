@@ -49,4 +49,4 @@ Of course, if the item is not craft able, the recipe can be omitted (i.e., left 
 
 ## Application
 
-See [**Configuration file - items**](file/items.md) for details.
+See [**Configuration file - items**](/en-us/file/items.md) for details.

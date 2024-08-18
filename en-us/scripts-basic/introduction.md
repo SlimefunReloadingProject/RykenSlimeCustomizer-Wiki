@@ -2,7 +2,7 @@
 A script is an executable file
 written in a specific descriptive language according to a certain format *-Taken from Baidu Baike*
 
-The current scripting language used by the plugin is [JavaScript](https://baike.baidu.com/item/JavaScript/321142),
+The current scripting language used by the plugin is [JavaScript](https://en.wikipedia.org/wiki/JavaScript2),
 
 JavaScript Tutorial: <https://www.runoob.com/js/js-tutorial.html>
 

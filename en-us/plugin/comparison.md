@@ -1,38 +1,37 @@
-# 对比与总览
+# Comparison and Overview
 
-本页将对RykenSlimeCustomizer（后文简称 **rsc**）与SlimeCustomizer（后文简称 **sc**）的功能进行一个系统性的梳理，简单明了的列出 rsc 的优势，你也可以在此页找到你想要的功能
+This page will systematically sort out the functions of RykenSlimeCustomizer (hereinafter referred to as **rsc**) and SlimeCustomizer (hereinafter referred to as **sc**), and simply and clearly list the advantages of rsc. You can also find the functions you want on this page
 
-## 加载差异
+## Loading Differences
 
-| 内容 | sc | rsc |
+| Content | sc | rsc |
 | --- | --- | --- |
-| 自定义加载选项 | ✕ | ✓ |
-| 自动更新附属 | ✕ | ✓ |
-| 多配置共存 | ✕ | ✓ |
-| 跳过错误配置 | ✕ | ✓ |
-| 预加载附属所有物品 | ✕ | ✓ |
-| 引用 sc 物品 | - | ✓ |
+| Custom loading options | ✕ | ✓ |
+| Automatic update of attachments | ✕ | ✓ |
+| Coexistence of multiple configurations | ✕ | ✓ |
+| Skip incorrect configuration | ✕ | ✓ |
+| Preload all attachment items | ✕ | ✓ |
+| Reference sc items | - | ✓ |
 
-自定义加载选项：详见[内容加载/注册选项](file/context-options.md)
-<br>自动更新附属：详见[让你的附属可更新](other/updateable-addon.md)
-<br>预加载附属所有物品：在同一个附属中，你可以在 `items.yml` 内引用后面 `machines.yml` 的内容，而无需再为此大费周章使用 `saveditem`
-## 配方编写类
+Custom loading options: see [Content loading/registration options](/en-us/file/context-options.md)
+<br>Automatically update addons: see [WWrite Addon Information](/en-us/addon/learn-to-write-addons-information.md)
+<br>Preload all addon items: In the same addon, you can reference the contents of the following `machines.yml` in `items.yml`, without having to use `saveditem`
+## Recipe writing class
 
-关于配方的编写，rsc可以**省略不写**无物品的配方格，而sc必须按部就班的按统一格式编写
+Regarding recipe writing, rsc can **omit** recipe grids without items, while sc must write them step by step in a unified format
 
 ```yaml
-# 对比
+# Compare
 # sc
 type: NONE
 
 # rsc
-# 是的，什么也不用写
+# Yes, nothing needs to be written
 ```
-
-对于引用原版物品方面，sc必须在type栏填写VANILLA，而rsc只需在material_type一栏填写mc或直接忽略不写material_type
+For referencing vanilla items, sc must fill in VANILLA in the type column, while rsc only needs to fill in mc in the material_type column or directly ignore material_type
 
 ```yaml
-# 对比
+# Compare
 # sc
 type: VANILLA
 id: BARRIER
@@ -42,93 +41,88 @@ amount: 1
 material: BARRIER
 ```
 
+## Recipe Tips
 
-## 配方提示类
-
-| 内容 | sc | rsc |
+| Content | sc | rsc |
 | --- | ----------- | ----------- |
-| 粘液原版配方提示 | ✓ | ✓ |
-| 自定义配方提示 | ✕ | ✓ |
+| Original Slime Recipe Tips | ✓ | ✓ |
+| Custom Recipe Tips | ✕ | ✓ |
 
-rsc提供了可自定义化的配方提示，如果要在sc中实现此功能，则需要额外的编写一个对配方进行描述的物品，再插入到合成配方，流程繁琐
+rsc provides customizable recipe tips. If you want to implement this function in sc, you need to write an additional item to describe the recipe and then insert it into the synthesis recipe. The process is cumbersome.
 
-## 物品类
+## Item Class
 
-sc在物品自定义方面仅提供了一个配置，自由度较小局限性较大
+sc only provides one configuration for item customization, which has less freedom and greater limitations.
 
-而rsc提供了一个通用物品模板，所有配置只要涉及到物品，都可以套用一个统一的模板
+rsc provides a general item template. All configurations can apply a unified template as long as they involve items.
 
-且这种模板提供更加多样的自定义选项
+And this template provides more diverse customization options.
 
-下表将列出除基础自定义功能外，rsc与sc在多种自定义需求下的差异
+The following table lists the differences between rsc and sc under various customization requirements in addition to basic customization functions.
 
-| 内容 | sc | rsc |
+| Content | sc | rsc |
 | --- | ----------- | ----------- |
-| saveitem(保存物品) | ✓ | ✓ |
-| placeable（可放置物品） | ✓ | ✓ |
-| script(脚本) | ✕ | ✓ |
-| 引用头颅方块 | 仅hash | hash、url、Base64 |
-| 发光附魔特效 | ✕ | ✓ |
-| 辐射/充电物品 | ✕ | ✓ |
-| 材质模型ID | ✕ | ✓ |
-| 隐藏物品 | ✕ | ✓ |
-| 挖掘方块掉落 | ✕ | ✓ |
+| saveitem (save item) | ✓ | ✓ |
+| placeable (placeable item) | ✓ | ✓ |
+| script (script) | ✕ | ✓ |
+| reference skull block | hash only | hash, url, Base64 |
+| glow enchantment effect | ✕ | ✓ |
+| radiation/charged item | ✕ | ✓ |
+| material model ID | ✕ | ✓ |
+| hidden item | ✕ | ✓ |
+| mining block drop | ✕ | ✓ |
 
-sc只能通过保存物品功能实现辐射，食物等功能，而rsc只需在通用物品格式中加一项辐射即可自定义辐射，通过通用脚本格式自定义食物
+sc can only realize radiation, food and other functions through the save item function, while rsc only needs to add one radiation item in the general item format to customize radiation, and customize food through the general script format
 
-rsc同样也利好于材质制作者，可以为自定义物品套上特殊的材质
+rsc is also beneficial to material makers, who can apply special materials to custom items
 
-## 机器类
+## Machine class
 
-| 内容 | sc | rsc |
+| Content | sc | rsc |
 | --- | ----------- | ----------- |
-| 自定义机器菜单 | ✕ | ✓ |
-| 套用其他机器的菜单 | ✕ | ✓ |
-| 自定义输入格与输出格 | ✕ | ✓ |
-| 粘液原版机器进阶版 | ✕ | ✓ |
-| 无电机器 | ✕ | ✓ |
-| 随机输出物品 | ✕ | ✓ |
-| 自定义能源类型 | ✕ | ✓ |
-| 机器脚本 | ✕ | ✓ |
+| Custom machine menus | ✕ | ✓ |
+| Apply another machine's menu | ✕ | ✓ |
+| Custom input and output slots | ✕ | ✓ |
+| Slime vanilla machine upgrade | ✕ | ✓ |
+| Non-powered machines | ✕ | ✓ |
+| Random output items | ✕ | ✓ |
+| Custom energy types | ✕ | ✓ |
+| Machine scripts | ✕ | ✓ |
 
-sc中关于机器的配置仅包含`machine.yml`，且机器菜单单一，输入输出数量单一，功能单一，但是编写较为简单
+The configuration of machines in sc only includes `machine.yml`, and the machine menu is single, the number of inputs and outputs is single, and the function is single, but the writing is relatively simple
 
-rsc中关于机器的配置包含`machine.yml`（无输入输出机器，需脚本套模）、`recipe_machines.yml`（配方机器）、`simple_machines.yml`（简单机器），可自定义机器菜单，功能多样
+The configuration of machines in rsc includes `machine.yml` (machine without input and output, script template required), `recipe_machines.yml` (recipe machine), `simple_machines.yml` (simple machine), which can customize the machine menu and has various functions
 
-rsc可在`machine.yml`中通过编辑能源类型（`energy.type`），自定义能源节点等能源类型
+rsc can customize energy types such as energy nodes by editing energy types (`energy.type`) in `machine.yml`
 
-rsc中的`simple_machines.yml`为编写者提供简易的粘液原版机器进阶版的编写，而在sc中添加同类机器则格外繁琐，需一个个填写输入与输出物品
+`simple_machines.yml` in rsc provides the author with a simple advanced version of the slime original machine, while adding similar machines in sc is particularly cumbersome, and the input and output items need to be filled in one by one
 
-## 多方块机器类
+## Multi-block machine class
 
-rsc可以自定义**多方块机器**，详见[多方块机器](file/multi-block-machine.md)，而sc不能
+rsc can customize **multi-block machines**, see [multi-block machines](/en-us/file/multi-block-machine.md) for details, but sc cannot
 
-## 太阳能发电机类
+## Solar generator class
 
-rsc可以自定义太阳能发电机**需达到的光照强度限制**，而sc不能
+rsc can customize the **light intensity limit** that the solar generator needs to reach, but sc cannot
 
-## 材料生成器类
+## Material generator class
 
-rsc可自定义显示信息的**槽位**，而sc不能
+rsc can customize the **slot** that displays information, but sc cannot
 
-## 研究类
+## Research class
 
-rsc可以自定义解锁研究所需要的**游戏币**，而sc不能
+rsc can customize the **game coins** required to unlock the research, but sc cannot
 
-## 脚本类
+## Script class
 
-脚本是rsc特有的功能，可以通过脚本自定义各种道具、食物、机器等
+Scripts are a unique feature of rsc, and various props, food, machines, etc. can be customized through scripts
 
-*你可以理解成在rsc中写插件*
+*You can understand it as writing plug-ins in rsc*
 
-详见[脚本-介绍](scripts-basic/introduction.md)
+See [Script-Introduction](/en-us/scripts-basic/introduction.md) for details
 
-## 继承物品类
+## Inherited item class
 
-继承物品是rsc特有的功能，可以通过继承物品，复制其他附属的物品或机器的机制
+Inherited items are a unique feature of rsc, and the mechanism of other attached items or machines can be copied through inherited items
 
-详见[继承物品](file/supers.md)
-
-## 其它功能
-
-剩下的geo、电容和生物掉落物与sc大致相同
+See [Inherited items](/en-us/file/supers.md) for details

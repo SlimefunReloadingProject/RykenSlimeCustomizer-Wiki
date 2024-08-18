@@ -22,7 +22,7 @@
 * Configuration Files
 
     * [Content register/load options](/en-us/file/context-options.md)
-    * [Item Groups(/en-us/Category)](/en-us/file/groups.md)
+    * [Item Groups(Category)](/en-us/file/groups.md)
     * [Recipe Type](/en-us/file/recipe_type.md)
     * [GEO resource](/en-us/file/geo.md)
     * [Mob Drop](/en-us/file/mob_drops.md)

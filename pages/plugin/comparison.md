@@ -14,7 +14,7 @@
 | 引用 sc 物品 | - | ✓ |
 
 自定义加载选项：详见[内容加载/注册选项](file/context-options.md)
-<br>自动更新附属：详见[让你的附属可更新](other/updateable-addon.md)
+<br>自动更新附属：详见[编写附属信息](../addon/learn-to-write-addons-information.md)
 <br>预加载附属所有物品：在同一个附属中，你可以在 `items.yml` 内引用后面 `machines.yml` 的内容，而无需再为此大费周章使用 `saveditem`
 ## 配方编写类
 
