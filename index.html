@@ -39,14 +39,33 @@
         coverpage: true,
         onlyCover: true,
         search: {
-          placeholder: '搜索',
-          noData: '没有结果',
+          placeholder: {
+            '/': '搜索',
+            '/en-us/': 'Search',
+          },
+          noData: {
+            '/en-us/': "No result",
+            '/': '没有结果'
+          },
           hideOtherSidebarContent: true,
         },
+        nameLink: {
+          '/en-us/': '#/en-us/',
+          '/': '#/',
+        },
         copyCode: {
-          buttonText: '复制',
-          errorText: '复制失败',
-          successText: '复制成功'
+          buttonText: {
+            '/': '复制',
+            '/en-us/': "Copy"
+          },
+          errorText: {
+            '/': '复制失败',
+            '/en-us/': "Copy failed"
+          },
+          successText: {
+            '/': '复制成功',
+            '/en-us/': "Copy success"
+          }
         },
         toc: {
           tocMaxLevel: 4,
@@ -58,16 +77,16 @@
               return (
                 html +
                 '\n\n----\n\n' +
-                'Copyright © 2024 [SlimefunReloadingProject](https://github.com/SlimefunReloadingProject) 版权所有 \n\n Powered by [HiWorldMC](https://github.com/HiWorldMC)'
+                'Copyright © 2024 [SlimefunReloadingProject](https://github.com/SlimefunReloadingProject) All rights reserved \n\n Powered by [HiWorldMC](https://github.com/HiWorldMC)'
               );
             });
           },
         ],
         aliases: {
-          "/en-us/(.*)/": "https://raw.githubusercontent.com/SlimefunReloadingProject/RykenSlimeCustomizer-Wiki-EN/master/pages/$1",
+          "/en-us/(.*)": "https://raw.githubusercontent.com/SlimefunReloadingProject/RykenSlimeCustomizer-Wiki/master/en-us/$1",
           "/(.*)":"https://raw.githubusercontent.com/SlimefunReloadingProject/RykenSlimeCustomizer-Wiki/master/pages/$1",
         },
-        fallbackLanguages: ["ru", "zh-cn"],
+        fallbackLanguages: ["en-us", "zh-cn"],
         namespaces: [
           {
              id: "lang",
