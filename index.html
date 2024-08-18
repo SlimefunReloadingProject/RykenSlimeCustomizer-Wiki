@@ -58,6 +58,19 @@
             });
           },
         ],
+        aliases: {
+          "/en-us/(.*)/": "https://raw.githubusercontent.com/SlimefunReloadingProject/RykenSlimeCustomizer-Wiki-EN/master/pages/$1",
+          "/(.*)":"https://raw.githubusercontent.com/SlimefunReloadingProject/RykenSlimeCustomizer-Wiki/master/pages/$1",
+        },
+        fallbackLanguages: ["ru", "zh-cn"],
+        namespaces: [
+          {
+             id: "lang",
+             values: ["en-us", "zh-cn"],
+             optional: true,
+             selector: "#lang-selector"
+          },
+        ]
       }
     </script>
   <!-- Docsify v4 -->
