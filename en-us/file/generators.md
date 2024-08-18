@@ -4,7 +4,7 @@
 
 > Essential power generation equipment.
 
-**示例：**
+**Example:**
 
 ```yaml
 RSC_EXAMPLE_GENERATOR:

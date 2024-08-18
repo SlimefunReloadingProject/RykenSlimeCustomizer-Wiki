@@ -95,6 +95,6 @@ actions:
 | seasonal | Seasonal item group |
 | nested, parent | Nested item group (parent item group) |
 | sub | Sub-item group (parent item group name must be written in the parent column) |
-| button | Link group (actions must be filled in, the rest is the same as the sub-item group) |
+| button | Button group (actions must be filled in, the rest is the same as the sub-item group) |
 
 3. **When the item group type is a locked item group, you need to fill in the **`NamespacedKey`** of the parent category instead of directly referencing the item group in the attached.**

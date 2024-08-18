@@ -29,9 +29,9 @@ RSC_EXAMPLE_GEO_RESOURCE:
 | Field                        | Description                                                                                                 | Valid Input                                                     |
 |------------------------------|-------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------|
 | \*`RSC_EXAMPLE_GEO_RESOURCE` | The ID of the natural resource. <br>This ID cannot be the same as any other item's ID!                      | **Only uppercase letters, numbers, underscores are supported!** |
-| \*item_group                 | The ID of the [item group (category)](file/groups.md) that the natural resource belongs to.                 |
-| \*item.#                     | [Universal Item Format](format/universal-item-format.md)                                                    | Optionally add modelId, lore, glow, etc.                        |
-| recipe_type                  | See [Recipe Type](format/universal-item-format.md).                                                         |
+| \*item_group                 | The ID of the [item group (category)](/en-us/file/groups.md) that the natural resource belongs to.                 |
+| \*item.#                     | [Universal Item Format](/en-us/format/universal-item-format.md)                                                    | Optionally add modelId, lore, glow, etc.                        |
+| recipe_type                  | See [Recipe Type](/en-us/format/universal-item-format.md).                                                         |
 | \*max-deviation              | Maximum deviation in the amount of the natural resource per block.                                          | Positive integer                                                |
 | obtain_from_geo_miner        | Sets whether the natural resource can be mined from the GEO miner.                                          |
 | \*geo_name                   | Set the name of the natural resource.                                                                       |

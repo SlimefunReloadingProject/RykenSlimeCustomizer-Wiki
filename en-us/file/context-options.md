@@ -8,15 +8,15 @@ You can add these options for items, machines, etc. added to the addon
 
 ```yaml
 OBJECT_FOR_REGISTER_2:
-id_alias: OBJECT_FOR_REGISTER_1
-lateInit: false
-register:
-warn: false
-conditions:
-- "hasplugin DyeBench"
-- "!hasplugin DynaTech"
-- "version >= 1.18.1"
-unfinished: false
+  id_alias: OBJECT_FOR_REGISTER_1
+  lateInit: false
+  register:
+  warn: false
+  conditions:
+    - "hasplugin DyeBench"
+    - "!hasplugin DynaTech"
+    - "version >= 1.18.1"
+  unfinished: false
 ```
 
 | Field | Description |

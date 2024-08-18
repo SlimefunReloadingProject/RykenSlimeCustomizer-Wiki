@@ -4,7 +4,7 @@
 
 <mark style="color:red;">**Note: Fields with * are required**</mark>
 
-<b>Note:</b> This configuration custom machine cannot customize input and output items! (To customize a machine with custom input and output items, see [Recipe Machines](file/recipe_machines.md) for details, or check the recipe in the script)
+<b>Note:</b> This configuration custom machine cannot customize input and output items! (To customize a machine with custom input and output items, see [Recipe Machines](/en-us/file/recipe_machines.md) for details, or check the recipe in the script)
 
 **Example:**
 

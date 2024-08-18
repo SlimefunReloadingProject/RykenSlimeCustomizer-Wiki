@@ -22,10 +22,10 @@ RSC_EXAMPLE_SUPER_ITEM:
 | Field                    | Description                                                                                         | Valid Input                                                            |
 |----------------------------|-----------------------------------------------------------------------------------------------------|------------------------------------------------------------------------|
 | \*`RSC_EXAMPLE_SUPER_ITEM` | The ID of the inherited item. <br>This ID cannot be the same as any other item's ID!                | **Only uppercase letters, numbers, underscores are supported!**        |
-| \*item_group               | The ID of the [item group (category)](file/groups.md) that the item belongs to.                     |
-| \*item.#                   | [Universal Item Format](format/universal-item-format.md)                                            | Optionally add `modelId`, `lore`, `glow`, etc.                         |
-| recipe_type                | See [Recipe Type](file/recipe_type.md).                                                             |
-| recipe                     | Set the recipe for the inherited item. See [**Recipe**](format/recipe.md) for details               |
+| \*item_group               | The ID of the [item group (category)](/en-us/file/groups.md) that the item belongs to.                     |
+| \*item.#                   | [Universal Item Format](/en-us/format/universal-item-format.md)                                            | Optionally add `modelId`, `lore`, `glow`, etc.                         |
+| recipe_type                | See [Recipe Type](/en-us/file/recipe_type.md).                                                             |
+| recipe                     | Set the recipe for the inherited item. See [**Recipe**](/en-us/format/recipe.md) for details               |
 | \*class                    | Set which item to inherit. Here you need to fill in the full class name of the item to be inherited | org.example.project.ExampleClass                                       |
 | \*args                     | Complete other construction parameters of the inherited item                                        |
 | ctor                       | Set which constructor of the inherited item to use. The position starts from 0                      |
@@ -56,7 +56,7 @@ RSC_EXAMPLE_SUPER_CARBON_PRESS:
     material: FURNACE
     name: "&b&lSuper &7Carbon Press"
   class: "io.github.thebusybiscuit.slimefun4.implementation.items.electric.machines.CarbonPress"
-  #新增部分
+  #Added code
   method:
     setCapacity: 50000
     setProcessingSpeed: 20
