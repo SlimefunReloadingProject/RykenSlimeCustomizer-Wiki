@@ -7,13 +7,13 @@ For this reason, we developed a custom slime attachment plug-in (RykenSlimeCusto
 
 If you have learned languages such as Java and JavaScript, you can quickly get started writing more advanced machines.
 
-Welcome to join the Discord server for communication: <https://discord.gg/M2yRf7VV3X>
+<!-- Welcome to join the Discord server for communication: <https://discord.gg/M2yRf7VV3X> -->
 
-Please read the "Pre-use Statement" carefully before using this attachment.
+Please read the "Declaration Before Use " carefully before using this attachment.
 
 ## Introduction
 
-First, you must be very curious about what is Ryken custom slime attachment (RykenSlimeCustomizer), and what is the difference between it and custom attachment (SlimeCustomizer)?
+First, you must be very curious about what is RykenSlimeCustomizer, and what is the difference between it and custom attachment (SlimeCustomizer)?
 
 This page will explain the pros and cons of RykenSlimeCustomizer and SlimeCustomizer, and solve some of the most basic doubts about this plugin
 
