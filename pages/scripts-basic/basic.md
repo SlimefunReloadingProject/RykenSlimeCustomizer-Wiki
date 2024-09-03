@@ -256,7 +256,7 @@ randintA(10);
 |---|---|---|
 |number|int|整数|
 
-返回 0~9 的随机数（0,1,2,3,4,5,6,7,8,9）
+返回 0到9 的随机数（0,1,2,3,4,5,6,7,8,9）
 
 ## randintB
 
@@ -274,8 +274,8 @@ randintB(10, true);
 |number|int|整数|
 |includeSelf|boolean|布尔值|
 
-如果`includeSelf: true`，则返回 0~10 的随机数（0,1,2,3,4,5,6,7,8,9,10）
-如果`includeSelf: false`，则返回 0~9 的随机数（0,1,2,3,4,5,6,7,8,9）
+如果`includeSelf: true`，则返回 0到10 的随机数（0,1,2,3,4,5,6,7,8,9,10）
+如果`includeSelf: false`，则返回 0到9 的随机数（0,1,2,3,4,5,6,7,8,9）
 
 ## randintC
 
@@ -293,7 +293,7 @@ randintC(2, 10);
 |start|int|整数|
 |stop|int|整数|
 
-返回 2~9 的随机数（2,3,4,5,6,7,8,9）
+返回 2到9 的随机数（2,3,4,5,6,7,8,9）
 
 ## randintD
 
@@ -312,8 +312,8 @@ randintD(2, 10, true);
 |stop|int|整数|
 |includeSelf|boolean|布尔值|
 
-如果`includeSelf: true`, 则返回 2~10 的随机数（2,3,4,5,6,7,8,9,10）
-如果`includeSelf: false`, 则返回 2~9 的随机数（2,3,4,5,6,7,8,9）
+如果`includeSelf: true`, 则返回 2到10 的随机数（2,3,4,5,6,7,8,9,10）
+如果`includeSelf: false`, 则返回 2到9 的随机数（2,3,4,5,6,7,8,9）
 
 # PDC 操作
 
