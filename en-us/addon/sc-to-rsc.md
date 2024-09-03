@@ -8,4 +8,4 @@ which can solve the two problems you are worried about mentioned above.
 
 SC-to-RSC also has advanced conversion options, including custom menus, additional parameters and other functions, which can help you generate personalized RSC.
 
-He is also the author of [RSCchecker](https://github.com/SlimefunReloadingProject/RSCchecker) and [SCcheck](https://github.com/SlimefunReloadingProject/SCchecker) (not recommended, almost stopped maintenance, and more errors) can also help determine whether your configuration is wrong.
+He is also the author of [RSCchecker](https://github.com/SlimefunReloadingProject/RSCchecker) and [SCcheck](https://github.com/SlimefunReloadingProject/SCchecker) (only for the CN version) can also help determine whether your configuration is wrong.

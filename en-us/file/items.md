@@ -99,12 +99,12 @@ RSC_HIDDEN_ITEM:
 | Field                | Description                                                                                                                                                 | Valid Input                                                         |
 |----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------|
 | \*`RSC_EXAMPLE_ITEM` | The ID of the item. <br>This ID cannot be the same as any other item's ID!                                                                                  | **Only uppercase letters, numbers, and underscores are supported!** |
-| \*item_group         | The ID of the [item group (category)](../file/groups.md) that the item belongs to.                                                                          |
-| \*item.#             | [Universal Item Format](../format/universal-item-format.md)                                                                                                 | Optionally add `modelId`, `lore`, `glow`, etc.                      |
+| \*item_group         | The ID of the [item group (category)](../en-us/file/groups.md) that the item belongs to.                                                                          |
+| \*item.#             | [Universal Item Format](../en-us/format/universal-item-format.md)                                                                                                 | Optionally add `modelId`, `lore`, `glow`, etc.                      |
 | placeable            | Whether the item is placeable. **Don't make tools and other items that are not placeable! **                                                                |
-| recipe_type          | See [recipe type](../file/recipe_type.md).                                                                                                                  |
+| recipe_type          | See [recipe type](../en-us/file/recipe_type.md).                                                                                                                  |
 | script               | The script referenced by the item, set the script file corresponding to the item, and fill the double quotes with the file name corresponding to the script |
-| recipe               | Set the recipe of the item. See [**Recipe**](../format/recipe.md) for details                                                                               |
+| recipe               | Set the recipe of the item. See [**Recipe**](../en-us/format/recipe.md) for details                                                                               |
 | energy_capacity      | Charge capacity of rechargeable items, see below                                                                                                            |
 | radiation            | Radiation level, see below                                                                                                                                  |
 | rainbow              | Rainbow blocks, see below                                                                                                                                   |
@@ -226,11 +226,11 @@ drop_amount: 1 # Optional, default 1, supports drop_amount: 3-5 range
 
 Regarding the tags after item.#, this page only uses name, material, and amount as examples.
 You can add more tags after amount.
-For details, see [Universal Item Format](../format/universal-item-format.md)
+For details, see [Universal Item Format](../en-us/format/universal-item-format.md)
 
 Note that name and material are required.
 If material_type is not filled in, the default detected material is the original item
 
 ### About the example script example_item_2 referenced on this page
 
-See [Script Basics - Items](../scripts-basic/items.md) for details
+See [Script Basics - Items](../en-us/scripts-basic/items.md) for details

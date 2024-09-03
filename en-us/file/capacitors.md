@@ -24,9 +24,9 @@ RSC_EXAMPLE_CAPACITOR:
 | Field                     | Description                                                                         | Valid Inputs                                                        |
 |---------------------------|-------------------------------------------------------------------------------------|---------------------------------------------------------------------|
 | \*`RSC_EXAMPLE_CAPACITOR` | ID of the capacitor. <br>This ID cannot be the same as any other item's ID!         | **Only uppercase letters, numbers, and underscores are supported!** |
-| \*item_group              | The ID of the [item group (category)](../file/groups.md) that the item belongs to.  |
-| \*item.#                  | [Universal Item Format](../format/universal-item-format.md)                         | Optionally add modelId, lore, glow, etc.                            |
+| \*item_group              | The ID of the [item group (category)](../en-us/file/groups.md) that the item belongs to.  |
+| \*item.#                  | [Universal Item Format](../en-us/format/universal-item-format.md)                         | Optionally add modelId, lore, glow, etc.                            |
 | recipe_type               | See [Recipe Type](recipe_type.md).                                                  |
 | \*capacity                | The amount of energy that a capacitor can store, up to 2147483647.                  |
-| recipe                    | Set the recipe for the capacitor. See [**Recipe**](../format/recipe.md) for details |
+| recipe                    | Set the recipe for the capacitor. See [**Recipe**](../en-us/format/recipe.md) for details |
 

@@ -32,14 +32,14 @@ RSC_EXAMPLE_MATERIAL_GENERATOR:
 | Field                             | Description                                                                                                              | Valid Input                                                         |
 |-----------------------------------|--------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------|
 | *`RSC_EXAMPLE_MATERIAL_GENERATOR` | The ID of the material generator.<br>This ID must be unique and not match any other item's ID!                           |
-| *item_group                       | The ID of the [item group (category)](file/groups.md) where the item belongs.                                            |
-| *item.#                           | [Universal Item Format](format/universal-item-format.md)                                                                 | Optional additions such as modelId, lore, glow, etc. are available. |
+| *item_group                       | The ID of the [item group (category)](/en-us/file/groups.md) where the item belongs.                                            |
+| *item.#                           | [Universal Item Format](/en-us/format/universal-item-format.md)                                                                 | Optional additions such as modelId, lore, glow, etc. are available. |
 | *capacity                         | The amount of energy the machine can store, with a maximum of 2147483647. Set to 0 for a machine that cannot be charged. |
-| recipe_type                       | See [Recipe Type](file/recipe_type.md).                                                                                  |
-| recipe                            | Sets the recipe for the material generator. See [**Recipe**](format/recipe.md) for details.                              |
+| recipe_type                       | See [Recipe Type](/en-us/file/recipe_type.md).                                                                                  |
+| recipe                            | Sets the recipe for the material generator. See [**Recipe**](/en-us/format/recipe.md) for details.                              |
 | *output                           | The corresponding slot for item output. (Please do not set items in these slots in the menu!)                            |
-| outputItem                        | See [Universal Item Format](format/universal-item-format.md), cannot coexist with `outputs`                              |
-| outputs.#                         | See [Universal Item Format](format/universal-item-format.md), cannot coexist with `outputItem`                           |
+| outputItem                        | See [Universal Item Format](/en-us/format/universal-item-format.md), cannot coexist with `outputs`                              |
+| outputs.#                         | See [Universal Item Format](/en-us/format/universal-item-format.md), cannot coexist with `outputItem`                           |
 | *tickRate                         | The time required to generate one item, with a maximum of 2147483647.                                                    |
 | *status                           | Sets the slot for display information.                                                                                   |
 | *per                              | The amount of energy consumed per item generated.                                                                        |

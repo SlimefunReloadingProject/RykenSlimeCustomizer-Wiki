@@ -55,12 +55,12 @@ rsc_example_armor:
 | Fields                             | Description                                                                                                             | Valid inputs |
 |------------------------------------|-------------------------------------------------------------------------------------------------------------------------|--------------|
 | \*`rsc_example_armor`              | NamespacedKey of the armor set.                                                                                         |              |
-| \*item_group                       | ID of the [item group (category)](../file/groups.md) that the armor belongs to.                                         |
+| \*item_group                       | ID of the [item group (category)](../en-us/file/groups.md) that the armor belongs to.                                         |
 | fullSet                            | Whether the armor is required to form a set for the protection type and potion effect to take effect                    |
 | protection_types                   | Protection types, see below                                                                                             |
-| \*helmet/chestplate/leggings/boots | Helmets/chestplates/leggings/boots, follow the [universal item format](../format/universal-item-format.md)              |
+| \*helmet/chestplate/leggings/boots | Helmets/chestplates/leggings/boots, follow the [universal item format](../en-us/format/universal-item-format.md)              |
 | potion_effects                     | The potion effect given when wearing the armor is in the format of potion effect ID + potion level **(number+1) level** |
-| recipe, etc.                       | Follow the [universal item format](../format/universal-item-format.md)                                                  |
+| recipe, etc.                       | Follow the [universal item format](../en-us/format/universal-item-format.md)                                                  |
 
 ## Protection Types
 

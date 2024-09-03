@@ -22,7 +22,7 @@ repo: "SlimefunReloadingProject/rsc-example"
 | \*name | The name of the addon.                                                                              |
 | depends | The id of other custom dependencies edited with RykenSlimeCustomizer                                |
 | pluginDepends | The name of the plugin to depend on, that is, the name defined in plugin.yml.                       |
-| scriptListener | The name of the event-listening script, a `.js` file named accordingly should be placed in the "scripts" folder, See [Script Advanced-Listener](scripts-advanced/listener.md) |
+| scriptListener | The name of the event-listening script, a `.js` file named accordingly should be placed in the "scripts" folder, See [Script Advanced-Listener](/en-us/scripts-advanced/listener.md) |
 | \*version | The version of the addon.                                                                           |
 | description | The description of the addon.                                                                       |
 | \*authors | Authors of the addon.                                                                               |

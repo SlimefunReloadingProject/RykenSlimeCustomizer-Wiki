@@ -44,11 +44,11 @@ RSC_EXAMPLE_MACHINE_ENERGY:
 | Field                   | Description                                                                                                                                                  | Valid Input                                                         |
 |-------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------|
 | \*`RSC_EXAMPLE_MACHINE` | The ID of the machine. <br>This ID cannot be the same as any other item's ID!                                                                                | **Only uppercase letters, numbers, and underscores are supported!** |
-| \*item_group            | The ID of the [item group (category)](groups.md) that the item belongs to.                                                                                   |
-| \*item.#                | [Universal Item Format](../format/universal-item-format.md)                                                                                                  | Optionally add modelId, lore, glow, etc.                            |
-| recipe_type             | See [Recipe Type](recipe_type.md).                                                                                                                           |
+| \*item_group            | The ID of the [item group (category)](/en-us/groups.md) that the item belongs to.                                                                                   |
+| \*item.#                | [Universal Item Format](../en-us/format/universal-item-format.md)                                                                                                  | Optionally add modelId, lore, glow, etc.                            |
+| recipe_type             | See [Recipe Type](/en-us/recipe_type.md).                                                                                                                           |
 | script                  | The script referenced by the item, set the script file corresponding to the item, and fill the double quotes with the file name corresponding to the script. |
-| recipe                  | Set the recipe for the machine. See [**Recipe**](../format/recipe.md) for details                                                                            |
+| recipe                  | Set the recipe for the machine. See [**Recipe**](../en-us/format/recipe.md) for details                                                                            |
 | \*input                 | The corresponding slots for item input. (Please do not set items for these slots in the menu!)                                                               |
 | \*output                | The corresponding slots for item output. (Please do not set items for these slots in the menu!)                                                              |
 | energy                  | Set the energy of the machine. If this is not set or loading/reading fails, it will be automatically set to a non-powered machine.                           |
@@ -80,4 +80,4 @@ If **energy is not set** or **load/read fails**, it will automatically be set to
 
 ## Others
 
-If you want to customize the machine menu in machine.yml, see [Machine Menu](menu.md) for details.
+If you want to customize the machine menu in machine.yml, see [Machine Menu](/en-us/menu.md) for details.
