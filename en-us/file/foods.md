@@ -29,11 +29,11 @@ RSC_EXAMPLE_FOOD:
 | Field | Description | Valid Input |
 | --- | ----------- | ----------------- |
 | \*`RSC_EXAMPLE_ITEM` | The ID of the item. <br>This ID cannot be the same as any other item's ID! | **Only uppercase letters, numbers, and underscores are supported!** |
-| \*item_group | The ID of the [item group (category)](file/groups.md) that the item belongs to. |
-| \*item.# | [Universal Item Format](format/universal-item-format.md)| Optionally add `modelId`, `lore`, `glow`, etc. |
-| recipe_type | See [Recipe Type](file/recipe_type.md). |
+| \*item_group | The ID of the [item group (category)](/en-us/file/groups.md) that the item belongs to. |
+| \*item.# | [Universal Item Format](/en-us/format/universal-item-format.md)| Optionally add `modelId`, `lore`, `glow`, etc. |
+| recipe_type | See [Recipe Type](/en-us/file/recipe_type.md). |
 | \*script | The script referenced by the item, set the script file corresponding to the item, and fill the file name corresponding to the script in double quotes |
-| recipe | Set the recipe of the item. See [**Recipe**](format/recipe.md) for details |
+| recipe | Set the recipe of the item. See [**Recipe**](/en-us/format/recipe.md) for details |
 
 ## Advanced Custom Food
 
@@ -47,4 +47,4 @@ RSC_EXAMPLE_FOOD:
 | always_eatable | Set whether the item is always edible | true/false, default false, true allows you to continue eating after your satiety is full |
 
 The characteristics of food are implemented by referencing scripts in foods.yml,
-see [Scripts-Foods](../scripts-basic/foods.md) for details
+see [Scripts-Foods](../en-us/scripts-basic/foods.md) for details

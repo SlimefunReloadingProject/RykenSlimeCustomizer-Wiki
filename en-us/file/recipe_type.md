@@ -21,7 +21,7 @@ RSC_EXAMPLE_MULTIBLOCK_MACHINE_RECIPE_TYPE:
 | *material                  | Vanilla item                                                                                                                        | CRAFTING_TABLE                                                      |
 | *name                      | The name of the recipe type                                                                                                         | "&bExample Multi-block Machine"                                     |
 
-On this basis, you can add tags such as `modelId`, `lore`, `glow`, etc., see [Universal Item Format](../format/universal-item-format.md).
+On this basis, you can add tags such as `modelId`, `lore`, `glow`, etc., see [Universal Item Format](../en-us/format/universal-item-format.md).
 
 The recipe type ID here can be directly used for reference in `recipe_type`.
 
@@ -108,5 +108,5 @@ NULL # None
 
 # Recipe type where the fifth slot must be a spawn egg or empty
 ```yaml
-- MOB_DROP Mob Drop
+- MOB_DROP #Mob Drop
 ```

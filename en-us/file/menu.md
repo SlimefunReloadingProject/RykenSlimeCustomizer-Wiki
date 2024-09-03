@@ -110,4 +110,4 @@ to fill in the numbers of the corresponding slots.
 2. If you want to add a custom menu to a machine, the **machine's `id`** and the **menu's `id`** must be consistent!
 
 ### Regarding the example script example_menu referenced on this page
-See [Script Basics - Machine Menus](scripts-basic/machine_menus.md)
+See [Script Basics - Machine Menus](/en-us/scripts-basic/machine_menus.md)

@@ -44,12 +44,12 @@ RSC_EXAMPLE_GENERATOR:
 | Field               | Description                                                                                             | Valid Input                                                         |
 |-----------------------|---------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------|
 | \*`EXAMPLE_GENERATOR` | The ID of the generator. <br>This ID cannot be the same as any other item's ID!                         | **Only uppercase letters, numbers, and underscores are supported!** |
-| \*item_group          | The ID of the [item group (category)](groups.md) that the item belongs to.                              |
-| \*item.#              | [Universal Item Format](../format/universal-item-format.md)                                             | Optionally add modelId, lore, glow, etc.                            |
+| \*item_group          | The ID of the [item group (category)](/en-us/groups.md) that the item belongs to.                              |
+| \*item.#              | [Universal Item Format](../en-us/format/universal-item-format.md)                                             | Optionally add modelId, lore, glow, etc.                            |
 | \*capacity            | The amount of energy the generator can store, up to 2147483647, set to 0 for a non-rechargeable machine |
 | \*production          | The amount of electricity the generator can produce, in slime ticks, up to 2147483647                   |
-| recipe_type           | See [recipe type](recipe_type.md).                                                                      |
-| recipe                | Set the recipe for the generator. See [**Recipe**](../format/recipe.md) for details                     |
+| recipe_type           | See [recipe type](/en-us/recipe_type.md).                                                                      |
+| recipe                | Set the recipe for the generator. See [**Recipe**](../en-us/format/recipe.md) for details                     |
 | \*input               | The corresponding slots for item input. (Please do not set items for these slots in the menu!)          |
 | \*output              | The corresponding slots for item output. (Please do not set items for these slots in the menu!)         |
 | \*fuels               | Set the fuel for the generator.                                                                         |
