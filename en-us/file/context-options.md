@@ -2,21 +2,28 @@
 
 <mark style="color:red;">**Note: Fields with * are required**</mark>
 
-You can add these options for items, machines, etc. added to the addon
+The method on this page is applicable to all configurations. You can add the following options to any item/machine/etc.
 
 **Example (do not copy):**
 
 ```yaml
-OBJECT_FOR_REGISTER_2:
-  id_alias: OBJECT_FOR_REGISTER_1
+OBJECT_FOR_REGISTER_1:
   lateInit: false
   register:
-  warn: false
-  conditions:
-    - "hasplugin DyeBench"
-    - "!hasplugin DynaTech"
-    - "version >= 1.18.1"
-  unfinished: false
+    warn: false
+    conditions:
+       - "!hasplugin DynaTech" # This item conflicts/incompatible with DynaTech.
+       - "version < 1.18.1" # This item can be loaded before version 1.18.1.
+    unfinished: false
+OBJECT_FOR_REGISTER_2:  # The ID here must be different from that above.
+  id_alias: OBJECT_FOR_REGISTER_1 # The ID here must be the same as above.
+  lateInit: false
+  register:
+    warn: false
+    conditions:
+       - "hasplugin DynaTech" # This item needs DynaTech to load.
+       - "version >= 1.18.1" # This item can't be loaded before version 1.18.1.
+    unfinished: false
 ```
 
 | Field | Description |

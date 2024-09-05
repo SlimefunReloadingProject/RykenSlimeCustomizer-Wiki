@@ -2,20 +2,27 @@
 
 <mark style="color:red;">**注意：**</mark>带\*为必填
 
-你可以为给附属添加的物品、机器等添加这些选项
+本页方法适用于所有配置，你可以为任意物品添加下述条目。
 
 **示例(不要照抄)：**
 
 ```yaml
-OBJECT_FOR_REGISTER_2:
-  id_alias: OBJECT_FOR_REGISTER_1
+OBJECT_FOR_REGISTER_1:
   lateInit: false
   register:
     warn: false
     conditions:
-       - "hasplugin DyeBench"
-       - "!hasplugin DynaTech"
-       - "version >= 1.18.1"
+       - "!hasplugin DynaTech" # 意为：与DynaTech冲突/不兼容
+       - "version < 1.18.1" # 意为：需要MC版本低于1.18.1
+    unfinished: false
+OBJECT_FOR_REGISTER_2:  # 此处ID必须与上面的不同
+  id_alias: OBJECT_FOR_REGISTER_1 # 此处ID必须与上面的相同
+  lateInit: false
+  register:
+    warn: false
+    conditions:
+       - "hasplugin DynaTech" # 意为：需要DynaTech才能加载
+       - "version >= 1.18.1" # 意为：需要MC版本高于或等于1.18.1
     unfinished: false
 ```
 
