@@ -14,7 +14,7 @@ This page will systematically sort out the functions of RykenSlimeCustomizer (he
 | Reference sc items | - | ✓ |
 
 Custom loading options: see [Content loading/registration options](/en-us/file/context-options.md)
-<br>Automatically update addons: see [WWrite Addon Information](/en-us/addon/learn-to-write-addons-information.md)
+<br>Automatically update addons: see [Write Addon Information](/en-us/addon/learn-to-write-addons-information.md)
 <br>Preload all addon items: In the same addon, you can reference the contents of the following `machines.yml` in `items.yml`, without having to use `saveditem`
 ## Recipe writing class
 
