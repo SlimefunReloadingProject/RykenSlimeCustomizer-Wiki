@@ -131,6 +131,6 @@ See [Script Introduction](/en-us/scripts-basic/introduction.md) for details.
 
 ## Inherited items
 
-Inherited items are a unique feature of RSC. The "inherit" is to extend any `SlimefunItem` class from any addon.
+Inherited items are a unique feature of RSC. The "inherit" is programming term, which is to extend any `SlimefunItem` class from any addon.
 
 See [Inherited items](/en-us/file/supers.md) for details.
