@@ -359,7 +359,7 @@ BlockStorage.hasBlockInfo(location);
 SlimefunUtils.canPlayerUseItem(player,itemStack, isSendMessage);
 ```
 
-Click the link to view more methods
+Click the link above to view more methods
 
 # NBTAPI method
 
