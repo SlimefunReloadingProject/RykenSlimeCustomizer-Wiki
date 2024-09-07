@@ -1,21 +1,21 @@
 # Home :id=home
 
-## Preface
+## Overview
 
-I believe you have heard of SlimeCustomizer. But its limitations are too great. \
-For this reason, we developed RykenSlimeCustomizer, which is more customizable than SlimeCustomizer.
+I believe you may have heard of SlimeCustomizer. But it has too many limitations.  
+For this reason, we developed RykenSlimeCustomizer, which is more customizable than [SlimeCustomizer](https://github.com/NCBPFluffyBear/SlimeCustomizer).
 
-If you have learned languages such as Java and JavaScript, you can quickly get started writing more advanced machines.
+If you have learned Java and JavaScript, you can quickly get started making more advanced machines using scripts.
 
-Welcome to join the Discord server for communication: <https://discord.gg/M2yRf7VV3X>
+Welcome to join the Discord server: <https://discord.gg/M2yRf7VV3X>
 
-Please read the "Declaration Before Use" carefully before using this addon.
+You MUST read and agree to [**Terms of Use**](declaration) carefully before using this addon.
 
 ## Introduction
 
 First, you must be very curious about what is RykenSlimeCustomizer, and what is the difference between it and SlimeCustomizer?
 
-This page will explain the pros and cons of RykenSlimeCustomizer and SlimeCustomizer, and solve some of the most basic doubts about this plugin
+This page will explain the pros and cons of RykenSlimeCustomizer and SlimeCustomizer, and solve some of the most basic doubts about this plugin.
 
 ## SlimeCustomizer and RykenSlimeCustomizer
 
@@ -25,37 +25,36 @@ To better show the difference between SlimeCustomizer and RykenSlimeCustomizer, 
 
 ### SlimeCustomizer
 
-[SlimeCustomizer](https://github.com/NCBPFluffyBear/SlimeCustomizer) is suitable for beginners. You don’t need to learn Java and other languages. You can make basic accessories by modifying the most basic configuration.
+[SlimeCustomizer](https://github.com/NCBPFluffyBear/SlimeCustomizer) is suitable for beginners. You don’t need to learn Java and other languages. You can make simple machines just by yaml configurations.
 
-SlimeCustomizer is easy to understand and simpler, but it has great limitations.
-You can only customize in a **fixed framework**
+SlimeCustomizer is easy to understand, but it has many limitations.
+You can only customize within the **given framework** of items.
 
-For example, for machines, you can only arrange two inputs and two outputs,
-and all machines have a unified format and menu
+For example, you can only have 2 input slots and 2 output slots in machines,
+and all machines have the same layout.
 
-RykenSlimefunCustomizer accessories support more feature-rich machine customization and have very few limitations
+RykenSlimefunCustomizer machines support more feature-rich machine customization and have very few limitations.
 
-The following page will explain RykenSlimefunCustomizer.
+The following section will explain RykenSlimefunCustomizer.
 
 ### RykenSlimeCustomizer
 
-RykenSlimeCustomizer combines configuration with scripts (scripts are optional), greatly reducing the limitations of customization
+RykenSlimeCustomizer combines configuration with optional scripts, allowing you to implement your ideas more flexibly.
 
-You can customize any props you want through the script function attached to RykenSlimeCustomizer.
+You can customize any items you want through the scripts in RykenSlimeCustomizer.
 
-Script functions require the author to have a certain Java foundation,
-but don't worry about it for authors without Java foundation
+Users are expected to have a certain foundation in Java and JavaScript to use scripts, but don't worry if you have 0 knowledge of Java and JavaScript.
 
-This wiki will list multiple script templates.
-You can make slight modifications to the templates given in the wiki to implement custom props, advanced machines, etc.
+This wiki contains multiple script templates.
+You can make slight modifications to the templates given in the wiki to implement custom items, advanced machines, etc.
 
 ## Special instructions
 
-1. RykenSlimeCustomizer has the same **saveitem** function as SlimeCustomizer, so **saveitem** will not be described in detail in this wiki
+1. RykenSlimeCustomizer has the same **saved item** feature as SlimeCustomizer, so **saved item** will not be described in detail in this wiki. Refer to [this section](https://github.com/NCBPFluffyBear/SlimeCustomizer#using-custom-items) if you don't know how to use **saved item**.
 
-2. RykenSlimeCustomizer and SlimeCustomizer do not conflict with each other and can coexist at the same time
+2. RykenSlimeCustomizer and SlimeCustomizer do not conflict with each other, you can install both at the same time.
 
-3. RykenSlimeCustomizer is loaded after SlimeCustomizer, so you can directly reference the slime ID customized by SlimeCustomizer in RykenSlimeCustomizer
+3. RykenSlimeCustomizer is loaded after SlimeCustomizer, so you can directly reference the item IDs from SlimeCustomizer in RykenSlimeCustomizer.
 
 ## Thanks
 
