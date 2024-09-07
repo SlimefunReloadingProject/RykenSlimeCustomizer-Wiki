@@ -3,11 +3,11 @@
 ## Preface
 
 I believe you have heard of SlimeCustomizer. But its limitations are too great. \
-For this reason, we developed a RykenSlimeCustomizer, which is more customizable than SlimeCustomizer.
+For this reason, we developed RykenSlimeCustomizer, which is more customizable than SlimeCustomizer.
 
 If you have learned languages such as Java and JavaScript, you can quickly get started writing more advanced machines.
 
-<!-- Welcome to join the Discord server for communication: <https://discord.gg/M2yRf7VV3X> -->
+Welcome to join the Discord server for communication: <https://discord.gg/M2yRf7VV3X>
 
 Please read the "Declaration Before Use" carefully before using this addon.
 
