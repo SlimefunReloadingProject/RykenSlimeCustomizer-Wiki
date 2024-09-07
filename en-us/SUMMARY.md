@@ -1,9 +1,11 @@
 # Summary
+
 * [Main Page](/en-us/README.md)
-* [Declaration Before Use](/en-us/declaration.md)
+* [Terms of Use](/en-us/declaration.md)
 * [Download and Install](/en-us/download-and-install.md)
 
 ## Plugin
+
 * [Comparison and Overview](/en-us/plugin/comparison.md)
 * [Commands and Permissions](/en-us/plugin/commands-and-permissions.md)
 * [Config registration order](/en-us/plugin/registration-order.md)
@@ -45,13 +47,14 @@
 
 ## Scripts(Basic)
 
-- [Introduction](/en-us/scripts-basic/introduction.md)
-- [Basic](/en-us/scripts-basic/basic.md)
-- [Machine](/en-us/scripts-basic/machines.md)
-- [Item](/en-us/scripts-basic/items.md)
-- [Machine Menu](/en-us/scripts-basic/machine_menus.md)
-- [Food](/en-us/scripts-basic/foods.md)
+* [Introduction](/en-us/scripts-basic/introduction.md)
+* [Basic](/en-us/scripts-basic/basic.md)
+* [Machine](/en-us/scripts-basic/machines.md)
+* [Item](/en-us/scripts-basic/items.md)
+* [Machine Menu](/en-us/scripts-basic/machine_menus.md)
+* [Food](/en-us/scripts-basic/foods.md)
 
 ## Scripts(Advanced)
+
 - [Prop](/en-us/scripts-advanced/item-consume.md)
-- [Listener](/en-us/scripts-advanced/listener.md)
+* [Listener](/en-us/scripts-advanced/listener.md)

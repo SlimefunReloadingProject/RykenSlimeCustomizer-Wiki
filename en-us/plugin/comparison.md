@@ -1,24 +1,25 @@
 # Comparison and Overview
 
-This page will systematically sort out the functions of RykenSlimeCustomizer (hereinafter referred to as **rsc**) and SlimeCustomizer (hereinafter referred to as **sc**), and simply and clearly list the advantages of rsc. You can also find the functions you want on this page
+This page will list and compare the features of RykenSlimeCustomizer (**RSC**) and SlimeCustomizer (**SC**).
 
-## Loading Differences
+## Loading
 
-| Content | sc | rsc |
+| Feature | SC | RSC |
 | --- | --- | --- |
 | Custom loading options | ✕ | ✓ |
-| Automatic update of addons | ✕ | ✓ |
+| Auto update of configurations | ✕ | ✓ |
 | Coexistence of multiple configurations | ✕ | ✓ |
-| Skip incorrect configuration | ✕ | ✓ |
-| Preload all addon items | ✕ | ✓ |
-| Reference sc items | - | ✓ |
+| Skip problematic items | ✕ | ✓ |
+| Preload addon items | ✕ | ✓ |
+| Reference SC items | - | ✓ |
 
-Custom loading options: see [Content loading/registration options](/en-us/file/context-options.md)
-<br>Automatically update addons: see [WWrite Addon Information](/en-us/addon/learn-to-write-addons-information.md)
-<br>Preload all addon items: In the same addon, you can reference the contents of the following `machines.yml` in `items.yml`, without having to use `saveditem`
-## Recipe writing class
+Custom loading options: see [Content loading/registration options](/en-us/file/context-options.md)  
+Auto update configurations: see [Addon Information](/en-us/addon/learn-to-write-addons-information.md)
+Preload all addon items: In a configuration module, you can reference the items from `machines.yml` in `items.yml`, without having to use `saved item` to save machines.
 
-Regarding recipe writing, rsc can **omit** recipe grids without items, while sc must write them step by step in a unified format
+## Recipes
+
+Regarding recipe configuration, RSC can **omit** recipe slots without items, while SC must write every slot and use `NONE` to represent an empty slot.
 
 ```yaml
 # Compare
@@ -28,7 +29,8 @@ type: NONE
 # rsc
 # Yes, nothing needs to be written
 ```
-For referencing vanilla items, sc must fill in VANILLA in the type column, while rsc only needs to fill in mc in the material_type column or directly ignore material_type
+
+For referencing vanilla items, SC must fill in `VANILLA` in the `type` field, while RSC only need a `material` field.
 
 ```yaml
 # Compare
@@ -41,88 +43,94 @@ amount: 1
 material: BARRIER
 ```
 
-## Recipe Tips
+## RecipeType
 
-| Content | sc | rsc |
+| Feature | SC | RSC |
 | --- | ----------- | ----------- |
-| Original Slimefun Recipe Tips | ✓ | ✓ |
-| Custom Recipe Tips | ✕ | ✓ |
+| Standard RecipeType | ✓ | ✓ |
+| Custom RecipeType | ✕ | ✓ |
 
-rsc provides customizable recipe tips. If you want to implement this function in sc, you need to write an additional item to describe the recipe and then insert it into the synthesis recipe. The process is cumbersome.
+A RecipeType usually tells the player where to craft the item.
 
-## Item Class
+In SC, you cannot add new RecipeTypes. You will have to set recipe type to `NULL`, then save and reference the recipe type item in the recipe.
+However in RSC, you can simply add new RecipeTypes by editing `recipe_type.yml`.
 
-sc only provides one configuration for item customization, which has less freedom and greater limitations.
+## Items
 
-rsc provides a general item template. All configurations can apply a unified template as long as they involve items.
+SC only provides 1 configuration file to customize items (`items.yml`), which has less freedom and more limitations.
 
-And this template provides more diverse customization options.
+RSC provides a general item template. All configurations can use more types of items by applying the template.
 
-The following table lists the differences between rsc and sc under various customization requirements in addition to basic customization functions.
+The following table lists the differences between SC and RSC under various customization requirements in addition to basic customization functions.
 
-| Content | sc | rsc |
+| Feature | SC | RSC |
 | --- | ----------- | ----------- |
-| saveitem (save item) | ✓ | ✓ |
-| placeable (placeable item) | ✓ | ✓ |
-| script (script) | ✕ | ✓ |
-| reference skull block | hash only | hash, url, Base64 |
+| saved item | ✓ | ✓ |
+| placeable | ✓ | ✓ |
+| script | ✕ | ✓ |
+| player head | hash only | hash, url, base64 |
 | glow enchantment effect | ✕ | ✓ |
-| radiation/charged item | ✕ | ✓ |
-| material model ID | ✕ | ✓ |
+| radioactive/chargeable item | ✕ | ✓ |
+| custom model data | ✕ | ✓ |
 | hidden item | ✕ | ✓ |
-| mining block drop | ✕ | ✓ |
+| drop from block breaking | ✕ | ✓ |
 
-sc can only realize radiation, food and other functions through the save item function, while rsc only needs to add one radiation item in the general item format to customize radiation, and customize food through the general script format
+In SC, you can achieve limited functions through the `saved item` function (e.g. radiation, food), while RSC only needs to add a radiation item in the general item template to customize radiation, and customize food through the general script template.
+RSC is also beneficial to resource pack makers, they can apply custom model data to custom items directly in RSC, without the need to set up them in Slimefun's item-models.yml.
 
-rsc is also beneficial to material makers, who can apply special materials to custom items
+## Machines
 
-## Machine class
-
-| Content | sc | rsc |
+| Feature | SC | RSC |
 | --- | ----------- | ----------- |
-| Custom machine menus | ✕ | ✓ |
-| Apply another machine's menu | ✕ | ✓ |
+| Custom machine menu | ✕ | ✓ |
+| Use another machine's menu | ✕ | ✓ |
 | Custom input and output slots | ✕ | ✓ |
-| Slimefun vanilla machine upgrade | ✕ | ✓ |
-| Non-powered machines | ✕ | ✓ |
+| Slimefun core machine upgrade | ✕ | ✓ |
+| Machines that don't need energy | ✕ | ✓ |
 | Random output items | ✕ | ✓ |
 | Custom energy types | ✕ | ✓ |
 | Machine scripts | ✕ | ✓ |
 
-The configuration of machines in sc only includes `machine.yml`, and the machine menu is single, the number of inputs and outputs is single, and the function is single, but the writing is relatively simple
+In SC, there is only 1 configuration file for machines (`machine.yml`), and all machines have the same layout, fixed number of input and output slots, and same function, which is relatively simple to write.
 
-The configuration of machines in rsc includes `machine.yml` (machine without input and output, script template required), `recipe_machines.yml` (recipe machine), `simple_machines.yml` (simple machine), which can customize the machine menu and has various functions
+In RSC, there are more configuration files for machines:
 
-rsc can customize energy types such as energy nodes by editing energy types (`energy.type`) in `machine.yml`
+- `machine.yml` (machine without input and output, scripts required)
+- `recipe_machines.yml` (SC type machines)
+- `simple_machines.yml` (extended version of Slimefun core machines)
 
-`simple_machines.yml` in rsc provides the author with a simple advanced version of the slime original machine, while adding similar machines in sc is particularly cumbersome, and the input and output items need to be filled in one by one
+You can also customize the machine layout, input and output slots, energy types (the machine is a consumer, a producer, or a connecting node?), and scripts.
 
-## Multi-block machine class
+## Multi-block machines
 
-rsc can customize **multi-block machines**, see [multi-block machines](/en-us/file/multi-block-machine.md) for details, but sc cannot
+RSC provides **multi-block machines** customization, see [multi-block machines](/en-us/file/multi-block-machine.md) for details.
 
-## Solar generator class
+There is no such feature in SC.
 
-rsc can customize the **light intensity limit** that the solar generator needs to reach, but sc cannot
+## Solar generators
 
-## Material generator class
+In RSC, you can customize the **light level** that the solar generator needs to reach. Not available in SC.
 
-rsc can customize the **slot** that displays information, but sc cannot
+## Material generators
 
-## Research class
+In RSC, you can customize **material generators** to generate multiple items. Not available in SC.
 
-rsc can customize the **Vault economy** required to unlock the research, but sc cannot
+## Researches
 
-## Script class
+In RSC, you can customize the research.
 
-Scripts are a unique feature of rsc, and various props, food, machines, etc. can be customized through scripts
+You can also set the money requirement (**Vault** required) to unlock the research.
+
+## Scripts
+
+Scripts are a unique feature of RSC, and various items, food, machines, etc. can be customized through scripts.
 
 *You can understand it as writing plug-ins in rsc*
 
-See [Script-Introduction](/en-us/scripts-basic/introduction.md) for details
+See [Script Introduction](/en-us/scripts-basic/introduction.md) for details.
 
-## Inherited item class
+## Inherited items
 
-Inherited items are a unique feature of rsc, and the mechanism of other attached items or machines can be copied through inherited items
+Inherited items are a unique feature of RSC. The "inherit" is to extend any `SlimefunItem` class from any addon.
 
-See [Inherited items](/en-us/file/supers.md) for details
+See [Inherited items](/en-us/file/supers.md) for details.
