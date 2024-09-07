@@ -345,8 +345,8 @@ itemStack.setItemMeta(itemMeta);
 # Slimefun methods
 
 RSC automatically imports several classes from **Chinese version of Slimefun** in the script
-<br>[SlimefunItems](https://slimefun.github.io/javadocs/Slimefun4/docs/io/github/thebusybiscuit/slimefun4/implementation/SlimefunItems.html): contains all Slime items (including slime items in attachments loaded before RSC)
-<br>[SlimefunItem](https://slimefun.github.io/javadocs/Slimefun4/docs/io/github/thebusybiscuit/slimefun4/api/items/SlimefunItem.html) : Slime item construction method
+<br>[SlimefunItems](https://slimefun.github.io/javadocs/Slimefun4/docs/io/github/thebusybiscuit/slimefun4/implementation/SlimefunItems.html): contains all Slimefun items (including slime items in addons loaded before RSC)
+<br>[SlimefunItem](https://slimefun.github.io/javadocs/Slimefun4/docs/io/github/thebusybiscuit/slimefun4/api/items/SlimefunItem.html) : Slimefun item construction method
 <br>[BlockStorage](https://slimefun.github.io/javadocs/Slimefun4/docs/me/mrCookieSlime/Slimefun/api/BlockStorage.html) : Used to access cached Slimefun block storage data
 <br>[SlimefunUtils](https://slimefun.github.io/javadocs/Slimefun4/docs/io/github/thebusybiscuit/slimefun4/utils/SlimefunUtils.html): Contains some utility methods for slime
 

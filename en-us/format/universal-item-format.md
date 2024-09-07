@@ -36,7 +36,7 @@ This function determines the type of the item. If this tag is not added, the def
 | skull\_base64 | Skull item             |
 | skull\_url    | Skull item             |
 | skull\_hash   | Skull item             |
-| slimefun      | Slime item             |
+| slimefun      | Slimefun item             |
 | none          | No item                |
 | saveditem     | Saved item             |
 

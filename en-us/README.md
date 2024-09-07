@@ -2,18 +2,18 @@
 
 ## Preface
 
-I believe you have heard of a custom slime attachment SlimeCustomizer. But its limitations are too great. \
-For this reason, we developed a custom slime attachment plug-in (RykenSlimeCustomizer), which is more customizable than SlimeCustomizer.
+I believe you have heard of SlimeCustomizer. But its limitations are too great. \
+For this reason, we developed a RykenSlimeCustomizer, which is more customizable than SlimeCustomizer.
 
 If you have learned languages such as Java and JavaScript, you can quickly get started writing more advanced machines.
 
 <!-- Welcome to join the Discord server for communication: <https://discord.gg/M2yRf7VV3X> -->
 
-Please read the "Declaration Before Use " carefully before using this attachment.
+Please read the "Declaration Before Use" carefully before using this addon.
 
 ## Introduction
 
-First, you must be very curious about what is RykenSlimeCustomizer, and what is the difference between it and custom attachment (SlimeCustomizer)?
+First, you must be very curious about what is RykenSlimeCustomizer, and what is the difference between it and SlimeCustomizer?
 
 This page will explain the pros and cons of RykenSlimeCustomizer and SlimeCustomizer, and solve some of the most basic doubts about this plugin
 

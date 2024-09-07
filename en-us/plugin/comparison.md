@@ -7,10 +7,10 @@ This page will systematically sort out the functions of RykenSlimeCustomizer (he
 | Content | sc | rsc |
 | --- | --- | --- |
 | Custom loading options | ✕ | ✓ |
-| Automatic update of attachments | ✕ | ✓ |
+| Automatic update of addons | ✕ | ✓ |
 | Coexistence of multiple configurations | ✕ | ✓ |
 | Skip incorrect configuration | ✕ | ✓ |
-| Preload all attachment items | ✕ | ✓ |
+| Preload all addon items | ✕ | ✓ |
 | Reference sc items | - | ✓ |
 
 Custom loading options: see [Content loading/registration options](/en-us/file/context-options.md)
@@ -45,7 +45,7 @@ material: BARRIER
 
 | Content | sc | rsc |
 | --- | ----------- | ----------- |
-| Original Slime Recipe Tips | ✓ | ✓ |
+| Original Slimefun Recipe Tips | ✓ | ✓ |
 | Custom Recipe Tips | ✕ | ✓ |
 
 rsc provides customizable recipe tips. If you want to implement this function in sc, you need to write an additional item to describe the recipe and then insert it into the synthesis recipe. The process is cumbersome.
@@ -83,7 +83,7 @@ rsc is also beneficial to material makers, who can apply special materials to cu
 | Custom machine menus | ✕ | ✓ |
 | Apply another machine's menu | ✕ | ✓ |
 | Custom input and output slots | ✕ | ✓ |
-| Slime vanilla machine upgrade | ✕ | ✓ |
+| Slimefun vanilla machine upgrade | ✕ | ✓ |
 | Non-powered machines | ✕ | ✓ |
 | Random output items | ✕ | ✓ |
 | Custom energy types | ✕ | ✓ |
@@ -111,7 +111,7 @@ rsc can customize the **slot** that displays information, but sc cannot
 
 ## Research class
 
-rsc can customize the **game coins** required to unlock the research, but sc cannot
+rsc can customize the **Vault economy** required to unlock the research, but sc cannot
 
 ## Script class
 
