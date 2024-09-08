@@ -21,10 +21,12 @@
 ## 验证配置文件
 如果你想要限制某个配置选项的值在某个范围，那么你可以这样做：
 1. 在附属脚本文件夹里创建一个名为`configHandler.js`的文件
-2. 写一个名为`onConfigReload`的函数，就像这样：
+2. 写一个名为`onConfigReload`的函数，就像这样
+
 ```js
 function onConfigReload(config) {
 
 }
+
 ```
 config这个入参是指附属的配置文件，类型为[YamlConfiguration](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/configuration/file/YamlConfiguration.html)
