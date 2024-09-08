@@ -43,3 +43,6 @@ Set the conditions required for content registration.
 | hasplugin      | Requires a certain plug-in                                                      | hasplugin DyeBench  |
 | !hasplugin     | Conflict/incompatible with a certain plug-in                                    | !hasplugin DynaTech |
 | version        | Check whether the MC version meets the requirements (use >=, <=, >, < to judge) | version >= 1.18.1   |
+| config.boolean | Check if the boolean value of a option in the configuration file is true | config.boolean isSomethingEnabled |
+| config.int | Check if the numeric value of a option in the configuration file meets the requirements (use >=, <=, >, <, ==, != to judge) | config.int theIntValue >= 64 |
+| config.string | Check if the value of a option in the configuration file is the same as the target string | config.string theStringValue Hello |

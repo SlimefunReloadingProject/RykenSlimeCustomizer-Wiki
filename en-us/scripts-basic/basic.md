@@ -383,3 +383,22 @@ Detailed parameter description:
 | name           | String                                                                                    | String       |
 | block          | [Block](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/block/Block.html)             | Block        |
 | entity         | [Entity](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/entity/Entity.html)          | Entity       |
+
+# Addon Configuration File
+
+Please ensure that the addon already has a configuration file, otherwise, an error will be reported when attempting to using it.
+
+Retrieval method:
+
+```js
+let config = getAddonConfig();
+```
+
+Example usage:
+```js
+let isSomethingEnabled = config.getBoolean("isSomethingEnabled", true);
+let theStringValue = config.getString("stringValue");
+```
+
+The `getAddonConfig();` returns an object of type [YamlConfiguration](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/configuration/file/YamlConfiguration.html).   
+For more methods, please click on the link above.

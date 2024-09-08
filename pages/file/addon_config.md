@@ -16,4 +16,15 @@
 详见[脚本 - 基础](scripts-basic/basic.md#附属配置文件)
 
 ## 使用作为内容的注册条件
-详见[内容注册/加载选项](context-options.md#关于-conditions#)
+详见[内容注册/加载选项](context-options.md#关于-conditions)
+
+## 验证配置文件
+如果你想要限制某个配置选项的值在某个范围，那么你可以这样做：
+1. 在附属脚本文件夹里创建一个名为`configHandler.js`的文件
+2. 写一个名为`onConfigReload`的函数，就像这样：
+```js
+function onConfigReload(config) {
+
+}
+```
+config这个入参是指附属的配置文件，类型为[YamlConfiguration](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/configuration/file/YamlConfiguration.html)
