@@ -22,6 +22,7 @@ For details, see [Content Registration/Loading Options](context-options.md#about
 If you want to restrict the value of a configuration option to a certain range, you can do the following:
 1. Create a file named `configHandler.js` in the addon's script folder.
 2. Write a function named `onConfigReload`, like this:
+
 ```js
 function onConfigReload(config) {
   
