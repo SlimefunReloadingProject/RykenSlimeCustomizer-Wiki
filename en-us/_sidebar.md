@@ -22,6 +22,7 @@
 * Configuration Files
 
   * [Content register/load options](/en-us/file/context-options.md)
+  * [Addon Config](/en-us/file/config.md)
   * [Item Groups(Category)](/en-us/file/groups.md)
   * [Recipe Type](/en-us/file/recipe_type.md)
   * [GEO resource](/en-us/file/geo.md)

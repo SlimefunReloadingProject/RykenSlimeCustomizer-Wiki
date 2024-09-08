@@ -24,6 +24,7 @@
 * 配置文件
   
   * [内容加载/注册选项](file/context-options.md)
+  * [附属配置文件](file/addon_config.md)
   * [物品组（分类）](file/groups.md)
   * [配方类型](file/recipe_type.md)
   * [GEO资源](file/geo.md)
