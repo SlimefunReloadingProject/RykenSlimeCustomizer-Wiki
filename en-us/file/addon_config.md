@@ -24,7 +24,7 @@ If you want to restrict the value of a configuration option to a certain range, 
 2. Write a function named `onConfigReload`, like this:
 ```js
 function onConfigReload(config) {
-
-}
+  
+}  
 ```
 The `config` parameter refers to the addon's configuration file and is of type [YamlConfiguration](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/configuration/file/YamlConfiguration.html).
