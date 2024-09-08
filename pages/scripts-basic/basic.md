@@ -1,4 +1,4 @@
-# 脚本基础
+# 脚本 - 基础
 
 这里列出所有脚本中可以方便使用的方法/字段
 
@@ -369,3 +369,22 @@ NBTAPI.readEntity(entity)
 |name|String|字符串|
 |block|[Block](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/block/Block.html)|方块|
 |entity|[Entity](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/entity/Entity.html)|实体|
+
+# 附属配置文件
+
+请确保附属先前已经有配置文件，否则获取的时候会报错
+  
+获取方法:
+
+```js
+let config = getAddonConfig();
+```
+
+示例用法:
+```js
+let isSomethingEnabled = config.getBoolean("isSomethingEnabled", true);
+let theStringValue = config.getString("stringValue");
+```
+
+`getAddonConfig();`返回的类型是[YamlConfiguration](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/configuration/file/YamlConfiguration.html)。  
+若想知道更多方法，请点击上面的链接
