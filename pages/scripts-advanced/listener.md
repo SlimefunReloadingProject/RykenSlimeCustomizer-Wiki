@@ -1,7 +1,7 @@
 # 监听
 
 ## 简单介绍
-rsc 提供了丰富的监听事件，关于如何监听事件见[信息](file/info.md)
+rsc 提供了丰富的监听事件，关于如何监听事件见[信息](addon/learn-to-write-addons-information)
 <br>
 <br>
 监听脚本文件中，你可以设置监听以下事件 (详见下文)
