@@ -94,6 +94,7 @@ actions:
 - "console 指令" # 被玩家点击此分类后在控制台执行命令
 - "open_itemgroup <key>" # 被玩家点击此分类后打开物品组，key为物品组的`NamespacedKey` 例：open_itemgroup slimefun:misc
 - "display_slimefunitem ID" # 被玩家点击此分类后打开对应ID的物品配方，ID为一个粘液科技物品的ID
+- "script 脚本名" # 执行脚本
 ```
 
 ## 注意事项
