@@ -29,6 +29,8 @@ addons
         │  solar_generators.yml
         │  supers.yml
         │  template_machines.yml
+        │  workbenches.yml
+        │  linked_recipe_machines.yml
         │
         ├─saveditems
         │   │  example_saveditem1.yml

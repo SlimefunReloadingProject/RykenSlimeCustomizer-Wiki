@@ -40,4 +40,7 @@
 * [配方机器](file/recipe\_machines.md)
 * [多方块机器](file/multi-block-machine.md)
 * [继承物品](file/supers.md)
+* [模板机器](file/template\_machines.md)
+* [工作台](file/workbenches.md)
+* [强配方机器](file/linked\_recipe\_machines.md)
 * [研究](file/research.md)

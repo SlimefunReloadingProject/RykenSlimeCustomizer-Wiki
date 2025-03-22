@@ -2,6 +2,8 @@
 
 <mark style="color:red;">**注意：**</mark>带\*为必填
 
+> 用于自定义引用构造器的物品/机器。
+
 **示例：**
 
 ```yaml
@@ -14,6 +16,7 @@ RSC_EXAMPLE_SUPER_ITEM:
       - "&e继承测试"
   class: "me.ddggdd135.slimeae.core.slimefun.MEItemStorageCell" # 来自 SlimeAE
   args: [50000]
+  ignore_accessible: true
   register:
     conditions:
        - "hasplugin SlimeAE"
@@ -30,6 +33,7 @@ RSC_EXAMPLE_SUPER_ITEM:
 | \*args | 补全继承物品的其他构造参数 |
 | ctor | 设置用继承物品的哪个构造器，位置从0开始 | 0 |
 | arg_template | 设置默认构造参数的输入位置 | [group, item, recipe_type, recipe] |
+| ignore_accessible | 允许绕过某些private或protected的属性和方法 |  |
 | method | 可使用此继承物品的一些方法来修改一些值 | 详见下面**使用method修改部分值** |
 | field | 修改此继承物品的部分字段 | 详见下面**使用field修改部分字段的值** |
 

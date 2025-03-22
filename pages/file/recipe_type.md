@@ -2,7 +2,7 @@
 
 <mark style="color:red;">**注意：**</mark>带\*为必填
 
-> 这是仅作显示的配方类型。
+> 用于自定义仅作显示的配方类型。
 
 **示例：**
 
@@ -62,6 +62,8 @@ ANCIENT_ALTAR # 远古祭坛
 JUICER # 榨汁机
 HEATED_PRESSURE_CHAMBER # 加热压力舱
 MOB_DROP # 生物掉落
+INFINITY_FORGE # 无尽工作台
+TINKERS_WORKBENCH # 匠魂工作台
 
 # 仅展示的类型
 MULTIBLOCK # 多方块结构
@@ -85,6 +87,12 @@ NULL # 无配方
 - PRESSURE_CHAMBER <u>压力机</u>
 - ANCIENT_ALTAR <u>古代祭坛</u>
 
+
+### 以下配方类型的合成配方支持多组多格的物品输入
+
+- SMELTERY <u>冶炼炉</u>
+
+
 ### 以下配方类型的合成配方仅第1格物品有效
 
 - COMPRESSOR <u>压缩机</u>
@@ -102,3 +110,10 @@ NULL # 无配方
 ### 以下配方类型的合成配方的第5格必须是生物蛋或空
 
 - MOB_DROP <u>生物掉落</u>
+
+### 注意
+
+- INFINITY_FORGE <u>无尽工作台</u>
+- TINKERS_WORKBENCH <u>匠魂工作台</u>
+
+上述两种配方类型仅支持九宫格，不支持多乘多的合成配方

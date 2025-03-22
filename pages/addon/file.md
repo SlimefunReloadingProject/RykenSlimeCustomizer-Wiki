@@ -76,6 +76,14 @@
 
 存放附属的模板机器。
 
+### workbenches.yml <a href="#workbenches.yml" id="workbenches.yml"></a>
+
+存放附属的工作台。
+
+### linked_recipe_machines.yml <a href="#linked_recipe_machines.yml" id="linked_recipe_machines.yml"></a>
+
+存放附属的强配方机器。
+
 ### researches.yml <a href="#researches.yml" id="researches.yml"></a>
 
 存放附属的研究。

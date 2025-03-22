@@ -2,10 +2,13 @@
 
 <mark style="color:red;">**注意：**</mark>带\*为必填
 
+> 用于自定义粘液科技的基础物品。
+
 **示例：**
 
 ```yaml
 RSC_EXAMPLE_ITEM:
+  lateInit: false
   item_group: rsc_example_sub_group
   item:
     name: "&a示例物品"
@@ -102,8 +105,9 @@ RSC_HIDDEN_ITEM:
 | \*item_group | 物品所在[物品组（分类）](file/groups.md)的ID。 |
 | \*item.# | [通用物品格式](format/universal-item-format.md)| 可选择性添加`modelId`、`lore`、`glow`等 |
 | placeable | 物品是否可放置。**不要让工具等本来就无法放置的物品可放置！** |
+| lateInit | 延迟加载，即在所有物品加载完以后再加载该物品。**此条目适用于所有配置(除了info.yml)** |
 | recipe_type | 见[配方类型](file/recipe_type.md)。 |
-| script | 物品引用的脚本，设置物品对应的脚本文件，双引号内填脚本对应的文件名称 |
+| script | 物品引用的脚本，设置物品对应的脚本文件，双引号内填脚本对应的文件名称，支持使用路径，例如 **文件名1/文件名2/脚本名** |
 | recipe | 设置物品的配方。详见[**配方**](format/recipe.md) |
 | energy_capacity | 可充电物品的充电量，详见下文 |
 | radiation | 辐射等级，详见下文 |
