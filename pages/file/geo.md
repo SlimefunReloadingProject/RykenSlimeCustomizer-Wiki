@@ -2,6 +2,8 @@
 
 <mark style="color:red;">**注意：**</mark>带\*为必填
 
+> 用于自定义需要用GEO矿机挖掘的物品。
+
 **示例：**
 
 ```yaml

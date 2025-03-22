@@ -43,6 +43,8 @@
   * [多方块机器](file/multi-block-machine.md)
   * [继承物品](file/supers.md)
   * [模板机器](file/template_machines.md)
+  * [工作台](file/workbenches.md)
+  * [强配方机器](file/linked_recipe_machines.md)
   * [研究](file/research.md)
 
 - 脚本-基础
@@ -54,5 +56,10 @@
   - [食物](scripts-basic/foods.md)
 
 - 脚本-进阶
-  - [道具](scripts-advanced/item-consume.md)
+  - [指令执行道具](scripts-advanced/item-consume.md)
+  - [进阶食物](scripts-advanced/advance-foods.md)
+  - [进阶道具](scripts-advanced/advance-item.md)
+  - [自定义农作物](scripts-advanced/crops.md)
+  - [自定义钓鱼](scripts-advanced/fishing.md)
+  - [实体生成类道具](scripts-advanced/summon-mob.md)
   - [监听](scripts-advanced/listener.md)

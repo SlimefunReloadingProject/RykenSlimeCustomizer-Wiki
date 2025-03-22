@@ -2,7 +2,7 @@
 
 <mark style="color:red;">**注意：**</mark>带\*为必填
 
-> 含自定义输入输出的机器。
+> 用于自定义含自定义输入输出的机器。
 
 ## 示例：
 
@@ -25,8 +25,12 @@ RSC_EXAMPLE_RECIPE_MACHINE:
   output: [15,16]
   energyPerCraft: 100
   speed: 2
+  hideAllRecipes: false
   recipes:
     example:
+      chooseOne: true
+      forDisplay: false
+      hide: false
       seconds: 10
       input:
         1:
@@ -66,10 +70,13 @@ RSC_EXAMPLE_RECIPE_MACHINE:
 | \*input | 物品输入的对应槽位。<br>**请不要在菜单中为这些槽位设置物品！** |
 | \*output | 物品输出的对应槽位。<br>**请不要在菜单中为这些槽位设置物品！** |
 | \*energyPerCraft | 机器每粘液刻消耗的电量。 |
+| hideAllRecipes | 隐藏所有输入输出配方。 |
 | \*speed | 机器运行速度，最大为 2147483647，数值越大，机器运行的越快。<br>即你不需要更改每个工作配方的seconds。更改此项即可 *升级机器* |
 | \*capacity | 设置机器可储存的能量，最大为 2147483647。 |
 | recipes.#.seconds | 合成所需时间，最大为 2147483647。 **实际合成时间(单位：粘液刻)：(秒数×2) / 机器运行速度** |
 | recipes.#.chooseOne | 当随机出多个产物的时候从中选一个作为最终产物，详见注意事项。 |
+| recipes.#.forDisplay | 仅供展示的配方，可以用于在配方中写关于机器的描述/使用方法等。类似于乱码科技。 |
+| recipes.#.hide | 隐藏此输入输出配方。 |
 | recipes.#.output.chance | 物品产出的概率。有效范围 1~100 |
 
 ## 注意事项

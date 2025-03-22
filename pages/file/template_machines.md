@@ -2,7 +2,7 @@
 
 <mark style="color:red;">**注意：**</mark>带\*为必填
 
-> 更高级的自定义输入输出的机器。
+> 用于自定义需要插入对应模版产出对应物品的机器(类似于需要插入生物卡片/芯片的机器)。
 
 ## 示例：
 
@@ -53,6 +53,8 @@ RSC_EXAMPLE_TEMPLATE_MACHINE:
       2item:
         seconds: 1
         chooseOne: true
+        forDisplay: false
+        hide: false
         output:
           1:
             material_type: slimefun
@@ -76,3 +78,7 @@ RSC_EXAMPLE_TEMPLATE_MACHINE:
 | \*recipes."sfid".# | 在第二缩进中填写工作配方，同[配方机器](file/recipes_machines.md)，在模板槽的物品与第一缩进的粘液id相同时，便会进入此缩进进行工作配方的匹配 |
 | fasterIfMoreTemplates | 存在多个模板在模板槽时，机器是否运行更快，默认 false |
 | moreOutputIfMoreTemplates | 存在多个模板在模板槽时，是否输出更多物品，默认 false |
+
+# 注意
+
+此处同样可以使用配方机器中包含的 **hideAllRecipes，chooseOne，forDisplay，hide和chance**

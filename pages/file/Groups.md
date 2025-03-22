@@ -2,6 +2,8 @@
 
 <mark style="color:red;">**注意：**</mark>带\*为必填
 
+> 用于自定义显示在粘液书中的分类。
+
 **示例：**
 
 ```yaml
@@ -64,6 +66,15 @@ rsc_example_console_group:
   actions:
   - "console say 示例控制台指令组"
 
+rsc_example_open_itemgroup_group:
+  type: button
+  parent: rsc_example_parent_group
+  item:
+    name: "&e示例打开其它物品分类组"
+    material: BEDROCK
+  actions:
+  - "open_itemgroup slimefun:misc"
+
 ```
 
 | 内容 | 描述 |
@@ -81,6 +92,8 @@ rsc_example_console_group:
 actions:
 - "link 链接" # 被玩家点击此分类后在聊天栏弹出可点击链接
 - "console 指令" # 被玩家点击此分类后在控制台执行命令
+- "open_itemgroup <key>" # 被玩家点击此分类后打开物品组，key为物品组的`NamespacedKey` 例：open_itemgroup slimefun:misc
+- "display_slimefunitem ID" # 被玩家点击此分类后打开对应ID的物品配方，ID为一个粘液科技物品的ID
 ```
 
 ## 注意事项
