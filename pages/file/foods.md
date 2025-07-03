@@ -1,6 +1,6 @@
 # 食物(foods.yml)
 
-> 用于自定义食物(类似于粘液科技食物分类中的肉干，无法自定义类似于异域花园的食品)。
+> 用于自定义食物/果汁(类似于粘液科技食物分类中的肉干和果汁，无法自定义类似于异域花园的食品)。
 
 > 脚本-进阶中会详细介绍如何自定义类似于异域花园的食品
 
@@ -27,6 +27,22 @@ RSC_EXAMPLE_FOOD:
       amount: 1
     3:
       material: dark_oak_planks
+      amount: 1
+RSC_EXAMPLE_JUICE:
+  item_group: rsc_example_sub_group
+  item:
+    name: "果汁 1"
+    material: POTION
+    color: "0,255,0"
+  script: "example_food" # 可沿用食物的脚本
+  nutrition: 1
+  saturation: 0
+  eatseconds: 1.6
+  always_eatable: false
+  recipe_type: JUICER
+  recipe:
+    1:
+      material: birch_planks
       amount: 1
 ```
 

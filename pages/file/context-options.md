@@ -20,6 +20,7 @@ OBJECT_FOR_REGISTER_2:
        - "hasplugin DyeBench"
        - "!hasplugin DynaTech"
        - "version >= 1.18.1"
+       - "itemexist EXAMPLE_ITEM"
     unfinished: false
 ```
 
@@ -47,6 +48,8 @@ OBJECT_FOR_REGISTER_2:
 | hasplugin  | 需要某插件   | hasplugin DyeBench   |
 | !hasplugin | 与某插件冲突/不兼容 | !hasplugin DynaTech |
 | version | 检查MC版本是否达到要求(使用>=,<=,>,<这些符号来判断) | version >= 1.18.1 |
+| itemexist | 检查是否存在某个粘液科技物品的id | itemexist EXAMPLE_ITEM |
+| !itemexist | 检查是否不存在某个粘液科技物品的id | !itemexist EXAMPLE_ITEM |
 | config.boolean | 检查配置文件某一项的布尔值是否为true(真) | config.boolean isSomethingEnabled |
 | config.int | 检查配置文件某一项的数字值是否达到要求(使用>=,<=,>,<这些符号来判断) | config.int theIntValue >= 64 |
 | config.string | 检查配置文件某一项的值是否跟目标字符串相同 | config.string theStringValue 你好 |

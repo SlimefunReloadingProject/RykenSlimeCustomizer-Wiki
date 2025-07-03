@@ -45,12 +45,14 @@
   * [模板机器](file/template_machines.md)
   * [工作台](file/workbenches.md)
   * [强配方机器](file/linked_recipe_machines.md)
+  * [自然生成](file/generations.md)
   * [研究](file/research.md)
 
 - 脚本-基础
   - [介绍](scripts-basic/introduction.md)
   - [基础](scripts-basic/basic.md)
   - [机器](scripts-basic/machines.md)
+  - [多方块机器](scripts-basic/multiblock_machines.md)
   - [物品](scripts-basic/items.md)
   - [机器菜单](scripts-basic/machine_menus.md)
   - [食物](scripts-basic/foods.md)

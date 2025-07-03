@@ -219,6 +219,7 @@ recipe_type: BARTER_DROP # 猪灵交易
 ```
 
 类似于硼砂，在这里是挖掘灰化土掉落这个粘液物品（参考上面 可变泥土 ）
+注意：此值填的是原版方块id，关于原版方块id与物品id区别，详见[自然生成](file/generations.md)的**有关replacement**。
 你还可以设置掉落的几率以及数量（与drop_from同级）：
 
 ```yaml
