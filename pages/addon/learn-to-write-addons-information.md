@@ -15,6 +15,15 @@ description: "RSC示例附属"
 authors: ["mmmjjkx"]
 repo: "SlimefunReloadingProject/rsc-example"
 idPattern: EXAMPLE_%0
+loadStartTexts:
+- "===="
+- "Example附属 开始加载"
+- "===="
+enabledTexts:
+- "===="
+- "Example附属 加载成功"
+- "欢迎使用"
+- "===="
 ```
 
 | 内容 | 描述 |
@@ -29,6 +38,8 @@ idPattern: EXAMPLE_%0
 | \*authors | 附属的作者。 |
 | \*repo | 附属对应的github库，这是附属更新的必填项。 |
 | idPattern | 附属的通用前缀，示例中实际注册时会为所有物品加上**EXAMPLE_**前缀，%0表示原物品ID。 |
+| loadStartTexts | rsc附属开始加载时后台显示的文本 |
+| enabledTexts | rsc附属加载成功时后台显示的文本 |
 
 注意：当你设置idPattern之后，在引用附属内的物品时需要加上这个前缀。
 

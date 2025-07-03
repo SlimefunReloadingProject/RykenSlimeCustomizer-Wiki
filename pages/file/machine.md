@@ -80,4 +80,4 @@ RSC_EXAMPLE_MACHINE_ENERGY:
 
 ## 其它
 
-如果想自定义machine.yml里的机器菜单(menu），详见 [机器菜单](file/menu.md) 。
+如果想自定义machine.yml里的机器菜单（menu），详见 [机器菜单](file/menu.md) 。

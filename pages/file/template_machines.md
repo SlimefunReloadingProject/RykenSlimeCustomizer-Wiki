@@ -22,7 +22,7 @@ RSC_EXAMPLE_TEMPLATE_MACHINE:
       material: RSC_EXAMPLE_ITEM
   consumption: 300
   capacity: 3000
-  templateSlot: 0
+  templateSlot: 2
   input: [2, 3, 4, 5, 6, 7, 8]
   output: [18, 19, 20, 21, 22, 23, 24, 25, 26]
   fasterIfMoreTemplates: true
@@ -49,6 +49,8 @@ RSC_EXAMPLE_TEMPLATE_MACHINE:
           1:
             material_type: slimefun
             material: RSC_EXAMPLE_ITEM
+# 注意：以下示例仅适用于我的世界1.20.5以前的版本
+# 此实例展示的是模版机器在不设置输入物品的情况下仅放置模版即可输出相应物品
     RSC_EXAMPLE_ITEM:
       2item:
         seconds: 1
@@ -60,6 +62,7 @@ RSC_EXAMPLE_TEMPLATE_MACHINE:
             material_type: slimefun
             material: RSC_EXAMPLE_ITEM
             chance: 15
+
 ```
 
 | 内容 | 描述 | 有效输入 |
@@ -73,11 +76,12 @@ RSC_EXAMPLE_TEMPLATE_MACHINE:
 | \*output | 物品输出的对应槽位。<br>**请不要在菜单中为这些槽位设置物品！** |
 | \*consumption | 模板机器每粘液刻消耗的电量。 |
 | \*capacity | 设置模板机器可储存的能量，最大为 2147483647。 |
+| \*templateSlot | 设置模版的槽位，此槽位必须是input槽位的其中一个 |
 | \*recipes | 模板机器的自定义配方。 |
 | \*recipes."sfid" | 在第一缩进中需要填写识别物的粘液id，识别物只能是粘液物品 |
 | \*recipes."sfid".# | 在第二缩进中填写工作配方，同[配方机器](file/recipes_machines.md)，在模板槽的物品与第一缩进的粘液id相同时，便会进入此缩进进行工作配方的匹配 |
-| fasterIfMoreTemplates | 存在多个模板在模板槽时，机器是否运行更快，默认 false |
-| moreOutputIfMoreTemplates | 存在多个模板在模板槽时，是否输出更多物品，默认 false |
+| fasterIfMoreTemplates | 存在多个模板在模板槽时，机器是否运行得更快，默认 false |
+| moreOutputIfMoreTemplates | 存在多个模板在模板槽时，机器是否输出的物品更多，默认 false |
 
 # 注意
 

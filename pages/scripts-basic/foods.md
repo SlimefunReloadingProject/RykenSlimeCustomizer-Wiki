@@ -2,13 +2,25 @@
 
 ## onEat
 
-当食物被吃掉时触发
+当食物被吃掉时/药水或牛奶被喝完时触发
 
 ### 方法体
 
 ```js
 function onEat(event, player, itemStack) {
 
+}
+```
+
+### 示例
+
+```js
+function onEat(event, player, itemStack) { 
+    var player = event.getPlayer();
+
+    player.setFoodLevel(player.getFoodLevel() + 1);  //恢复饥饿值
+    player.setSaturation(player.getSaturation() + 2); //恢复饱和度
+    player.setExhaustion(player.getExhaustion() - 1);  //降低消耗度
 }
 ```
 

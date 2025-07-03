@@ -43,4 +43,5 @@
 * [模板机器](file/template\_machines.md)
 * [工作台](file/workbenches.md)
 * [强配方机器](file/linked\_recipe\_machines.md)
+* [自然生成](file/generations.md)
 * [研究](file/research.md)
