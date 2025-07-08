@@ -204,6 +204,59 @@ let usable = canPlayerUseItem(player, item, sendMessage);
 |itemStack|[ItemStack](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemStack.html)|目标物品|
 |sendMessage|boolean|如果玩家不能使用物品时向玩家发送消息|
 
+## getChatInput
+
+获取玩家从聊天栏输入的文字
+
+示例用法：
+
+```js
+    let Consumer = Java.type('java.util.function.Consumer');
+    let JSConsumer = Java.extend(Consumer, {
+        accept: function(你的变量名) {
+ 代码块
+    });
+    
+    getChatInput(player, new JSConsumer());
+}
+```
+
+实例展示(玩家右键某个方块，通过在聊天栏内输入文字，从而更新物品的lore)：
+
+```js
+    let Consumer = Java.type('java.util.function.Consumer');
+    let JSConsumer = Java.extend(Consumer, {
+        accept: function(input) {
+            isWaitingForInput = false;
+            
+            if (input.toLowerCase() === "cancel") {
+                player.sendMessage("§a✅ 已取消操作");
+                return;
+            }
+            
+            if (!input || input.trim() === "") {
+                player.sendMessage("§c❌ 输入不能为空，请重新输入");
+                return;
+            }
+            
+            // 更新物品Lore
+            try {
+                updateItemLore(player, input.trim());
+            } catch (error) {
+                player.sendMessage("§c❌ 设置失败，请重试");
+                console.log("Error updating item lore: " + error);
+            }
+        }
+    });
+    
+    getChatInput(player, new JSConsumer());
+```
+
+|入参名称|类型|说明|
+|---|---|---|
+|player|[Player](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/entity/Player.html)|玩家|
+|consumer| [Consumer](https://docs.oracle.com/javase/8/docs/api/java/util/function/Consumer.html)<String> | 一个函数式接口，用于处理玩家输入的文字。当玩家在聊天栏内输入文字后，该接口的 `accept` 方法会被调用，并将输入的文字作为参数传递 |
+
 ## setData
 
 示例用法:

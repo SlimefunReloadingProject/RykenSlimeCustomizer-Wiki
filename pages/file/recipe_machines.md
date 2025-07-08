@@ -58,6 +58,24 @@ RSC_EXAMPLE_RECIPE_MACHINE:
           chance: 15
           material_type: slimefun
           material: RSC_EXAMPLE_ITEM
+    example_3:
+      seconds: 5
+      noConsume: true
+      input:
+        1:
+          material_type: slimefun
+          material: RSC_EXAMPLE_ITEM_2
+          amount: 1
+        # 此时输入物品不消耗
+      output:
+        1:
+          chance: 10
+          material_type: slimefun
+          material: RSC_EXAMPLE_MACHINE
+        2:
+          chance: 15
+          material_type: slimefun
+          material: RSC_EXAMPLE_ITEM
 ```
 
 | 内容 | 描述 | 有效输入 |
@@ -74,6 +92,7 @@ RSC_EXAMPLE_RECIPE_MACHINE:
 | \*speed | 机器运行速度，最大为 2147483647，数值越大，机器运行的越快。<br>即你不需要更改每个工作配方的seconds。更改此项即可 *升级机器* |
 | \*capacity | 设置机器可储存的能量，最大为 2147483647。 |
 | recipes.#.seconds | 合成所需时间，最大为 2147483647。 **实际合成时间(单位：粘液刻)：(秒数×2) / 机器运行速度** |
+| recipes.#.noConsume | 当设置为true时，所有的输入物品在输出产物时将不再消耗。注意：amount不能为0 |
 | recipes.#.chooseOne | 当随机出多个产物的时候从中选一个作为最终产物，详见注意事项。 |
 | recipes.#.forDisplay | 仅供展示的配方，可以用于在配方中写关于机器的描述/使用方法等。类似于乱码科技。 |
 | recipes.#.hide | 隐藏此输入输出配方。 |

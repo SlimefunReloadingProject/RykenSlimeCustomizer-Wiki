@@ -28,7 +28,7 @@ RSC_EXAMPLE_TEMPLATE_MACHINE:
   fasterIfMoreTemplates: true
   moreOutputIfMoreTemplates: true
   recipes:
-    RSC_EXAMPLE_GEO_RESOURCE:
+    RSC_EXAMPLE_GEO_RESOURCE: # 此处为模板的粘液科技物品ID
       item2machine:
         seconds: 5
         input:
@@ -41,6 +41,7 @@ RSC_EXAMPLE_TEMPLATE_MACHINE:
             material: RSC_EXAMPLE_MACHINE
       item22item:
         seconds: 5
+        noConsume: true # 此时所有的输入物品在输出产物时将不再消耗
         input:
           1:
             material_type: slimefun
@@ -80,6 +81,7 @@ RSC_EXAMPLE_TEMPLATE_MACHINE:
 | \*recipes | 模板机器的自定义配方。 |
 | \*recipes."sfid" | 在第一缩进中需要填写识别物的粘液id，识别物只能是粘液物品 |
 | \*recipes."sfid".# | 在第二缩进中填写工作配方，同[配方机器](file/recipes_machines.md)，在模板槽的物品与第一缩进的粘液id相同时，便会进入此缩进进行工作配方的匹配 |
+| recipes.#.#.noConsume | 当设置为true时，所有的输入物品在输出产物时将不再消耗。注意：amount不能为0 |
 | fasterIfMoreTemplates | 存在多个模板在模板槽时，机器是否运行得更快，默认 false |
 | moreOutputIfMoreTemplates | 存在多个模板在模板槽时，机器是否输出的物品更多，默认 false |
 

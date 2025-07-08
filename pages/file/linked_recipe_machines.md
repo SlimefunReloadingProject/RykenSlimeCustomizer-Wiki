@@ -4,7 +4,7 @@
 
 > 用于自定义指定输入槽位和指定输出槽位的机器。(也可以用来制作自定义工作台对应的自动化电力机器)
 
-## 示例(此处简要的引用魔法的一个强配方机器作为示例)：
+## 示例(此处简要的引用魔法附属的一个强配方机器作为示例)：
 
 ```yaml
 MAGIC_INFINITY_FORGE_1:
@@ -25,6 +25,7 @@ MAGIC_INFINITY_FORGE_1:
   recipes:
     '1':
       seconds: 1
+      noConsume: true # 此时所有的输入物品在输出产物时将不再消耗
       input:
         '1':
           amount: 1
@@ -41,6 +42,29 @@ MAGIC_INFINITY_FORGE_1:
           material_type: mc
           material: GOLD_NUGGET
           slot: 2
+      output:
+        '1':
+          amount: 1
+          material_type: slimefun
+          material: WT_KANGXING
+          slot: 25
+      chooseOne: false
+      forDisplay: false
+      hide: false
+    '2':
+      seconds: 1
+      input:
+        '1':
+          amount: 1
+          material_type: slimefun
+          material: WT_JIJUXIE
+          slot: 0
+          noConsume: true # 此时仅单个物品不消耗，其它输入物品正常消耗
+        '2':
+          amount: 1
+          material_type: mc
+          material: IRON_NUGGET
+          slot: 1
       output:
         '1':
           amount: 1
@@ -74,4 +98,6 @@ MAGIC_INFINITY_FORGE_1:
 | recipes.#.chooseOne | 当随机出多个产物的时候从中选一个作为最终产物。 |
 | recipes.#.forDisplay | 仅供展示的配方，可以用于在配方中写关于机器的描述/使用方法等。类似于乱码科技。 |
 | recipes.#.hide | 隐藏此输入输出配方。 |
+| recipes.#.noConsume | 当设置为true时，所有的输入物品在输出产物时将不再消耗。注意：amount不能为0 |
 | recipes.#.input/output.slot | 输入/输出物品对应的槽位。有效范围：0~53。 |
+| recipes.#.input.noConsume | 当设置为true时，仅单个相应槽位的物品不消耗，其它输入物品正常消耗。 |

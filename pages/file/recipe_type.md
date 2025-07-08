@@ -45,6 +45,8 @@ recipe_type: NULL
 
 你可以设置配方类型为这些（粘液自带），但并不代表此配方一定存在，不过你仍然可以设置recipe来解释说明
 
+注意： 你无法引用其它附属的多方块机器(无尽工作台和匠魂工作台除外)，比如异域花园的厨房、末地科技的纳米工作台等
+
 [参考代码](https://github.com/SlimefunGuguProject/Slimefun4/blob/master/src/main/java/io/github/thebusybiscuit/slimefun4/api/recipes/RecipeType.java)
 
 ```yaml
@@ -61,8 +63,8 @@ ENHANCED_CRAFTING_TABLE # 增强型工作台
 ANCIENT_ALTAR           # 远古祭坛
 JUICER                  # 榨汁机
 MOB_DROP                # 生物掉落
-INFINITY_FORGE          # 无尽工作台
-TINKERS_WORKBENCH       # 匠魂工作台
+INFINITY_FORGE          # 无尽工作台 (需要服务器安装无尽贪婪附属)
+TINKERS_WORKBENCH       # 匠魂工作台 (需要服务器安装粘液匠魂附属)
 
 # 仅展示的类型
 MULTIBLOCK              # 多方块结构
