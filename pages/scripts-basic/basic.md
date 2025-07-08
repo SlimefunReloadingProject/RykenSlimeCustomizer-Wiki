@@ -214,7 +214,7 @@ let usable = canPlayerUseItem(player, item, sendMessage);
     let Consumer = Java.type('java.util.function.Consumer');
     let JSConsumer = Java.extend(Consumer, {
         accept: function(你的变量名) {
- 代码块
+        代码块
     });
     
     getChatInput(player, new JSConsumer());
