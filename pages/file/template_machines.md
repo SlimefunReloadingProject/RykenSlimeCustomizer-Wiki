@@ -50,6 +50,20 @@ RSC_EXAMPLE_TEMPLATE_MACHINE:
           1:
             material_type: slimefun
             material: RSC_EXAMPLE_ITEM
+      item222item:
+        seconds: 5
+        input:
+          1:
+            material_type: slimefun
+            material: RSC_EXAMPLE_ITEM_2
+            noConsume: true # 此时仅单个物品不消耗
+          2:
+            material_type: mc
+            material: APPLE
+        output:
+          1:
+            material_type: slimefun
+            material: RSC_EXAMPLE_ITEM
 # 注意：以下示例仅适用于我的世界1.20.5以前的版本
 # 此实例展示的是模版机器在不设置输入物品的情况下仅放置模版即可输出相应物品
     RSC_EXAMPLE_ITEM:
@@ -84,6 +98,7 @@ RSC_EXAMPLE_TEMPLATE_MACHINE:
 | recipes.#.#.noConsume | 当设置为true时，所有的输入物品在输出产物时将不再消耗。注意：amount不能为0 |
 | fasterIfMoreTemplates | 存在多个模板在模板槽时，机器是否运行得更快，默认 false |
 | moreOutputIfMoreTemplates | 存在多个模板在模板槽时，机器是否输出的物品更多，默认 false |
+| recipes.#.#.input.noConsume | 当设置为true时，仅单个物品不消耗，其它输入物品正常消耗。 |
 
 # 注意
 
