@@ -221,35 +221,41 @@ let usable = canPlayerUseItem(player, item, sendMessage);
 }
 ```
 
-实例展示(玩家右键某个方块，通过在聊天栏内输入文字，从而更新物品的lore)：
+实例展示(玩家右键某个物品，通过在聊天栏内输入文字，从而更新物品的lore)：
 
 ```js
-    let Consumer = Java.type('java.util.function.Consumer');
-    let JSConsumer = Java.extend(Consumer, {
+var EquipmentSlot = Java.type('org.bukkit.inventory.EquipmentSlot');
+var Consumer = Java.type('java.util.function.Consumer');
+
+function onUse(event) {
+    var player = event.getPlayer();
+    if (event.getHand() !== EquipmentSlot.HAND) {
+        player.sendMessage("§c请用主手使用!");
+        return;
+    }
+    
+    var item = event.getItem();
+    player.sendMessage("§a请在聊天中输入要添加的Lore内容(输入cancel取消):");
+
+    var JSConsumer = Java.extend(Consumer, {
         accept: function(input) {
-            isWaitingForInput = false;
-            
             if (input.toLowerCase() === "cancel") {
-                player.sendMessage("§a✅ 已取消操作");
+                player.sendMessage("§a已取消添加Lore。");
                 return;
             }
             
-            if (!input || input.trim() === "") {
-                player.sendMessage("§c❌ 输入不能为空，请重新输入");
-                return;
-            }
+            var meta = item.getItemMeta();
+            var lore = meta.hasLore() ? meta.getLore() : new Java.type('java.util.ArrayList')();
+            lore.add(input);
+            meta.setLore(lore);
+            item.setItemMeta(meta);
             
-            // 更新物品Lore
-            try {
-                updateItemLore(player, input.trim());
-            } catch (error) {
-                player.sendMessage("§c❌ 设置失败，请重试");
-                console.log("Error updating item lore: " + error);
-            }
+            player.sendMessage("§a已成功添加Lore: §r" + input);
         }
     });
-    
+
     getChatInput(player, new JSConsumer());
+}
 ```
 
 |入参名称|类型|说明|
