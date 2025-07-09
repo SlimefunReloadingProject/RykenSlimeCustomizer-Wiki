@@ -204,6 +204,65 @@ let usable = canPlayerUseItem(player, item, sendMessage);
 |itemStack|[ItemStack](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemStack.html)|目标物品|
 |sendMessage|boolean|如果玩家不能使用物品时向玩家发送消息|
 
+## getChatInput
+
+获取玩家从聊天栏输入的文字
+
+示例用法：
+
+```js
+    let Consumer = Java.type('java.util.function.Consumer');
+    let JSConsumer = Java.extend(Consumer, {
+        accept: function(你的变量名) {
+        代码块
+    });
+    
+    getChatInput(player, new JSConsumer());
+}
+```
+
+实例展示(玩家右键某个物品，通过在聊天栏内输入文字，从而更新物品的lore)：
+
+```js
+var EquipmentSlot = Java.type('org.bukkit.inventory.EquipmentSlot');
+var Consumer = Java.type('java.util.function.Consumer');
+
+function onUse(event) {
+    var player = event.getPlayer();
+    if (event.getHand() !== EquipmentSlot.HAND) {
+        player.sendMessage("§c请用主手使用!");
+        return;
+    }
+    
+    var item = event.getItem();
+    player.sendMessage("§a请在聊天中输入要添加的Lore内容(输入cancel取消):");
+
+    var JSConsumer = Java.extend(Consumer, {
+        accept: function(input) {
+            if (input.toLowerCase() === "cancel") {
+                player.sendMessage("§a已取消添加Lore。");
+                return;
+            }
+            
+            var meta = item.getItemMeta();
+            var lore = meta.hasLore() ? meta.getLore() : new Java.type('java.util.ArrayList')();
+            lore.add(input);
+            meta.setLore(lore);
+            item.setItemMeta(meta);
+            
+            player.sendMessage("§a已成功添加Lore: §r" + input);
+        }
+    });
+
+    getChatInput(player, new JSConsumer());
+}
+```
+
+|入参名称|类型|说明|
+|---|---|---|
+|player|[Player](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/entity/Player.html)|玩家|
+|consumer| [Consumer](https://docs.oracle.com/javase/8/docs/api/java/util/function/Consumer.html)<String> | 一个函数式接口，用于处理玩家输入的文字。当玩家在聊天栏内输入文字后，该接口的 `accept` 方法会被调用，并将输入的文字作为参数传递 |
+
 ## setData
 
 示例用法:

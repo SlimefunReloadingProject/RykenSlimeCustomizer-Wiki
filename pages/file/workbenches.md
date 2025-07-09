@@ -32,6 +32,7 @@ WT_BWWYL:
           material_type: slimefun
           material: WT_JIJUXIE
           slot: 0
+          noConsume: true # 此时仅单个物品不消耗，其它输入物品正常消耗
         '2':
           amount: 1
           material_type: mc
@@ -75,3 +76,4 @@ WT_BWWYL:
 | recipes.#.forDisplay | 仅供展示的配方，可以用于在配方中写关于机器的描述/使用方法等。类似于乱码科技。 |
 | recipes.#.hide | 隐藏此输入输出配方。 |
 | recipes.#.input/output.slot | 输入/输出物品对应的槽位。有效范围：0~53。 |
+| recipes.#.input.noConsume | 当设置为true时，仅单个相应槽位的物品不消耗，其它输入物品正常消耗。 |
