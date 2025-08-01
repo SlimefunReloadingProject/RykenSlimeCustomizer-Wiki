@@ -36,6 +36,7 @@ amount: (数字)
 | skull\_url           | 头颅物品 |
 | skull\_hash          | 头颅物品 |
 | slimefun             | 粘液物品 |
+| uniitem              | 外部插件物品 |
 | none                 | 无物品(材料一栏可不用填)   |
 | saveditem            | 保存的物品 |
 
@@ -81,6 +82,38 @@ material: bb0f722aec27490cf056f560afdd457a0a794e703556cc4c3b51a582f5c57aa4
 鳞甲：旧id：SCUTE 新id：TURTLE_SCUTE
 
 你可以在填写上述两个原版物品id时随意使用旧id或新id
+
+6、uniitem
+
+引用外部插件的物品id，具体有关UniItem的用法详见[UniItem](https://github.com/ProjectUnified/UniItem)
+
+示例:
+
+```yaml
+material_type: uniitem
+material: mmoitems::MATERIAL:FLATSTONE
+```
+
+用法为namespace::id，支持以下插件
+
+```yaml
+  - ItemsAdder
+  - Oxaren
+  - MMOItems
+  - MythicMobs
+  - Nova
+  - Reforges
+  - StatTrackers
+  - Talismans
+  - ItemEdit
+  - HeadDatabase
+  - ItemBridge
+  - EcoItems
+  - EcoPets
+  - EcoScrolls
+  - EcoCrates
+  - EcoArmor
+```
 
 ### \*材料
 
